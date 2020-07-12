@@ -1,0 +1,10 @@
+{
+  "simulation": "simulation.GatlingSpec",
+  "simulationId": "gatlingspec",
+  "start": 1594510546223,
+  "description": "",
+  "scenarios": ["Clients"],
+  "assertions": [
+
+  ]
+}
