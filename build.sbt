@@ -45,6 +45,7 @@ lazy val root = (project in file("."))
       "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
       "io.lemonlabs" %% "scala-uri" % "1.5.1",
       "net.codingwell" %% "scala-guice" % "4.2.6",
+      "nl.grons" %% "metrics4-scala" % "4.1.9",
       "com.google.inject" % "guice" % "4.2.4-20200419-NEWAOP-BETA", // fixes https://github.com/google/guice/issues/1133
       "com.clojure-goes-fast" % "jvm-alloc-rate-meter" % "0.1.3",
       "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test

@@ -9,5 +9,6 @@ class Module(environment: Environment, configuration: Configuration)
 
   override def configure(): Unit = {
     bind[PostRepository].to[PostRepositoryImpl].asEagerSingleton()
+    bind[AllocService].asEagerSingleton()
   }
 }

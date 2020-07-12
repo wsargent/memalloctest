@@ -1,9 +1,8 @@
 package v1.post
 
+import com.tersesystems.blindsight._
 import javax.inject.Inject
-
-import net.logstash.logback.marker.LogstashMarker
-import play.api.{Logger, MarkerContext}
+import nl.grons.metrics4.scala.DefaultInstrumented
 import play.api.http.{FileMimeTypes, HttpVerbs}
 import play.api.i18n.{Langs, MessagesApi}
 import play.api.mvc._
@@ -34,19 +33,33 @@ class PostActionBuilder @Inject()(messagesApi: MessagesApi,
                                   playBodyParsers: PlayBodyParsers)(
     implicit val executionContext: ExecutionContext)
     extends ActionBuilder[PostRequest, AnyContent]
-    with HttpVerbs {
+    with HttpVerbs with DefaultInstrumented {
+
+  // should be a way to get flowlogger working better with Future[Result]
+  //private val flowlogger = LoggerFactory.getLogger.flow
+  private val logger = LoggerFactory.getLogger
 
   override val parser: BodyParser[AnyContent] = playBodyParsers.anyContent
 
   type PostRequestBlock[A] = PostRequest[A] => Future[Result]
 
-  // private val logger = Logger(this.getClass)
-
   override def invokeBlock[A](request: Request[A],
                               block: PostRequestBlock[A]): Future[Result] = {
+    val start = System.currentTimeMillis()
     val future = block(new PostRequest(request, messagesApi))
 
     future.map { result =>
+      import DSL._
+      val durationMs = System.currentTimeMillis() - start
+      val snapshot = metrics.registry.histogram("jvm_alloc_rate").getSnapshot
+      val mean = snapshot.getMean
+      val resultTag = bobj(
+        "result.status" -> result.header.status,
+        "duration_ms" -> durationMs,
+        "alloc_rate.mean_bsec" -> mean,
+        "alloc_rate.mean_mbsec" -> mean / 1e6,
+      )
+      logger.info(Markers(resultTag))
       request.method match {
         case GET | HEAD =>
           result.withHeaders("Cache-Control" -> s"max-age: 100")
