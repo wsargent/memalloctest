@@ -10,6 +10,7 @@ val graalOptions: Seq[String] = Seq(
 val shenOptions: Seq[String] = Seq(
   "-J-XX:+UnlockExperimentalVMOptions",
   "-J-XX:+UseShenandoahGC",
+  "-J-XX:-ShenandoahPacing",
   "-J-XX:ShenandoahGCHeuristics=compact"
 )
 
@@ -20,7 +21,8 @@ val jvmOptions = Seq(
   "-J-XX:MaxInlineSize=270",
   "-J-XX:MaxTrivialSize=12",
   "-J-XX:-UseBiasedLocking",
-  "-J-XX:+AlwaysPreTouch"
+  "-J-XX:+AlwaysPreTouch",
+  "-J-XX:+UseNUMA"
 ) ++ shenOptions
 
 val jfrOptions = Seq(
