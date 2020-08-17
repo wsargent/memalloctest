@@ -2,13 +2,6 @@ import sbt.Keys._
 
 val AkkaVersion = "2.6.7"
 
-initialize := {
-  val _        = initialize.value // run the previous initialization
-  val required = "14"
-  val current  = sys.props("java.specification.version")
-  assert(current >= required, s"Unsupported JDK: java.specification.version $current != $required")
-}
-
 val graalOptions: Seq[String] = Seq(
   "-J-XX:+UnlockExperimentalVMOptions",
   "-J-XX:+UseJVMCICompiler"
@@ -20,47 +13,97 @@ val shenOptions: Seq[String] = Seq(
   "-J-XX:ShenandoahGCHeuristics=compact"
 )
 
-val zgcOptions: Seq[String] = Seq(
-  "-J-XX:+UnlockExperimentalVMOptions",
-  "-J-XX:+UseZGC",
+val jvmOptions = Seq(
+  "-J-Xms4G",
+  "-J-Xmx4G",
+  "-J-XX:MaxInlineLevel=18",
+  "-J-XX:MaxInlineSize=270",
+  "-J-XX:MaxTrivialSize=12",
+  "-J-XX:-UseBiasedLocking",
+  "-J-XX:+AlwaysPreTouch"
+) ++ shenOptions
+
+val jfrOptions = Seq(
+  "-J-XX:StartFlightRecording:disk=true,filename=$LOG_DIR/memalloctest.jfr,maxage=10m,settings=profile"
 )
 
+val heapDumpOptions = Seq(
+ "-XX:HeapDumpPath=$LOG_DIR/heapdump.hprof"    
+)
+
+val gclogOptions: Seq[String] = Seq(
+  "-J-Xlog:gc*,gc+age=trace,gc+heap=debug,gc+promotion=trace,safepoint:file=$LOG_DIR/gc.log:utctime,pid,tags:filecount=10,filesize=1m",
+)
+
+// Create a docker image with sbt docker:publishLocal
 lazy val root = (project in file("."))
-  .enablePlugins(PlayService, PlayLayoutPlugin, Common)
+  .enablePlugins(PlayService, PlayLayoutPlugin, DockerPlugin, AshScriptPlugin, Common)
   .settings(
     name := "memory-allocation-test",
     scalaVersion := "2.13.3",
+
+    // disable javadoc/scaladoc generation
+    sources in (Compile, doc) := Seq.empty,
+    publishArtifact in (Compile, packageDoc) := false,
+
     resolvers += Resolver.bintrayRepo("tersesystems", "maven"),
     resolvers += "clojars" at "https://repo.clojars.org/",
     // https://github.com/mcculls/guice-betas/ to stop the jdk 11 reflective access warning
     resolvers += "guice-betas" at "https://mcculls.github.io/guice-betas/maven2/",
+
+    dockerExposedPorts ++= Seq(9000),
+
+    // Point the Play logs at the right place.
+    Docker / defaultLinuxLogsLocation := (Docker / defaultLinuxInstallLocation).value + "/logs",
+    dockerExposedVolumes := Seq((Docker / defaultLinuxLogsLocation).value),
+
+    // Always use latest tag
+    dockerUpdateLatest := true,
+
+    // Use alpine image that has been stripped down
+    dockerBaseImage := "adoptopenjdk/openjdk14:alpine-slim",
+
+    // Don't let Docker write out a PID file to /opt/docker, there's no write access,
+    // and it doesn't matter anyway.    
+    bashScriptExtraDefines += """addJava "-Dpidfile.path=/dev/null"""",
+
+    // Expose LOG_DIR as environment variable in Docker.
+    dockerEnvVars := Map(
+      "LOG_DIR" -> (Docker / defaultLinuxLogsLocation).value
+    ),
+
     libraryDependencies ++= Seq(
-      guice,
-      "org.joda" % "joda-convert" % "2.2.1",
+      // logging
       "com.tersesystems.blindsight" %% "blindsight-logstash" % "1.4.0-RC4",
+
+      // Akka's jackson has an old version here that must be upgraded
       "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.11.0",
+
+      // Play 2.8.x doesn't always have latest version of Akka
       "com.typesafe.akka" %% "akka-serialization-jackson" % AkkaVersion,
       "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
       "com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
       "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
-      "io.lemonlabs" %% "scala-uri" % "1.5.1",
+
+      // Some guice add-ons for easy Play use
+      guice,
       "net.codingwell" %% "scala-guice" % "4.2.6",
-      "nl.grons" %% "metrics4-scala" % "4.1.9",
       "com.google.inject" % "guice" % "4.2.4-20200419-NEWAOP-BETA", // fixes https://github.com/google/guice/issues/1133
+
+      // Scala API for dropwizard-metrics
+      "nl.grons" %% "metrics4-scala" % "4.1.9",
+
+      // ???
+      "org.joda" % "joda-convert" % "2.2.1",
+
+      // Expose the allocation rate meter
+      // This uses getThreadAllocatedBytes, it may be faster to use JEP-331 agent
       "com.clojure-goes-fast" % "jvm-alloc-rate-meter" % "0.1.3",
+
       "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
     ),
-    javaOptions in Universal ++= Seq(
-      "-J-Xms4G",
-      "-J-Xmx4G",
-      "-J-Xlog:gc*,gc+age=trace,gc+heap=debug,gc+promotion=trace,safepoint:file=/mnt/tmpfs/gc.log:utctime,pid,tags:filecount=10,filesize=1m",
-      "-J-XX:MaxInlineLevel=18",
-      "-J-XX:MaxInlineSize=270",
-      "-J-XX:MaxTrivialSize=12",
-      "-J-XX:-UseBiasedLocking",
-      "-J-XX:+AlwaysPreTouch",      
-      "-J-XX:StartFlightRecording:disk=true,filename=/mnt/tmpfs/memalloctest.jfr,maxage=10m,settings=profile"
-    ) ++ shenOptions,
+
+    javaOptions in Universal ++= jvmOptions,
 
     scalacOptions ++= Seq(
       "-feature",

@@ -11,7 +11,7 @@
 
   <appender name="ASYNCJSON" class="net.logstash.logback.appender.LoggingEventAsyncDisruptorAppender">
     <appender class="ch.qos.logback.core.FileAppender">
-      <file>/mnt/tmpfs/application.json</file>
+      <file>${LOG_DIR}/application.json</file>
       <append>false</append>
       <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
         <providers>

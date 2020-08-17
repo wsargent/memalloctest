@@ -10,12 +10,10 @@ import play.api.routing.sird._
   * Routes and URLs to the PostResource controller.
   */
 class PostRouter @Inject()(controller: PostController) extends SimpleRouter {
-  val prefix = "/v1/posts"
+  val prefix = "/"
 
   def link(id: PostId): String = {
-    import io.lemonlabs.uri.dsl._
-    val url = prefix / id.toString
-    url.toString()
+    prefix + id
   }
 
   override def routes: Routes = {
