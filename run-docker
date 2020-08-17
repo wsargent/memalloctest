@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+mkdir logs
+chmod a+rwx logs
+docker run \
+  -p 9000:9000 \
+  --rm \
+  --env "PLAY_APPLICATION_SECRET=very-long-secret-for-entropy" \
+  --env "LOG_DIR=/opt/docker/logs" \
+  --mount type=bind,source="$(pwd)/logs",target=/opt/docker/logs \
+  memory-allocation-test:latest
