@@ -1,0 +1,10 @@
+{
+  "simulation": "simulation.GatlingSpec",
+  "simulationId": "gatlingspec",
+  "start": 1598285815347,
+  "description": "JDK 1.8 with G1GC",
+  "scenarios": ["Clients"],
+  "assertions": [
+
+  ]
+}
