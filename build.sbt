@@ -25,17 +25,14 @@ val jvmOptions = Seq(
   "-J-XX:+UseNUMA"
 ) ++ shenOptions
 
-val jfrOptions = Seq(
-  "-J-XX:StartFlightRecording:disk=true,filename=$LOG_DIR/memalloctest.jfr,maxage=10m,settings=profile"
-)
+val jfrOptions = 
+  "-XX:StartFlightRecording:disk=true,filename=${LOG_DIR}/memalloctest.jfr,maxage=10m,settings=profile"
 
-val heapDumpOptions = Seq(
+val heapDumpOptions = 
  "-XX:HeapDumpPath=$LOG_DIR/heapdump.hprof"    
-)
 
-val gclogOptions: Seq[String] = Seq(
-  "-J-Xlog:gc*,gc+age=trace,gc+heap=debug,gc+promotion=trace,safepoint:file=$LOG_DIR/gc.log:utctime,pid,tags:filecount=10,filesize=1m",
-)
+val gclogOptions = 
+  "-Xlog:gc*,gc+age=debug,gc+heap=debug,gc+promotion=debug,safepoint:file=${LOG_DIR}/gc.log:utctime,pid,tags:filecount=10,filesize=1m"
 
 // Create a docker image with sbt docker:publishLocal
 lazy val root = (project in file("."))
@@ -65,13 +62,16 @@ lazy val root = (project in file("."))
     // Use image that has been stripped down
     dockerBaseImage := "adoptopenjdk/openjdk14:slim",
 
-    // Don't let Docker write out a PID file to /opt/docker, there's no write access,
-    // and it doesn't matter anyway.    
+    // Set the log directory if we are staging not in docker
+    bashScriptExtraDefines += "export LOG_DIR=${app_home}/../logs",
+    bashScriptExtraDefines += "mkdir -p $LOG_DIR",
+    bashScriptExtraDefines += "echo LOG_DIR=$LOG_DIR",
+    
+    // Don't write out a PID file, it doesn't matter anyway.    
     bashScriptExtraDefines += """addJava "-Dpidfile.path=/dev/null"""",
     bashScriptExtraDefines += """addJava "-Dplay.http.secret.key=a-long-secret-to-defeat-entropy"""",
-
-    // Set the log directory if we are staging not in docker
-    bashScriptExtraDefines += "LOG_DIR=${app_home}/../logs",
+    bashScriptExtraDefines += s"""addJava "$gclogOptions"""",
+    // bashScriptExtraDefines += s"""addJava "$jfrOptions""""" + ,
 
     // Expose LOG_DIR as environment variable in Docker.
     dockerEnvVars := Map(

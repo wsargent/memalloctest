@@ -1,18 +1,27 @@
 <!-- https://www.playframework.com/documentation/latest/SettingsLogger -->
 <configuration>
+  
+  <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/>
 
   <conversionRule conversionWord="coloredLevel" converterClass="play.api.libs.logback.ColoredLevel" />
 
+  <!-- only log warn and error to STDOUT -->
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>WARN</level>
+    </filter>
     <encoder>
       <pattern>%coloredLevel %logger{15} - %message%n%xException{10}</pattern>
     </encoder>
   </appender>
 
   <appender name="ASYNCJSON" class="net.logstash.logback.appender.LoggingEventAsyncDisruptorAppender">
+    <ringBufferSize>32768</ringBufferSize>
+    <listener class="net.logstash.logback.appender.listener.FailureSummaryLoggingAppenderListener"/>
     <appender class="ch.qos.logback.core.FileAppender">
-      <file>${LOG_DIR}/application.json</file>
+      <file>logs/application.json</file>
       <append>false</append>
+      <immediateFlush>false</immediateFlush>
       <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
         <providers>
           <timestamp/>
@@ -28,12 +37,9 @@
     </appender>
   </appender>
 
-  <logger name="play" level="INFO" />
-  <logger name="application" level="INFO" />
-  <logger name="v1.post" level="INFO" />
-
-  <root level="INFO">
+  <root level="TRACE">
     <appender-ref ref="ASYNCJSON" />
+    <appender-ref ref="STDOUT" />
   </root>
 
 </configuration>
