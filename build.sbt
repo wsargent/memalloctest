@@ -10,6 +10,7 @@ val graalOptions: Seq[String] = Seq(
 val shenOptions: Seq[String] = Seq(
   "-J-XX:+UnlockExperimentalVMOptions",
   "-J-XX:+UseShenandoahGC",
+  "-J-XX:-ShenandoahPacing",
   "-J-XX:ShenandoahGCHeuristics=compact"
 )
 
@@ -20,24 +21,22 @@ val jvmOptions = Seq(
   "-J-XX:MaxInlineSize=270",
   "-J-XX:MaxTrivialSize=12",
   "-J-XX:-UseBiasedLocking",
-  "-J-XX:+AlwaysPreTouch"
+  "-J-XX:+AlwaysPreTouch",
+  "-J-XX:+UseNUMA"
 ) ++ shenOptions
 
-val jfrOptions = Seq(
-  "-J-XX:StartFlightRecording:disk=true,filename=$LOG_DIR/memalloctest.jfr,maxage=10m,settings=profile"
-)
+val jfrOptions = 
+  "-XX:StartFlightRecording:disk=true,filename=${LOG_DIR}/memalloctest.jfr,maxage=10m,settings=profile"
 
-val heapDumpOptions = Seq(
+val heapDumpOptions = 
  "-XX:HeapDumpPath=$LOG_DIR/heapdump.hprof"    
-)
 
-val gclogOptions: Seq[String] = Seq(
-  "-J-Xlog:gc*,gc+age=trace,gc+heap=debug,gc+promotion=trace,safepoint:file=$LOG_DIR/gc.log:utctime,pid,tags:filecount=10,filesize=1m",
-)
+val gclogOptions = 
+  "-Xlog:gc*,gc+age=debug,gc+heap=debug,gc+promotion=debug,safepoint:file=${LOG_DIR}/gc.log:utctime,pid,tags:filecount=10,filesize=1m"
 
 // Create a docker image with sbt docker:publishLocal
 lazy val root = (project in file("."))
-  .enablePlugins(PlayService, PlayLayoutPlugin, DockerPlugin, AshScriptPlugin, Common)
+  .enablePlugins(PlayService, PlayLayoutPlugin, DockerPlugin, Common)
   .settings(
     name := "memory-allocation-test",
     scalaVersion := "2.13.3",
@@ -60,12 +59,19 @@ lazy val root = (project in file("."))
     // Always use latest tag
     dockerUpdateLatest := true,
 
-    // Use alpine image that has been stripped down
-    dockerBaseImage := "adoptopenjdk/openjdk14:alpine-slim",
+    // Use image that has been stripped down
+    dockerBaseImage := "adoptopenjdk/openjdk14:slim",
 
-    // Don't let Docker write out a PID file to /opt/docker, there's no write access,
-    // and it doesn't matter anyway.    
+    // Set the log directory if we are staging not in docker
+    bashScriptExtraDefines += "export LOG_DIR=${app_home}/../logs",
+    bashScriptExtraDefines += "mkdir -p $LOG_DIR",
+    bashScriptExtraDefines += "echo LOG_DIR=$LOG_DIR",
+    
+    // Don't write out a PID file, it doesn't matter anyway.    
     bashScriptExtraDefines += """addJava "-Dpidfile.path=/dev/null"""",
+    bashScriptExtraDefines += """addJava "-Dplay.http.secret.key=a-long-secret-to-defeat-entropy"""",
+    bashScriptExtraDefines += s"""addJava "$gclogOptions"""",
+    // bashScriptExtraDefines += s"""addJava "$jfrOptions""""" + ,
 
     // Expose LOG_DIR as environment variable in Docker.
     dockerEnvVars := Map(
@@ -112,16 +118,5 @@ lazy val root = (project in file("."))
       "-opt:l:inline",
       "-opt-inline-from:akka.**,com.lightbend.**,v1.**",
       "-opt-warnings:any-inline-failed",
-    )
-  )
-
-lazy val gatlingVersion = "3.3.1"
-lazy val gatling = (project in file("gatling"))
-  .enablePlugins(GatlingPlugin)
-  .settings(
-    scalaVersion := "2.12.10",
-    libraryDependencies ++= Seq(
-      "io.gatling.highcharts" % "gatling-charts-highcharts" % gatlingVersion % Test,
-      "io.gatling" % "gatling-test-framework" % gatlingVersion % Test
     )
   )
