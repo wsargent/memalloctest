@@ -14,6 +14,8 @@ val shenOptions: Seq[String] = Seq(
   "-J-XX:ShenandoahGCHeuristics=compact"
 )
 
+val g1gcOptions = Seq("-J-XX:+UseG1GC")
+
 val jvmOptions = Seq(
   "-J-Xms4G",
   "-J-Xmx4G",
@@ -23,7 +25,7 @@ val jvmOptions = Seq(
   "-J-XX:-UseBiasedLocking",
   "-J-XX:+AlwaysPreTouch",
   "-J-XX:+UseNUMA"
-) ++ shenOptions
+) ++ g1gcOptions
 
 val jfrOptions = 
   "-XX:StartFlightRecording:disk=true,filename=${LOG_DIR}/memalloctest.jfr,maxage=10m,settings=profile"
@@ -31,7 +33,17 @@ val jfrOptions =
 val heapDumpOptions = 
  "-XX:HeapDumpPath=$LOG_DIR/heapdump.hprof"    
 
-val gclogOptions = 
+val gclog18Options = Seq(
+  "-XX:+PrintGC",
+  "-XX:+PrintGCApplicationStoppedTime",
+  "-XX:+PrintGCDateStamps",
+  "-XX:+PrintGCDetails",
+  "-XX:+PrintGCTimeStamps",
+  "-XX:+PrintTenuringDistribution",
+  "-Xloggc:${LOG_DIR}/gc.log"
+)
+
+val gclog9Options =
   "-Xlog:gc*,gc+age=debug,gc+heap=debug,gc+promotion=debug,safepoint:file=${LOG_DIR}/gc.log:utctime,pid,tags:filecount=10,filesize=1m"
 
 // Create a docker image with sbt docker:publishLocal
@@ -70,7 +82,8 @@ lazy val root = (project in file("."))
     // Don't write out a PID file, it doesn't matter anyway.    
     bashScriptExtraDefines += """addJava "-Dpidfile.path=/dev/null"""",
     bashScriptExtraDefines += """addJava "-Dplay.http.secret.key=a-long-secret-to-defeat-entropy"""",
-    bashScriptExtraDefines += s"""addJava "$gclogOptions"""",
+    //bashScriptExtraDefines ++= gclog18Options.map(gcOption => s"""addJava "${gcOption}""""),
+    bashScriptExtraDefines += s"""addJava "${gclog9Options}"""",
     // bashScriptExtraDefines += s"""addJava "$jfrOptions""""" + ,
 
     // Expose LOG_DIR as environment variable in Docker.
