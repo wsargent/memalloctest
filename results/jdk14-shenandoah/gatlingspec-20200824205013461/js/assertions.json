@@ -1,0 +1,10 @@
+{
+  "simulation": "simulation.GatlingSpec",
+  "simulationId": "gatlingspec",
+  "start": 1598302213461,
+  "description": "JDK 14 with Shenandoah",
+  "scenarios": ["Clients"],
+  "assertions": [
+
+  ]
+}
