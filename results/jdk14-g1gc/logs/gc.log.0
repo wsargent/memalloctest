@@ -1,0 +1,219 @@
+[2020-08-24T20:33:29.784+0000][22223][gc,heap] Heap region size: 2M
+[2020-08-24T20:33:29.784+0000][22223][gc,heap] Minimum heap 4294967296  Initial heap 4294967296  Maximum heap 4294967296
+[2020-08-24T20:33:29.788+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 4 work units pre-touching 4294967296B.
+[2020-08-24T20:33:30.922+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 1 work units pre-touching 67108864B.
+[2020-08-24T20:33:30.938+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 1 work units pre-touching 67108864B.
+[2020-08-24T20:33:30.956+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 1 work units pre-touching 8388608B.
+[2020-08-24T20:33:30.958+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 1 work units pre-touching 8388608B.
+[2020-08-24T20:33:30.961+0000][22223][gc,heap] Running G1 PreTouch with 1 workers for 1 work units pre-touching 8388608B.
+[2020-08-24T20:33:30.970+0000][22223][gc     ] Using G1
+[2020-08-24T20:33:30.970+0000][22223][gc,heap,coops] Heap address: 0x0000000700000000, size: 4096 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Application time: 0.5915555 seconds
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Leaving safepoint region
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Total time for which application threads were stopped: 0.0002402 seconds, Stopping threads took: 0.0000093 seconds
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Application time: 0.0003683 seconds
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Leaving safepoint region
+[2020-08-24T20:33:31.608+0000][22223][safepoint    ] Total time for which application threads were stopped: 0.0001311 seconds, Stopping threads took: 0.0000052 seconds
+[2020-08-24T20:33:31.737+0000][22223][safepoint    ] Application time: 0.1283078 seconds
+[2020-08-24T20:33:31.737+0000][22223][safepoint    ] Entering safepoint region: CollectForMetadataAllocation
+[2020-08-24T20:33:31.737+0000][22223][gc,heap      ] GC(0) Heap before GC invocations=0 (full 0): garbage-first heap   total 4194304K, used 47104K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:31.737+0000][22223][gc,heap      ] GC(0)   region size 2048K, 24 young (49152K), 0 survivors (0K)
+[2020-08-24T20:33:31.737+0000][22223][gc,heap      ] GC(0)  Metaspace       used 20706K, capacity 20964K, committed 21248K, reserved 1069056K
+[2020-08-24T20:33:31.737+0000][22223][gc,heap      ] GC(0)   class space    used 2388K, capacity 2493K, committed 2560K, reserved 1048576K
+[2020-08-24T20:33:31.737+0000][22223][gc,start     ] GC(0) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2020-08-24T20:33:31.738+0000][22223][gc,task      ] GC(0) Using 10 workers of 10 for evacuation
+[2020-08-24T20:33:31.738+0000][22223][gc,age       ] GC(0) Desired survivor size 13631488 bytes, new threshold 15 (max threshold 15)
+[2020-08-24T20:33:31.742+0000][22223][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
+[2020-08-24T20:33:31.742+0000][22223][gc,phases    ] GC(0)   Evacuate Collection Set: 3.2ms
+[2020-08-24T20:33:31.742+0000][22223][gc,phases    ] GC(0)   Post Evacuate Collection Set: 0.6ms
+[2020-08-24T20:33:31.742+0000][22223][gc,phases    ] GC(0)   Other: 1.3ms
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0) Eden regions: 24->0(98)
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0) Survivor regions: 0->4(13)
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0) Old regions: 0->0
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0) Humongous regions: 0->0
+[2020-08-24T20:33:31.742+0000][22223][gc,metaspace ] GC(0) Metaspace: 20706K->20706K(1069056K)
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0) Heap after GC invocations=1 (full 0): garbage-first heap   total 4194304K, used 6259K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0)   region size 2048K, 4 young (8192K), 4 survivors (8192K)
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0)  Metaspace       used 20706K, capacity 20964K, committed 21248K, reserved 1069056K
+[2020-08-24T20:33:31.742+0000][22223][gc,heap      ] GC(0)   class space    used 2388K, capacity 2493K, committed 2560K, reserved 1048576K
+[2020-08-24T20:33:31.742+0000][22223][gc           ] GC(0) Pause Young (Concurrent Start) (Metadata GC Threshold) 48M->6M(4096M) 5.145ms
+[2020-08-24T20:33:31.742+0000][22223][gc,cpu       ] GC(0) User=0.03s Sys=0.00s Real=0.01s
+[2020-08-24T20:33:31.742+0000][22223][gc           ] GC(1) Concurrent Cycle
+[2020-08-24T20:33:31.742+0000][22223][gc,marking   ] GC(1) Concurrent Clear Claimed Marks
+[2020-08-24T20:33:31.742+0000][22223][gc,marking   ] GC(1) Concurrent Clear Claimed Marks 0.008ms
+[2020-08-24T20:33:31.742+0000][22223][gc,marking   ] GC(1) Concurrent Scan Root Regions
+[2020-08-24T20:33:31.742+0000][22223][safepoint    ] Leaving safepoint region
+[2020-08-24T20:33:31.742+0000][22223][safepoint    ] Total time for which application threads were stopped: 0.0054455 seconds, Stopping threads took: 0.0000072 seconds
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Scan Root Regions 1.567ms
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Mark (1.981s)
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Mark From Roots
+[2020-08-24T20:33:31.744+0000][22223][gc,task      ] GC(1) Using 3 workers of 3 for marking
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Mark From Roots 0.544ms
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Preclean
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Preclean 0.092ms
+[2020-08-24T20:33:31.744+0000][22223][gc,marking   ] GC(1) Concurrent Mark (1.981s, 1.982s) 0.661ms
+[2020-08-24T20:33:31.744+0000][22223][safepoint    ] Application time: 0.0022409 seconds
+[2020-08-24T20:33:31.744+0000][22223][safepoint    ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:31.744+0000][22223][gc,start     ] GC(1) Pause Remark
+[2020-08-24T20:33:31.751+0000][22223][gc,stringtable] GC(1) Cleaned string and symbol table, strings: 6600 processed, 0 removed, symbols: 66039 processed, 20 removed
+[2020-08-24T20:33:31.751+0000][22223][gc            ] GC(1) Pause Remark 7M->7M(4096M) 6.810ms
+[2020-08-24T20:33:31.751+0000][22223][gc,cpu        ] GC(1) User=0.07s Sys=0.00s Real=0.01s
+[2020-08-24T20:33:31.751+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:31.751+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0069286 seconds, Stopping threads took: 0.0000376 seconds
+[2020-08-24T20:33:31.751+0000][22223][gc,marking    ] GC(1) Concurrent Rebuild Remembered Sets
+[2020-08-24T20:33:31.751+0000][22223][gc,marking    ] GC(1) Concurrent Rebuild Remembered Sets 0.147ms
+[2020-08-24T20:33:31.752+0000][22223][safepoint     ] Application time: 0.0002669 seconds
+[2020-08-24T20:33:31.752+0000][22223][safepoint     ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:31.752+0000][22223][gc,start      ] GC(1) Pause Cleanup
+[2020-08-24T20:33:31.752+0000][22223][gc            ] GC(1) Pause Cleanup 7M->7M(4096M) 0.241ms
+[2020-08-24T20:33:31.752+0000][22223][gc,cpu        ] GC(1) User=0.00s Sys=0.00s Real=0.00s
+[2020-08-24T20:33:31.752+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:31.752+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0002996 seconds, Stopping threads took: 0.0000182 seconds
+[2020-08-24T20:33:31.752+0000][22223][gc,marking    ] GC(1) Concurrent Cleanup for Next Mark
+[2020-08-24T20:33:31.755+0000][22223][gc,marking    ] GC(1) Concurrent Cleanup for Next Mark 2.636ms
+[2020-08-24T20:33:31.755+0000][22223][gc            ] GC(1) Concurrent Cycle 12.566ms
+[2020-08-24T20:33:32.517+0000][22223][safepoint     ] Application time: 0.7648236 seconds
+[2020-08-24T20:33:32.517+0000][22223][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2020-08-24T20:33:32.517+0000][22223][gc,heap       ] GC(2) Heap before GC invocations=2 (full 0): garbage-first heap   total 4194304K, used 69747K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:32.517+0000][22223][gc,heap       ] GC(2)   region size 2048K, 37 young (75776K), 4 survivors (8192K)
+[2020-08-24T20:33:32.517+0000][22223][gc,heap       ] GC(2)  Metaspace       used 35010K, capacity 35517K, committed 35840K, reserved 1081344K
+[2020-08-24T20:33:32.517+0000][22223][gc,heap       ] GC(2)   class space    used 4187K, capacity 4409K, committed 4480K, reserved 1048576K
+[2020-08-24T20:33:32.517+0000][22223][gc,start      ] GC(2) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2020-08-24T20:33:32.517+0000][22223][gc,task       ] GC(2) Using 10 workers of 10 for evacuation
+[2020-08-24T20:33:32.517+0000][22223][gc,age        ] GC(2) Desired survivor size 13631488 bytes, new threshold 15 (max threshold 15)
+[2020-08-24T20:33:32.522+0000][22223][gc,phases     ] GC(2)   Pre Evacuate Collection Set: 0.0ms
+[2020-08-24T20:33:32.522+0000][22223][gc,phases     ] GC(2)   Evacuate Collection Set: 4.0ms
+[2020-08-24T20:33:32.522+0000][22223][gc,phases     ] GC(2)   Post Evacuate Collection Set: 0.6ms
+[2020-08-24T20:33:32.522+0000][22223][gc,phases     ] GC(2)   Other: 0.3ms
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2) Eden regions: 33->0(96)
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2) Survivor regions: 4->6(13)
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2) Old regions: 0->0
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2) Humongous regions: 0->0
+[2020-08-24T20:33:32.522+0000][22223][gc,metaspace  ] GC(2) Metaspace: 35010K->35010K(1081344K)
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2) Heap after GC invocations=3 (full 0): garbage-first heap   total 4194304K, used 10506K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2)   region size 2048K, 6 young (12288K), 6 survivors (12288K)
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2)  Metaspace       used 35010K, capacity 35517K, committed 35840K, reserved 1081344K
+[2020-08-24T20:33:32.522+0000][22223][gc,heap       ] GC(2)   class space    used 4187K, capacity 4409K, committed 4480K, reserved 1048576K
+[2020-08-24T20:33:32.522+0000][22223][gc            ] GC(2) Pause Young (Concurrent Start) (Metadata GC Threshold) 72M->10M(4096M) 4.913ms
+[2020-08-24T20:33:32.522+0000][22223][gc,cpu        ] GC(2) User=0.04s Sys=0.00s Real=0.01s
+[2020-08-24T20:33:32.522+0000][22223][gc            ] GC(3) Concurrent Cycle
+[2020-08-24T20:33:32.522+0000][22223][gc,marking    ] GC(3) Concurrent Clear Claimed Marks
+[2020-08-24T20:33:32.522+0000][22223][gc,marking    ] GC(3) Concurrent Clear Claimed Marks 0.011ms
+[2020-08-24T20:33:32.522+0000][22223][gc,marking    ] GC(3) Concurrent Scan Root Regions
+[2020-08-24T20:33:32.522+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:32.522+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0051898 seconds, Stopping threads took: 0.0000156 seconds
+[2020-08-24T20:33:32.523+0000][22223][gc,marking    ] GC(3) Concurrent Scan Root Regions 1.434ms
+[2020-08-24T20:33:32.523+0000][22223][gc,marking    ] GC(3) Concurrent Mark (2.761s)
+[2020-08-24T20:33:32.523+0000][22223][gc,marking    ] GC(3) Concurrent Mark From Roots
+[2020-08-24T20:33:32.523+0000][22223][gc,task       ] GC(3) Using 3 workers of 3 for marking
+[2020-08-24T20:33:32.524+0000][22223][gc,marking    ] GC(3) Concurrent Mark From Roots 0.532ms
+[2020-08-24T20:33:32.524+0000][22223][gc,marking    ] GC(3) Concurrent Preclean
+[2020-08-24T20:33:32.524+0000][22223][gc,marking    ] GC(3) Concurrent Preclean 0.122ms
+[2020-08-24T20:33:32.524+0000][22223][gc,marking    ] GC(3) Concurrent Mark (2.761s, 2.761s) 0.683ms
+[2020-08-24T20:33:32.524+0000][22223][safepoint     ] Application time: 0.0021303 seconds
+[2020-08-24T20:33:32.524+0000][22223][safepoint     ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:32.524+0000][22223][gc,start      ] GC(3) Pause Remark
+[2020-08-24T20:33:32.525+0000][22223][gc,stringtable] GC(3) Cleaned string and symbol table, strings: 8936 processed, 0 removed, symbols: 109266 processed, 16 removed
+[2020-08-24T20:33:32.526+0000][22223][gc            ] GC(3) Pause Remark 11M->11M(4096M) 1.621ms
+[2020-08-24T20:33:32.526+0000][22223][gc,cpu        ] GC(3) User=0.01s Sys=0.00s Real=0.00s
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0016903 seconds, Stopping threads took: 0.0000164 seconds
+[2020-08-24T20:33:32.526+0000][22223][gc,marking    ] GC(3) Concurrent Rebuild Remembered Sets
+[2020-08-24T20:33:32.526+0000][22223][gc,marking    ] GC(3) Concurrent Rebuild Remembered Sets 0.125ms
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Application time: 0.0001960 seconds
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:32.526+0000][22223][gc,start      ] GC(3) Pause Cleanup
+[2020-08-24T20:33:32.526+0000][22223][gc            ] GC(3) Pause Cleanup 11M->11M(4096M) 0.238ms
+[2020-08-24T20:33:32.526+0000][22223][gc,cpu        ] GC(3) User=0.01s Sys=0.00s Real=0.00s
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:32.526+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0003221 seconds, Stopping threads took: 0.0000150 seconds
+[2020-08-24T20:33:32.526+0000][22223][gc,marking    ] GC(3) Concurrent Cleanup for Next Mark
+[2020-08-24T20:33:32.529+0000][22223][gc,marking    ] GC(3) Concurrent Cleanup for Next Mark 2.760ms
+[2020-08-24T20:33:32.529+0000][22223][gc            ] GC(3) Concurrent Cycle 7.241ms
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Application time: 0.3853223 seconds
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0002224 seconds, Stopping threads took: 0.0000065 seconds
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Application time: 0.0005626 seconds
+[2020-08-24T20:33:32.912+0000][22223][safepoint     ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:32.913+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:32.913+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0001221 seconds, Stopping threads took: 0.0000049 seconds
+[2020-08-24T20:33:33.510+0000][22223][safepoint     ] Application time: 0.5974258 seconds
+[2020-08-24T20:33:33.510+0000][22223][safepoint     ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:33.510+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:33.510+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0003109 seconds, Stopping threads took: 0.0000070 seconds
+[2020-08-24T20:33:33.934+0000][22223][safepoint     ] Application time: 0.4235385 seconds
+[2020-08-24T20:33:33.934+0000][22223][safepoint     ] Entering safepoint region: CollectForMetadataAllocation
+[2020-08-24T20:33:33.934+0000][22223][gc,heap       ] GC(4) Heap before GC invocations=4 (full 0): garbage-first heap   total 4194304K, used 112906K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:33.934+0000][22223][gc,heap       ] GC(4)   region size 2048K, 57 young (116736K), 6 survivors (12288K)
+[2020-08-24T20:33:33.934+0000][22223][gc,heap       ] GC(4)  Metaspace       used 58468K, capacity 59984K, committed 60160K, reserved 1101824K
+[2020-08-24T20:33:33.934+0000][22223][gc,heap       ] GC(4)   class space    used 7460K, capacity 8225K, committed 8320K, reserved 1048576K
+[2020-08-24T20:33:33.934+0000][22223][gc,start      ] GC(4) Pause Young (Concurrent Start) (Metadata GC Threshold)
+[2020-08-24T20:33:33.934+0000][22223][gc,task       ] GC(4) Using 10 workers of 10 for evacuation
+[2020-08-24T20:33:33.935+0000][22223][gc,age        ] GC(4) Desired survivor size 13631488 bytes, new threshold 15 (max threshold 15)
+[2020-08-24T20:33:33.943+0000][22223][gc,phases     ] GC(4)   Pre Evacuate Collection Set: 0.1ms
+[2020-08-24T20:33:33.943+0000][22223][gc,phases     ] GC(4)   Evacuate Collection Set: 7.0ms
+[2020-08-24T20:33:33.943+0000][22223][gc,phases     ] GC(4)   Post Evacuate Collection Set: 1.0ms
+[2020-08-24T20:33:33.943+0000][22223][gc,phases     ] GC(4)   Other: 0.3ms
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4) Eden regions: 51->0(177)
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4) Survivor regions: 6->9(13)
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4) Old regions: 0->0
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4) Humongous regions: 0->0
+[2020-08-24T20:33:33.943+0000][22223][gc,metaspace  ] GC(4) Metaspace: 58468K->58468K(1101824K)
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4) Heap after GC invocations=5 (full 0): garbage-first heap   total 4194304K, used 16503K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4)   region size 2048K, 9 young (18432K), 9 survivors (18432K)
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4)  Metaspace       used 58468K, capacity 59984K, committed 60160K, reserved 1101824K
+[2020-08-24T20:33:33.943+0000][22223][gc,heap       ] GC(4)   class space    used 7460K, capacity 8225K, committed 8320K, reserved 1048576K
+[2020-08-24T20:33:33.943+0000][22223][gc            ] GC(4) Pause Young (Concurrent Start) (Metadata GC Threshold) 112M->16M(4096M) 8.454ms
+[2020-08-24T20:33:33.943+0000][22223][gc,cpu        ] GC(4) User=0.05s Sys=0.00s Real=0.01s
+[2020-08-24T20:33:33.943+0000][22223][gc            ] GC(5) Concurrent Cycle
+[2020-08-24T20:33:33.943+0000][22223][gc,marking    ] GC(5) Concurrent Clear Claimed Marks
+[2020-08-24T20:33:33.943+0000][22223][gc,marking    ] GC(5) Concurrent Clear Claimed Marks 0.031ms
+[2020-08-24T20:33:33.943+0000][22223][gc,marking    ] GC(5) Concurrent Scan Root Regions
+[2020-08-24T20:33:33.943+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:33.943+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0091737 seconds, Stopping threads took: 0.0000076 seconds
+[2020-08-24T20:33:33.946+0000][22223][gc,marking    ] GC(5) Concurrent Scan Root Regions 3.073ms
+[2020-08-24T20:33:33.946+0000][22223][gc,marking    ] GC(5) Concurrent Mark (4.184s)
+[2020-08-24T20:33:33.946+0000][22223][gc,marking    ] GC(5) Concurrent Mark From Roots
+[2020-08-24T20:33:33.946+0000][22223][gc,task       ] GC(5) Using 3 workers of 3 for marking
+[2020-08-24T20:33:33.947+0000][22223][gc,marking    ] GC(5) Concurrent Mark From Roots 0.553ms
+[2020-08-24T20:33:33.947+0000][22223][gc,marking    ] GC(5) Concurrent Preclean
+[2020-08-24T20:33:33.947+0000][22223][gc,marking    ] GC(5) Concurrent Preclean 0.087ms
+[2020-08-24T20:33:33.947+0000][22223][gc,marking    ] GC(5) Concurrent Mark (4.184s, 4.184s) 0.661ms
+[2020-08-24T20:33:33.947+0000][22223][safepoint     ] Application time: 0.0037872 seconds
+[2020-08-24T20:33:33.947+0000][22223][safepoint     ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:33.947+0000][22223][gc,start      ] GC(5) Pause Remark
+[2020-08-24T20:33:33.950+0000][22223][gc,stringtable] GC(5) Cleaned string and symbol table, strings: 15653 processed, 0 removed, symbols: 155372 processed, 262 removed
+[2020-08-24T20:33:33.950+0000][22223][gc            ] GC(5) Pause Remark 19M->19M(4096M) 2.911ms
+[2020-08-24T20:33:33.950+0000][22223][gc,cpu        ] GC(5) User=0.03s Sys=0.00s Real=0.01s
+[2020-08-24T20:33:33.950+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:33.950+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0034980 seconds, Stopping threads took: 0.0004794 seconds
+[2020-08-24T20:33:33.950+0000][22223][gc,marking    ] GC(5) Concurrent Rebuild Remembered Sets
+[2020-08-24T20:33:33.951+0000][22223][gc,marking    ] GC(5) Concurrent Rebuild Remembered Sets 0.165ms
+[2020-08-24T20:33:33.951+0000][22223][safepoint     ] Application time: 0.0002804 seconds
+[2020-08-24T20:33:33.951+0000][22223][safepoint     ] Entering safepoint region: CGC_Operation
+[2020-08-24T20:33:33.951+0000][22223][gc,start      ] GC(5) Pause Cleanup
+[2020-08-24T20:33:33.951+0000][22223][gc            ] GC(5) Pause Cleanup 19M->19M(4096M) 0.310ms
+[2020-08-24T20:33:33.951+0000][22223][gc,cpu        ] GC(5) User=0.00s Sys=0.00s Real=0.00s
+[2020-08-24T20:33:33.951+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:33.951+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0003713 seconds, Stopping threads took: 0.0000088 seconds
+[2020-08-24T20:33:33.951+0000][22223][gc,marking    ] GC(5) Concurrent Cleanup for Next Mark
+[2020-08-24T20:33:33.955+0000][22223][gc,marking    ] GC(5) Concurrent Cleanup for Next Mark 4.243ms
+[2020-08-24T20:33:33.955+0000][22223][gc            ] GC(5) Concurrent Cycle 12.345ms
+[2020-08-24T20:33:33.994+0000][22223][safepoint     ] Application time: 0.0430432 seconds
+[2020-08-24T20:33:33.994+0000][22223][safepoint     ] Entering safepoint region: Deoptimize
+[2020-08-24T20:33:33.994+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:33.994+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0001967 seconds, Stopping threads took: 0.0000074 seconds
+[2020-08-24T20:33:34.994+0000][22223][safepoint     ] Application time: 1.0001354 seconds
+[2020-08-24T20:33:34.995+0000][22223][safepoint     ] Entering safepoint region: Cleanup
+[2020-08-24T20:33:34.995+0000][22223][safepoint     ] Leaving safepoint region
+[2020-08-24T20:33:34.995+0000][22223][safepoint     ] Total time for which application threads were stopped: 0.0003537 seconds, Stopping threads took: 0.0000432 seconds
+[2020-08-24T20:33:37.369+0000][22223][gc,heap,exit  ] Heap
+[2020-08-24T20:33:37.370+0000][22223][gc,heap,exit  ]  garbage-first heap   total 4194304K, used 65655K [0x0000000700000000, 0x0000000800000000)
+[2020-08-24T20:33:37.370+0000][22223][gc,heap,exit  ]   region size 2048K, 35 young (71680K), 9 survivors (18432K)
+[2020-08-24T20:33:37.370+0000][22223][gc,heap,exit  ]  Metaspace       used 67263K, capacity 69174K, committed 69248K, reserved 1110016K
+[2020-08-24T20:33:37.370+0000][22223][gc,heap,exit  ]   class space    used 8616K, capacity 9597K, committed 9600K, reserved 1048576K
+[2020-08-24T20:33:37.370+0000][22223][safepoint     ] Application time: 2.3746494 seconds
+[2020-08-24T20:33:37.370+0000][22223][safepoint     ] Entering safepoint region: Exit

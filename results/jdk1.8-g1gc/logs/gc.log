@@ -1,0 +1,1333 @@
+OpenJDK 64-Bit Server VM (25.252-b09) for linux-amd64 JRE (1.8.0_252-b09), built on Apr 10 2020 21:06:10 by "jenkins" with gcc 7.3.1 20180303 (Red Hat 7.3.1-5)
+Memory: 4k page, physical 32513916k(10916708k free), swap 2097148k(2097148k free)
+CommandLine flags: -XX:+AlwaysPreTouch -XX:InitialHeapSize=4294967296 -XX:MaxHeapSize=4294967296 -XX:MaxInlineLevel=18 -XX:MaxInlineSize=270 -XX:MaxTrivialSize=12 -XX:+PrintGC -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:-UseBiasedLocking -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC -XX:-UseNUMA 
+2020-08-24T09:15:49.723-0700: 1.567: Total time for which application threads were stopped: 0.0001378 seconds, Stopping threads took: 0.0000163 seconds
+2020-08-24T09:15:49.856-0700: 1.700: Total time for which application threads were stopped: 0.0000877 seconds, Stopping threads took: 0.0000150 seconds
+2020-08-24T09:15:50.275-0700: 2.119: [GC pause (Metadata GC Threshold) (young) (initial-mark)
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+, 0.0072820 secs]
+   [Parallel Time: 3.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 2119.0, Avg: 2119.2, Max: 2119.2, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.6, Avg: 0.7, Max: 0.9, Diff: 0.3, Sum: 7.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 1.5, Diff: 1.5, Sum: 1.8]
+      [Object Copy (ms): Min: 0.8, Avg: 2.0, Max: 2.2, Diff: 1.4, Sum: 20.0]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+         [Termination Attempts: Min: 2, Avg: 52.2, Max: 67, Diff: 65, Sum: 522]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 2.9, Avg: 2.9, Max: 3.1, Diff: 0.2, Sum: 29.4]
+      [GC Worker End (ms): Min: 2122.1, Avg: 2122.1, Max: 2122.1, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.7 ms]
+   [Other: 3.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 2.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.7 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.0 ms]
+   [Eden: 96256.0K(204.0M)->0.0B(186.0M) Survivors: 0.0B->18432.0K Heap: 96256.0K(4096.0M)->16587.7K(4096.0M)]
+ [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-08-24T09:15:50.282-0700: 2.126: [GC concurrent-root-region-scan-start]
+2020-08-24T09:15:50.282-0700: 2.126: Total time for which application threads were stopped: 0.0075658 seconds, Stopping threads took: 0.0000139 seconds
+2020-08-24T09:15:50.284-0700: 2.128: [GC concurrent-root-region-scan-end, 0.0021886 secs]
+2020-08-24T09:15:50.284-0700: 2.128: [GC concurrent-mark-start]
+2020-08-24T09:15:50.285-0700: 2.129: [GC concurrent-mark-end, 0.0005619 secs]
+2020-08-24T09:15:50.285-0700: 2.129: [GC remark 2020-08-24T09:15:50.285-0700: 2.129: [Finalize Marking, 0.0005379 secs] 2020-08-24T09:15:50.286-0700: 2.130: [GC ref-proc, 0.0002791 secs] 2020-08-24T09:15:50.286-0700: 2.130: [Unloading, 0.0018112 secs], 0.0032834 secs]
+ [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-08-24T09:15:50.289-0700: 2.133: Total time for which application threads were stopped: 0.0034300 seconds, Stopping threads took: 0.0001019 seconds
+2020-08-24T09:15:50.289-0700: 2.133: [GC cleanup 18454K->18454K(4096M), 0.0020283 secs]
+ [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-08-24T09:15:50.291-0700: 2.135: Total time for which application threads were stopped: 0.0021602 seconds, Stopping threads took: 0.0000976 seconds
+2020-08-24T09:15:51.047-0700: 2.891: Total time for which application threads were stopped: 0.0002001 seconds, Stopping threads took: 0.0000155 seconds
+2020-08-24T09:15:51.078-0700: 2.922: [GC pause (Metadata GC Threshold) (young) (initial-mark)
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+- age   1:    5416152 bytes,    5416152 total
+, 0.0092842 secs]
+   [Parallel Time: 5.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 2921.9, Avg: 2922.0, Max: 2922.1, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.9, Avg: 1.0, Max: 1.1, Diff: 0.3, Sum: 9.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 2.3, Diff: 2.3, Sum: 3.4]
+      [Object Copy (ms): Min: 1.6, Avg: 3.6, Max: 3.9, Diff: 2.3, Sum: 35.6]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+         [Termination Attempts: Min: 1, Avg: 134.0, Max: 170, Diff: 169, Sum: 1340]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 4.9, Avg: 4.9, Max: 5.1, Diff: 0.2, Sum: 49.4]
+      [GC Worker End (ms): Min: 2927.0, Avg: 2927.0, Max: 2927.0, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.8 ms]
+   [Other: 2.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.9 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 75776.0K(186.0M)->0.0B(180.0M) Survivors: 18432.0K->24576.0K Heap: 92185.2K(4096.0M)->23552.0K(4096.0M)]
+ [Times: user=0.05 sys=0.00, real=0.01 secs] 
+2020-08-24T09:15:51.087-0700: 2.931: [GC concurrent-root-region-scan-start]
+2020-08-24T09:15:51.087-0700: 2.931: Total time for which application threads were stopped: 0.0094751 seconds, Stopping threads took: 0.0000137 seconds
+2020-08-24T09:15:51.091-0700: 2.935: [GC concurrent-root-region-scan-end, 0.0041394 secs]
+2020-08-24T09:15:51.091-0700: 2.935: [GC concurrent-mark-start]
+2020-08-24T09:15:51.092-0700: 2.936: [GC concurrent-mark-end, 0.0005570 secs]
+2020-08-24T09:15:51.092-0700: 2.936: [GC remark 2020-08-24T09:15:51.092-0700: 2.936: [Finalize Marking, 0.0004498 secs] 2020-08-24T09:15:51.093-0700: 2.937: [GC ref-proc, 0.0003216 secs] 2020-08-24T09:15:51.093-0700: 2.937: [Unloading, 0.0028015 secs], 0.0041428 secs]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-24T09:15:51.097-0700: 2.941: Total time for which application threads were stopped: 0.0045776 seconds, Stopping threads took: 0.0003863 seconds
+2020-08-24T09:15:51.097-0700: 2.941: [GC cleanup 24455K->24455K(4096M), 0.0023377 secs]
+ [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-08-24T09:15:51.099-0700: 2.943: Total time for which application threads were stopped: 0.0024006 seconds, Stopping threads took: 0.0000224 seconds
+2020-08-24T09:15:51.597-0700: 3.441: Total time for which application threads were stopped: 0.0003232 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:15:52.045-0700: 3.889: Total time for which application threads were stopped: 0.0002757 seconds, Stopping threads took: 0.0000151 seconds
+2020-08-24T09:15:52.072-0700: 3.916: Total time for which application threads were stopped: 0.0001589 seconds, Stopping threads took: 0.0000125 seconds
+2020-08-24T09:15:52.088-0700: 3.932: Total time for which application threads were stopped: 0.0001761 seconds, Stopping threads took: 0.0000170 seconds
+2020-08-24T09:15:52.093-0700: 3.937: Total time for which application threads were stopped: 0.0001784 seconds, Stopping threads took: 0.0000151 seconds
+2020-08-24T09:15:52.304-0700: 4.148: [GC pause (Metadata GC Threshold) (young) (initial-mark)
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+- age   1:    4106952 bytes,    4106952 total
+- age   2:    5132184 bytes,    9239136 total
+, 0.0145398 secs]
+   [Parallel Time: 9.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 4148.5, Avg: 4148.5, Max: 4148.6, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 1.4, Avg: 1.5, Max: 1.8, Diff: 0.4, Sum: 15.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 0.8, Diff: 0.8, Sum: 4.4]
+      [Object Copy (ms): Min: 6.0, Avg: 6.4, Max: 6.9, Diff: 1.0, Sum: 64.1]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 1.1]
+         [Termination Attempts: Min: 1, Avg: 230.9, Max: 275, Diff: 274, Sum: 2309]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 8.5, Avg: 8.5, Max: 8.6, Diff: 0.1, Sum: 85.2]
+      [GC Worker End (ms): Min: 4157.1, Avg: 4157.1, Max: 4157.1, Diff: 0.0]
+   [Code Root Fixup: 0.1 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.9 ms]
+   [Other: 4.5 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 3.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.8 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 132.0M(180.0M)->0.0B(640.0M) Survivors: 24576.0K->26624.0K Heap: 154.8M(4096.0M)->38170.5K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-24T09:15:52.319-0700: 4.163: [GC concurrent-root-region-scan-start]
+2020-08-24T09:15:52.319-0700: 4.163: Total time for which application threads were stopped: 0.0149380 seconds, Stopping threads took: 0.0000899 seconds
+2020-08-24T09:15:52.319-0700: 4.163: Total time for which application threads were stopped: 0.0001094 seconds, Stopping threads took: 0.0000863 seconds
+2020-08-24T09:15:52.325-0700: 4.168: [GC concurrent-root-region-scan-end, 0.0056551 secs]
+2020-08-24T09:15:52.325-0700: 4.169: [GC concurrent-mark-start]
+2020-08-24T09:15:52.325-0700: 4.169: [GC concurrent-mark-end, 0.0008368 secs]
+2020-08-24T09:15:52.326-0700: 4.170: [GC remark 2020-08-24T09:15:52.326-0700: 4.170: [Finalize Marking, 0.0005831 secs] 2020-08-24T09:15:52.326-0700: 4.170: [GC ref-proc, 0.0004535 secs] 2020-08-24T09:15:52.327-0700: 4.171: [Unloading, 0.0033248 secs], 0.0050040 secs]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-24T09:15:52.331-0700: 4.175: Total time for which application threads were stopped: 0.0051374 seconds, Stopping threads took: 0.0000810 seconds
+2020-08-24T09:15:52.331-0700: 4.175: [GC cleanup 44314K->44314K(4096M), 0.0029097 secs]
+ [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-08-24T09:15:52.334-0700: 4.178: Total time for which application threads were stopped: 0.0031077 seconds, Stopping threads took: 0.0001613 seconds
+2020-08-24T09:15:53.334-0700: 5.178: Total time for which application threads were stopped: 0.0001475 seconds, Stopping threads took: 0.0000391 seconds
+2020-08-24T09:16:56.695-0700: 68.539: Total time for which application threads were stopped: 0.0002624 seconds, Stopping threads took: 0.0000104 seconds
+2020-08-24T09:16:56.986-0700: 68.830: Total time for which application threads were stopped: 0.0002520 seconds, Stopping threads took: 0.0000468 seconds
+2020-08-24T09:16:57.542-0700: 69.386: Total time for which application threads were stopped: 0.0001306 seconds, Stopping threads took: 0.0000186 seconds
+2020-08-24T09:16:57.937-0700: 69.781: Total time for which application threads were stopped: 0.0001697 seconds, Stopping threads took: 0.0000609 seconds
+2020-08-24T09:16:58.330-0700: 70.174: Total time for which application threads were stopped: 0.0002141 seconds, Stopping threads took: 0.0000920 seconds
+2020-08-24T09:16:58.721-0700: 70.565: Total time for which application threads were stopped: 0.0001869 seconds, Stopping threads took: 0.0000654 seconds
+2020-08-24T09:16:59.367-0700: 71.211: Total time for which application threads were stopped: 0.0001979 seconds, Stopping threads took: 0.0000520 seconds
+2020-08-24T09:16:59.801-0700: 71.645: Total time for which application threads were stopped: 0.0001473 seconds, Stopping threads took: 0.0000353 seconds
+2020-08-24T09:17:00.055-0700: 71.899: Total time for which application threads were stopped: 0.0003578 seconds, Stopping threads took: 0.0002385 seconds
+2020-08-24T09:17:00.114-0700: 71.958: Total time for which application threads were stopped: 0.0001331 seconds, Stopping threads took: 0.0000311 seconds
+2020-08-24T09:17:00.469-0700: 72.313: Total time for which application threads were stopped: 0.0001368 seconds, Stopping threads took: 0.0000209 seconds
+2020-08-24T09:17:01.147-0700: 72.991: Total time for which application threads were stopped: 0.0001572 seconds, Stopping threads took: 0.0000165 seconds
+2020-08-24T09:17:01.424-0700: 73.268: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 44040192 bytes, new threshold 15 (max 15)
+- age   1:    7330792 bytes,    7330792 total
+- age   2:    3801952 bytes,   11132744 total
+- age   3:    5071032 bytes,   16203776 total
+, 0.0135845 secs]
+   [Parallel Time: 10.2 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 73267.7, Avg: 73267.8, Max: 73267.9, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.8, Max: 5.0, Diff: 4.8, Sum: 7.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.6]
+         [Processed Buffers: Min: 0, Avg: 1.0, Max: 2, Diff: 2, Sum: 10]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.4, Max: 3.4, Diff: 3.4, Sum: 14.2]
+      [Object Copy (ms): Min: 5.1, Avg: 7.5, Max: 8.8, Diff: 3.7, Sum: 74.9]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.5]
+         [Termination Attempts: Min: 1, Avg: 320.0, Max: 383, Diff: 382, Sum: 3200]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.3]
+      [GC Worker Total (ms): Min: 10.0, Avg: 10.1, Max: 10.2, Diff: 0.2, Sum: 100.7]
+      [GC Worker End (ms): Min: 73277.9, Avg: 73277.9, Max: 73277.9, Diff: 0.0]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.3 ms]
+   [Eden: 640.0M(640.0M)->0.0B(1020.0M) Survivors: 26624.0K->28672.0K Heap: 677.3M(4096.0M)->39194.5K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-24T09:17:01.437-0700: 73.281: Total time for which application threads were stopped: 0.0138445 seconds, Stopping threads took: 0.0000384 seconds
+2020-08-24T09:17:02.208-0700: 74.052: Total time for which application threads were stopped: 0.0001820 seconds, Stopping threads took: 0.0000198 seconds
+2020-08-24T09:17:03.208-0700: 75.052: Total time for which application threads were stopped: 0.0001952 seconds, Stopping threads took: 0.0000339 seconds
+2020-08-24T09:17:04.209-0700: 76.053: Total time for which application threads were stopped: 0.0002775 seconds, Stopping threads took: 0.0000974 seconds
+2020-08-24T09:17:05.209-0700: 77.053: Total time for which application threads were stopped: 0.0006116 seconds, Stopping threads took: 0.0004860 seconds
+2020-08-24T09:17:06.210-0700: 78.054: Total time for which application threads were stopped: 0.0001236 seconds, Stopping threads took: 0.0000322 seconds
+2020-08-24T09:17:07.210-0700: 79.054: Total time for which application threads were stopped: 0.0001495 seconds, Stopping threads took: 0.0000374 seconds
+2020-08-24T09:17:08.210-0700: 80.054: Total time for which application threads were stopped: 0.0001849 seconds, Stopping threads took: 0.0000289 seconds
+2020-08-24T09:17:08.977-0700: 80.821: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 69206016 bytes, new threshold 15 (max 15)
+- age   1:    2924512 bytes,    2924512 total
+- age   2:    6907840 bytes,    9832352 total
+- age   3:    3798720 bytes,   13631072 total
+- age   4:    4999208 bytes,   18630280 total
+, 0.0115341 secs]
+   [Parallel Time: 9.5 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 80820.7, Avg: 80820.7, Max: 80820.8, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.3, Diff: 3.2, Sum: 4.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 2, Diff: 2, Sum: 11]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.9, Max: 3.5, Diff: 3.5, Sum: 18.6]
+      [Object Copy (ms): Min: 5.3, Avg: 6.7, Max: 8.2, Diff: 2.9, Sum: 67.3]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+         [Termination Attempts: Min: 1, Avg: 310.2, Max: 372, Diff: 371, Sum: 3102]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.4]
+      [GC Worker Total (ms): Min: 9.3, Avg: 9.4, Max: 9.5, Diff: 0.2, Sum: 94.0]
+      [GC Worker End (ms): Min: 80830.1, Avg: 80830.1, Max: 80830.2, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.4 ms]
+   [Eden: 1020.0M(1020.0M)->0.0B(2100.0M) Survivors: 28672.0K->28672.0K Heap: 1058.3M(4096.0M)->39194.5K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-24T09:17:08.988-0700: 80.832: Total time for which application threads were stopped: 0.0117421 seconds, Stopping threads took: 0.0000187 seconds
+2020-08-24T09:17:09.988-0700: 81.832: Total time for which application threads were stopped: 0.0001074 seconds, Stopping threads took: 0.0000166 seconds
+2020-08-24T09:17:10.989-0700: 82.833: Total time for which application threads were stopped: 0.0003001 seconds, Stopping threads took: 0.0001187 seconds
+2020-08-24T09:17:11.989-0700: 83.833: Total time for which application threads were stopped: 0.0000887 seconds, Stopping threads took: 0.0000173 seconds
+2020-08-24T09:17:12.989-0700: 84.833: Total time for which application threads were stopped: 0.0000503 seconds, Stopping threads took: 0.0000158 seconds
+2020-08-24T09:17:13.989-0700: 85.833: Total time for which application threads were stopped: 0.0001103 seconds, Stopping threads took: 0.0000306 seconds
+2020-08-24T09:17:14.990-0700: 86.834: Total time for which application threads were stopped: 0.0001833 seconds, Stopping threads took: 0.0000846 seconds
+2020-08-24T09:17:15.990-0700: 87.834: Total time for which application threads were stopped: 0.0002365 seconds, Stopping threads took: 0.0000557 seconds
+2020-08-24T09:17:16.990-0700: 88.834: Total time for which application threads were stopped: 0.0001562 seconds, Stopping threads took: 0.0000448 seconds
+2020-08-24T09:17:17.991-0700: 89.835: Total time for which application threads were stopped: 0.0002005 seconds, Stopping threads took: 0.0000467 seconds
+2020-08-24T09:17:18.991-0700: 90.835: Total time for which application threads were stopped: 0.0001675 seconds, Stopping threads took: 0.0000477 seconds
+2020-08-24T09:17:19.992-0700: 91.836: Total time for which application threads were stopped: 0.0001673 seconds, Stopping threads took: 0.0000473 seconds
+2020-08-24T09:17:20.992-0700: 92.836: Total time for which application threads were stopped: 0.0001973 seconds, Stopping threads took: 0.0000464 seconds
+2020-08-24T09:17:21.760-0700: 93.604: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 101711872 bytes, new threshold 15 (max 15)
+- age   1:     116592 bytes,     116592 total
+- age   2:    2780816 bytes,    2897408 total
+- age   3:    6907816 bytes,    9805224 total
+- age   4:    3798720 bytes,   13603944 total
+- age   5:    4998872 bytes,   18602816 total
+, 0.0134587 secs]
+   [Parallel Time: 10.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 93604.0, Avg: 93604.1, Max: 93604.1, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.6, Max: 4.1, Diff: 3.9, Sum: 6.0]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.7]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 2, Diff: 2, Sum: 11]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.8, Max: 3.7, Diff: 3.7, Sum: 18.3]
+      [Object Copy (ms): Min: 5.3, Avg: 6.9, Max: 9.0, Diff: 3.7, Sum: 68.7]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 333.3, Max: 409, Diff: 408, Sum: 3333]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.9]
+      [GC Worker Total (ms): Min: 9.7, Avg: 9.8, Max: 9.9, Diff: 0.2, Sum: 98.1]
+      [GC Worker End (ms): Min: 93613.9, Avg: 93613.9, Max: 93614.0, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.7 ms]
+   [Other: 2.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 1512.0M(1512.0M)->0.0B(2434.0M) Survivors: 28672.0K->22528.0K Heap: 1550.3M(4096.0M)->33050.5K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.01 secs] 
+2020-08-24T09:17:21.773-0700: 93.617: Total time for which application threads were stopped: 0.0136128 seconds, Stopping threads took: 0.0000199 seconds
+2020-08-24T09:17:22.774-0700: 94.618: Total time for which application threads were stopped: 0.0000604 seconds, Stopping threads took: 0.0000190 seconds
+2020-08-24T09:17:26.774-0700: 98.618: Total time for which application threads were stopped: 0.0000623 seconds, Stopping threads took: 0.0000174 seconds
+2020-08-24T09:17:27.774-0700: 99.618: Total time for which application threads were stopped: 0.0000529 seconds, Stopping threads took: 0.0000175 seconds
+2020-08-24T09:17:28.774-0700: 100.618: Total time for which application threads were stopped: 0.0000734 seconds, Stopping threads took: 0.0000318 seconds
+2020-08-24T09:17:29.774-0700: 101.618: Total time for which application threads were stopped: 0.0000680 seconds, Stopping threads took: 0.0000255 seconds
+2020-08-24T09:17:31.775-0700: 103.619: Total time for which application threads were stopped: 0.0000848 seconds, Stopping threads took: 0.0000365 seconds
+2020-08-24T09:17:34.775-0700: 106.619: Total time for which application threads were stopped: 0.0002610 seconds, Stopping threads took: 0.0001280 seconds
+2020-08-24T09:17:35.775-0700: 107.619: Total time for which application threads were stopped: 0.0000574 seconds, Stopping threads took: 0.0000210 seconds
+2020-08-24T09:17:36.775-0700: 108.619: Total time for which application threads were stopped: 0.0000670 seconds, Stopping threads took: 0.0000206 seconds
+2020-08-24T09:17:38.776-0700: 110.620: Total time for which application threads were stopped: 0.0000731 seconds, Stopping threads took: 0.0000203 seconds
+2020-08-24T09:17:40.776-0700: 112.620: Total time for which application threads were stopped: 0.0002315 seconds, Stopping threads took: 0.0000819 seconds
+2020-08-24T09:17:41.776-0700: 113.620: Total time for which application threads were stopped: 0.0001885 seconds, Stopping threads took: 0.0000966 seconds
+2020-08-24T09:17:41.950-0700: 113.794: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      90544 bytes,      90544 total
+- age   2:      43272 bytes,     133816 total
+- age   3:    2780616 bytes,    2914432 total
+- age   4:    6907816 bytes,    9822248 total
+- age   5:    3798720 bytes,   13620968 total
+- age   6:    4998752 bytes,   18619720 total
+, 0.0321052 secs]
+   [Parallel Time: 27.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 113794.4, Avg: 113794.6, Max: 113794.8, Diff: 0.3]
+      [Ext Root Scanning (ms): Min: 0.3, Avg: 1.3, Max: 8.2, Diff: 7.9, Sum: 12.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.3, Max: 0.5, Diff: 0.5, Sum: 3.3]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 3, Diff: 3, Sum: 15]
+      [Scan RS (ms): Min: 0.2, Avg: 0.5, Max: 0.6, Diff: 0.4, Sum: 4.7]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 5.0, Max: 9.9, Diff: 9.9, Sum: 50.2]
+      [Object Copy (ms): Min: 15.4, Avg: 19.7, Max: 25.3, Diff: 9.9, Sum: 196.7]
+      [Termination (ms): Min: 0.0, Avg: 0.4, Max: 0.5, Diff: 0.5, Sum: 4.3]
+         [Termination Attempts: Min: 1, Avg: 350.3, Max: 425, Diff: 424, Sum: 3503]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+      [GC Worker Total (ms): Min: 27.1, Avg: 27.3, Max: 27.5, Diff: 0.5, Sum: 273.0]
+      [GC Worker End (ms): Min: 113821.8, Avg: 113821.9, Max: 113822.0, Diff: 0.2]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 3.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.7 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.9 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2434.0M) Survivors: 22528.0K->22528.0K Heap: 2466.3M(4096.0M)->34074.5K(4096.0M)]
+ [Times: user=0.28 sys=0.01, real=0.04 secs] 
+2020-08-24T09:17:41.982-0700: 113.826: Total time for which application threads were stopped: 0.0323774 seconds, Stopping threads took: 0.0000349 seconds
+2020-08-24T09:17:44.983-0700: 116.827: Total time for which application threads were stopped: 0.0002734 seconds, Stopping threads took: 0.0001422 seconds
+2020-08-24T09:17:45.983-0700: 117.827: Total time for which application threads were stopped: 0.0001626 seconds, Stopping threads took: 0.0000494 seconds
+2020-08-24T09:17:46.984-0700: 118.828: Total time for which application threads were stopped: 0.0001589 seconds, Stopping threads took: 0.0000482 seconds
+2020-08-24T09:17:47.984-0700: 119.828: Total time for which application threads were stopped: 0.0000503 seconds, Stopping threads took: 0.0000172 seconds
+2020-08-24T09:17:49.984-0700: 121.828: Total time for which application threads were stopped: 0.0001677 seconds, Stopping threads took: 0.0000403 seconds
+2020-08-24T09:17:51.985-0700: 123.829: Total time for which application threads were stopped: 0.0001369 seconds, Stopping threads took: 0.0000383 seconds
+2020-08-24T09:17:52.985-0700: 124.829: Total time for which application threads were stopped: 0.0002291 seconds, Stopping threads took: 0.0001070 seconds
+2020-08-24T09:17:54.985-0700: 126.829: Total time for which application threads were stopped: 0.0001560 seconds, Stopping threads took: 0.0000415 seconds
+2020-08-24T09:17:58.986-0700: 130.830: Total time for which application threads were stopped: 0.0001475 seconds, Stopping threads took: 0.0000537 seconds
+2020-08-24T09:18:01.756-0700: 133.600: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      76920 bytes,      76920 total
+- age   2:      23992 bytes,     100912 total
+- age   3:      43240 bytes,     144152 total
+- age   4:    2780584 bytes,    2924736 total
+- age   5:    6907816 bytes,    9832552 total
+- age   6:    3798720 bytes,   13631272 total
+- age   7:    4998752 bytes,   18630024 total
+, 0.0143412 secs]
+   [Parallel Time: 10.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 133599.8, Avg: 133599.9, Max: 133599.9, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.7, Max: 4.6, Diff: 4.4, Sum: 6.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+         [Processed Buffers: Min: 0, Avg: 1.2, Max: 2, Diff: 2, Sum: 12]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.3, Diff: 0.2, Sum: 1.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 2.1, Max: 4.1, Diff: 4.1, Sum: 21.1]
+      [Object Copy (ms): Min: 5.5, Avg: 7.2, Max: 9.6, Diff: 4.2, Sum: 72.1]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 324.8, Max: 389, Diff: 388, Sum: 3248]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.8]
+      [GC Worker Total (ms): Min: 10.5, Avg: 10.6, Max: 10.6, Diff: 0.2, Sum: 105.5]
+      [GC Worker End (ms): Min: 133610.4, Avg: 133610.4, Max: 133610.5, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.0 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.8 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2432.0M) Survivors: 22528.0K->24576.0K Heap: 2467.3M(4096.0M)->35098.5K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.01 secs] 
+2020-08-24T09:18:01.770-0700: 133.614: Total time for which application threads were stopped: 0.0144934 seconds, Stopping threads took: 0.0000196 seconds
+2020-08-24T09:18:02.770-0700: 134.614: Total time for which application threads were stopped: 0.0001696 seconds, Stopping threads took: 0.0000642 seconds
+2020-08-24T09:18:04.771-0700: 136.615: Total time for which application threads were stopped: 0.0001825 seconds, Stopping threads took: 0.0000643 seconds
+2020-08-24T09:18:10.771-0700: 142.615: Total time for which application threads were stopped: 0.0000486 seconds, Stopping threads took: 0.0000158 seconds
+2020-08-24T09:18:11.771-0700: 143.615: Total time for which application threads were stopped: 0.0000619 seconds, Stopping threads took: 0.0000227 seconds
+2020-08-24T09:18:17.772-0700: 149.616: Total time for which application threads were stopped: 0.0002295 seconds, Stopping threads took: 0.0001122 seconds
+2020-08-24T09:18:19.773-0700: 151.617: Total time for which application threads were stopped: 0.0000537 seconds, Stopping threads took: 0.0000152 seconds
+2020-08-24T09:18:20.773-0700: 152.617: Total time for which application threads were stopped: 0.0000710 seconds, Stopping threads took: 0.0000182 seconds
+2020-08-24T09:18:21.765-0700: 153.609: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      69688 bytes,      69688 total
+- age   2:        968 bytes,      70656 total
+- age   3:      23992 bytes,      94648 total
+- age   4:      43240 bytes,     137888 total
+- age   5:    2780584 bytes,    2918472 total
+- age   6:    6907816 bytes,    9826288 total
+- age   7:    3798720 bytes,   13625008 total
+- age   8:    4998752 bytes,   18623760 total
+, 0.0113812 secs]
+   [Parallel Time: 9.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 153609.2, Avg: 153609.3, Max: 153609.3, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.1, Diff: 3.0, Sum: 4.6]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.1]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 4, Diff: 4, Sum: 15]
+      [Scan RS (ms): Min: 0.1, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.6, Max: 3.1, Diff: 3.1, Sum: 15.9]
+      [Object Copy (ms): Min: 5.1, Avg: 6.5, Max: 8.3, Diff: 3.2, Sum: 65.1]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 342.5, Max: 410, Diff: 409, Sum: 3425]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 9.0, Avg: 9.0, Max: 9.1, Diff: 0.1, Sum: 90.3]
+      [GC Worker End (ms): Min: 153618.2, Avg: 153618.3, Max: 153618.3, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 1.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2430.0M) Survivors: 24576.0K->26624.0K Heap: 2466.3M(4096.0M)->38170.5K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-24T09:18:21.777-0700: 153.621: Total time for which application threads were stopped: 0.0115534 seconds, Stopping threads took: 0.0000322 seconds
+2020-08-24T09:18:23.777-0700: 155.621: Total time for which application threads were stopped: 0.0001612 seconds, Stopping threads took: 0.0000410 seconds
+2020-08-24T09:18:24.777-0700: 156.621: Total time for which application threads were stopped: 0.0001648 seconds, Stopping threads took: 0.0000527 seconds
+2020-08-24T09:18:27.778-0700: 159.622: Total time for which application threads were stopped: 0.0003927 seconds, Stopping threads took: 0.0002769 seconds
+2020-08-24T09:18:32.778-0700: 164.622: Total time for which application threads were stopped: 0.0000668 seconds, Stopping threads took: 0.0000283 seconds
+2020-08-24T09:18:34.779-0700: 166.623: Total time for which application threads were stopped: 0.0000498 seconds, Stopping threads took: 0.0000144 seconds
+2020-08-24T09:18:35.779-0700: 167.623: Total time for which application threads were stopped: 0.0002466 seconds, Stopping threads took: 0.0001053 seconds
+2020-08-24T09:18:36.779-0700: 168.623: Total time for which application threads were stopped: 0.0000651 seconds, Stopping threads took: 0.0000233 seconds
+2020-08-24T09:18:37.779-0700: 169.623: Total time for which application threads were stopped: 0.0000719 seconds, Stopping threads took: 0.0000324 seconds
+2020-08-24T09:18:38.780-0700: 170.624: Total time for which application threads were stopped: 0.0002750 seconds, Stopping threads took: 0.0001374 seconds
+2020-08-24T09:18:39.780-0700: 171.624: Total time for which application threads were stopped: 0.0001716 seconds, Stopping threads took: 0.0000597 seconds
+2020-08-24T09:18:41.778-0700: 173.622: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      71464 bytes,      71464 total
+- age   2:       1320 bytes,      72784 total
+- age   3:        968 bytes,      73752 total
+- age   4:      23992 bytes,      97744 total
+- age   5:      43240 bytes,     140984 total
+- age   6:    2780584 bytes,    2921568 total
+- age   7:    6907816 bytes,    9829384 total
+- age   8:    3798720 bytes,   13628104 total
+- age   9:    4998752 bytes,   18626856 total
+, 0.0139917 secs]
+   [Parallel Time: 10.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 173621.8, Avg: 173621.8, Max: 173621.9, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.3, Diff: 3.1, Sum: 4.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 3, Diff: 3, Sum: 13]
+      [Scan RS (ms): Min: 0.1, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.6, Max: 3.3, Diff: 3.3, Sum: 16.5]
+      [Object Copy (ms): Min: 5.7, Avg: 7.1, Max: 9.0, Diff: 3.3, Sum: 71.1]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+         [Termination Attempts: Min: 1, Avg: 276.8, Max: 339, Diff: 338, Sum: 2768]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.9]
+      [GC Worker Total (ms): Min: 9.7, Avg: 9.7, Max: 9.8, Diff: 0.1, Sum: 97.2]
+      [GC Worker End (ms): Min: 173631.5, Avg: 173631.5, Max: 173631.6, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.8 ms]
+   [Other: 2.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.9 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.7 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.9 ms]
+   [Eden: 2430.0M(2430.0M)->0.0B(2434.0M) Survivors: 26624.0K->22528.0K Heap: 2467.3M(4096.0M)->33306.5K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.02 secs] 
+2020-08-24T09:18:41.792-0700: 173.636: Total time for which application threads were stopped: 0.0141622 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:18:45.792-0700: 177.636: Total time for which application threads were stopped: 0.0001620 seconds, Stopping threads took: 0.0000574 seconds
+2020-08-24T09:18:52.793-0700: 184.637: Total time for which application threads were stopped: 0.0001686 seconds, Stopping threads took: 0.0000578 seconds
+2020-08-24T09:18:58.794-0700: 190.638: Total time for which application threads were stopped: 0.0002867 seconds, Stopping threads took: 0.0001058 seconds
+2020-08-24T09:19:01.791-0700: 193.635: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      77880 bytes,      77880 total
+- age   2:        832 bytes,      78712 total
+- age   3:       1320 bytes,      80032 total
+- age   4:        904 bytes,      80936 total
+- age   5:      23992 bytes,     104928 total
+- age   6:      43240 bytes,     148168 total
+- age   7:    2780584 bytes,    2928752 total
+- age   8:    6907816 bytes,    9836568 total
+- age   9:    3798720 bytes,   13635288 total
+- age  10:    4998752 bytes,   18634040 total
+, 0.0119031 secs]
+   [Parallel Time: 10.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 193635.3, Avg: 193635.4, Max: 193635.4, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.6, Max: 3.5, Diff: 3.4, Sum: 5.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.5]
+         [Processed Buffers: Min: 0, Avg: 1.2, Max: 2, Diff: 2, Sum: 12]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.7, Max: 3.4, Diff: 3.4, Sum: 17.2]
+      [Object Copy (ms): Min: 5.5, Avg: 7.0, Max: 9.0, Diff: 3.5, Sum: 70.4]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 330.6, Max: 380, Diff: 379, Sum: 3306]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.7]
+      [GC Worker Total (ms): Min: 9.8, Avg: 9.9, Max: 10.0, Diff: 0.2, Sum: 98.8]
+      [GC Worker End (ms): Min: 193645.2, Avg: 193645.2, Max: 193645.3, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.2 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2434.0M) Survivors: 22528.0K->22528.0K Heap: 2466.5M(4096.0M)->34074.5K(4096.0M)]
+ [Times: user=0.10 sys=0.01, real=0.01 secs] 
+2020-08-24T09:19:01.803-0700: 193.647: Total time for which application threads were stopped: 0.0120940 seconds, Stopping threads took: 0.0000202 seconds
+2020-08-24T09:19:02.803-0700: 194.647: Total time for which application threads were stopped: 0.0000639 seconds, Stopping threads took: 0.0000223 seconds
+2020-08-24T09:19:03.803-0700: 195.647: Total time for which application threads were stopped: 0.0000764 seconds, Stopping threads took: 0.0000320 seconds
+2020-08-24T09:19:04.804-0700: 196.648: Total time for which application threads were stopped: 0.0002133 seconds, Stopping threads took: 0.0000755 seconds
+2020-08-24T09:19:05.804-0700: 197.648: Total time for which application threads were stopped: 0.0000757 seconds, Stopping threads took: 0.0000335 seconds
+2020-08-24T09:19:06.804-0700: 198.648: Total time for which application threads were stopped: 0.0000665 seconds, Stopping threads took: 0.0000194 seconds
+2020-08-24T09:19:07.804-0700: 199.648: Total time for which application threads were stopped: 0.0000560 seconds, Stopping threads took: 0.0000182 seconds
+2020-08-24T09:19:08.804-0700: 200.648: Total time for which application threads were stopped: 0.0000660 seconds, Stopping threads took: 0.0000243 seconds
+2020-08-24T09:19:14.805-0700: 206.649: Total time for which application threads were stopped: 0.0001236 seconds, Stopping threads took: 0.0000406 seconds
+2020-08-24T09:19:21.835-0700: 213.679: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      67688 bytes,      67688 total
+- age   2:        456 bytes,      68144 total
+- age   3:        832 bytes,      68976 total
+- age   4:       1320 bytes,      70296 total
+- age   5:        904 bytes,      71200 total
+- age   6:      23992 bytes,      95192 total
+- age   7:      43240 bytes,     138432 total
+- age   8:    2780584 bytes,    2919016 total
+- age   9:    6907816 bytes,    9826832 total
+- age  10:    3798720 bytes,   13625552 total
+- age  11:    4998752 bytes,   18624304 total
+, 0.0121953 secs]
+   [Parallel Time: 9.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 213679.3, Avg: 213679.3, Max: 213679.4, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.4, Max: 2.6, Diff: 2.4, Sum: 4.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.1]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 4, Diff: 4, Sum: 15]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.8, Max: 3.6, Diff: 3.6, Sum: 18.3]
+      [Object Copy (ms): Min: 5.2, Avg: 6.8, Max: 8.8, Diff: 3.6, Sum: 68.1]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+         [Termination Attempts: Min: 1, Avg: 294.1, Max: 346, Diff: 345, Sum: 2941]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.8]
+      [GC Worker Total (ms): Min: 9.5, Avg: 9.5, Max: 9.6, Diff: 0.2, Sum: 95.3]
+      [GC Worker End (ms): Min: 213688.8, Avg: 213688.9, Max: 213689.0, Diff: 0.2]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 1.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2432.0M) Survivors: 22528.0K->24576.0K Heap: 2467.3M(4096.0M)->36122.5K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-24T09:19:21.848-0700: 213.692: Total time for which application threads were stopped: 0.0123514 seconds, Stopping threads took: 0.0000241 seconds
+2020-08-24T09:19:41.812-0700: 233.656: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      69216 bytes,      69216 total
+- age   2:         32 bytes,      69248 total
+- age   3:        424 bytes,      69672 total
+- age   4:        832 bytes,      70504 total
+- age   5:       1320 bytes,      71824 total
+- age   6:        904 bytes,      72728 total
+- age   7:      23992 bytes,      96720 total
+- age   8:      43240 bytes,     139960 total
+- age   9:    2780584 bytes,    2920544 total
+- age  10:    6907816 bytes,    9828360 total
+- age  11:    3798720 bytes,   13627080 total
+- age  12:    4998752 bytes,   18625832 total
+, 0.0129217 secs]
+   [Parallel Time: 10.2 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 233656.4, Avg: 233656.7, Max: 233658.9, Diff: 2.5]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.5, Max: 3.2, Diff: 3.2, Sum: 4.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 4, Diff: 4, Sum: 15]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.7, Max: 3.3, Diff: 3.3, Sum: 17.0]
+      [Object Copy (ms): Min: 5.9, Avg: 7.1, Max: 9.2, Diff: 3.3, Sum: 70.8]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+         [Termination Attempts: Min: 1, Avg: 269.8, Max: 321, Diff: 320, Sum: 2698]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 0.9]
+      [GC Worker Total (ms): Min: 7.6, Avg: 9.7, Max: 10.1, Diff: 2.5, Sum: 97.4]
+      [GC Worker End (ms): Min: 233666.4, Avg: 233666.5, Max: 233666.5, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 1.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.8 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2434.0M) Survivors: 24576.0K->22528.0K Heap: 2467.3M(4096.0M)->34074.5K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-24T09:19:41.825-0700: 233.669: Total time for which application threads were stopped: 0.0131184 seconds, Stopping threads took: 0.0000367 seconds
+2020-08-24T09:19:43.826-0700: 235.670: Total time for which application threads were stopped: 0.0002241 seconds, Stopping threads took: 0.0001107 seconds
+2020-08-24T09:20:02.421-0700: 254.265: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      72216 bytes,      72216 total
+- age   2:        752 bytes,      72968 total
+- age   4:        424 bytes,      73392 total
+- age   5:        832 bytes,      74224 total
+- age   6:       1320 bytes,      75544 total
+- age   7:        904 bytes,      76448 total
+- age   8:      23992 bytes,     100440 total
+- age   9:      43240 bytes,     143680 total
+- age  10:    2780584 bytes,    2924264 total
+- age  11:    6907816 bytes,    9832080 total
+- age  12:    3798720 bytes,   13630800 total
+- age  13:    4998752 bytes,   18629552 total
+, 0.0343388 secs]
+   [Parallel Time: 30.7 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 254265.5, Avg: 254265.8, Max: 254266.0, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.4, Avg: 1.5, Max: 10.1, Diff: 9.7, Sum: 15.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.5, Max: 0.5, Diff: 0.5, Sum: 4.5]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 2, Diff: 2, Sum: 13]
+      [Scan RS (ms): Min: 0.2, Avg: 0.6, Max: 0.7, Diff: 0.5, Sum: 5.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 7.5, Max: 14.8, Diff: 14.8, Sum: 75.0]
+      [Object Copy (ms): Min: 12.5, Avg: 19.4, Max: 27.6, Diff: 15.1, Sum: 194.1]
+      [Termination (ms): Min: 0.0, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 3.3]
+         [Termination Attempts: Min: 1, Avg: 325.7, Max: 388, Diff: 387, Sum: 3257]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.2, Max: 0.4, Diff: 0.4, Sum: 1.7]
+      [GC Worker Total (ms): Min: 29.7, Avg: 30.0, Max: 30.2, Diff: 0.5, Sum: 299.7]
+      [GC Worker End (ms): Min: 254295.6, Avg: 254295.7, Max: 254295.9, Diff: 0.2]
+   [Code Root Fixup: 0.5 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.7 ms]
+   [Other: 2.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.1 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2434.0M) Survivors: 22528.0K->22528.0K Heap: 2467.3M(4096.0M)->34074.5K(4096.0M)]
+ [Times: user=0.31 sys=0.00, real=0.03 secs] 
+2020-08-24T09:20:02.456-0700: 254.300: Total time for which application threads were stopped: 0.0346419 seconds, Stopping threads took: 0.0000621 seconds
+2020-08-24T09:20:03.456-0700: 255.300: Total time for which application threads were stopped: 0.0001745 seconds, Stopping threads took: 0.0000455 seconds
+2020-08-24T09:20:06.457-0700: 258.301: Total time for which application threads were stopped: 0.0001613 seconds, Stopping threads took: 0.0000466 seconds
+2020-08-24T09:20:08.458-0700: 260.302: Total time for which application threads were stopped: 0.0001948 seconds, Stopping threads took: 0.0000470 seconds
+2020-08-24T09:20:09.458-0700: 261.302: Total time for which application threads were stopped: 0.0001972 seconds, Stopping threads took: 0.0000458 seconds
+2020-08-24T09:20:10.459-0700: 262.303: Total time for which application threads were stopped: 0.0001766 seconds, Stopping threads took: 0.0000463 seconds
+2020-08-24T09:20:14.459-0700: 266.303: Total time for which application threads were stopped: 0.0001804 seconds, Stopping threads took: 0.0000654 seconds
+2020-08-24T09:20:21.461-0700: 273.305: Total time for which application threads were stopped: 0.0002261 seconds, Stopping threads took: 0.0000844 seconds
+2020-08-24T09:20:21.826-0700: 273.670: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      65864 bytes,      65864 total
+- age   2:         16 bytes,      65880 total
+- age   3:        688 bytes,      66568 total
+- age   5:        424 bytes,      66992 total
+- age   6:        832 bytes,      67824 total
+- age   7:       1320 bytes,      69144 total
+- age   8:        904 bytes,      70048 total
+- age   9:      23992 bytes,      94040 total
+- age  10:      43240 bytes,     137280 total
+- age  11:    2780584 bytes,    2917864 total
+- age  12:    6907816 bytes,    9825680 total
+- age  13:    3798720 bytes,   13624400 total
+- age  14:    4998752 bytes,   18623152 total
+, 0.0116967 secs]
+   [Parallel Time: 8.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 273670.0, Avg: 273670.1, Max: 273670.1, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.4, Max: 2.4, Diff: 2.3, Sum: 4.0]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.4, Max: 4, Diff: 4, Sum: 14]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.8, Max: 3.6, Diff: 3.6, Sum: 18.4]
+      [Object Copy (ms): Min: 4.5, Avg: 6.0, Max: 8.0, Diff: 3.5, Sum: 60.5]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+         [Termination Attempts: Min: 6, Avg: 277.9, Max: 331, Diff: 325, Sum: 2779]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 8.7, Avg: 8.7, Max: 8.8, Diff: 0.1, Sum: 87.4]
+      [GC Worker End (ms): Min: 273678.8, Avg: 273678.8, Max: 273678.8, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 2.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.8 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2434.0M) Survivors: 22528.0K->22528.0K Heap: 2467.3M(4096.0M)->33050.5K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-24T09:20:21.838-0700: 273.682: Total time for which application threads were stopped: 0.0118524 seconds, Stopping threads took: 0.0000160 seconds
+2020-08-24T09:20:23.838-0700: 275.682: Total time for which application threads were stopped: 0.0001438 seconds, Stopping threads took: 0.0000398 seconds
+2020-08-24T09:20:29.839-0700: 281.683: Total time for which application threads were stopped: 0.0001415 seconds, Stopping threads took: 0.0000379 seconds
+2020-08-24T09:20:31.839-0700: 283.683: Total time for which application threads were stopped: 0.0002447 seconds, Stopping threads took: 0.0001213 seconds
+2020-08-24T09:20:32.840-0700: 284.684: Total time for which application threads were stopped: 0.0001734 seconds, Stopping threads took: 0.0000635 seconds
+2020-08-24T09:20:38.841-0700: 290.684: Total time for which application threads were stopped: 0.0002743 seconds, Stopping threads took: 0.0001202 seconds
+2020-08-24T09:20:39.841-0700: 291.685: Total time for which application threads were stopped: 0.0000502 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:20:41.844-0700: 293.688: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      75192 bytes,      75192 total
+- age   3:         16 bytes,      75208 total
+- age   4:        656 bytes,      75864 total
+- age   6:        424 bytes,      76288 total
+- age   7:        832 bytes,      77120 total
+- age   8:       1320 bytes,      78440 total
+- age   9:        904 bytes,      79344 total
+- age  10:      23992 bytes,     103336 total
+- age  11:      43240 bytes,     146576 total
+- age  12:    2780584 bytes,    2927160 total
+- age  13:    6907816 bytes,    9834976 total
+- age  14:    3798720 bytes,   13633696 total
+- age  15:    4998752 bytes,   18632448 total
+, 0.0118171 secs]
+   [Parallel Time: 9.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 293688.0, Avg: 293688.1, Max: 293688.7, Diff: 0.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.0, Diff: 3.0, Sum: 4.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.1]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 3, Diff: 3, Sum: 13]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.9, Max: 3.7, Diff: 3.7, Sum: 18.6]
+      [Object Copy (ms): Min: 4.7, Avg: 6.4, Max: 8.5, Diff: 3.8, Sum: 64.0]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 334.8, Max: 402, Diff: 401, Sum: 3348]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.8]
+      [GC Worker Total (ms): Min: 8.5, Avg: 9.2, Max: 9.4, Diff: 0.9, Sum: 91.8]
+      [GC Worker End (ms): Min: 293697.2, Avg: 293697.2, Max: 293697.3, Diff: 0.2]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.5 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2438.0M) Survivors: 22528.0K->18432.0K Heap: 2466.3M(4096.0M)->34963.5K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-24T09:20:41.856-0700: 293.700: Total time for which application threads were stopped: 0.0119771 seconds, Stopping threads took: 0.0000233 seconds
+2020-08-24T09:20:43.856-0700: 295.700: Total time for which application threads were stopped: 0.0000532 seconds, Stopping threads took: 0.0000177 seconds
+2020-08-24T09:20:45.856-0700: 297.700: Total time for which application threads were stopped: 0.0000599 seconds, Stopping threads took: 0.0000150 seconds
+2020-08-24T09:20:47.856-0700: 299.700: Total time for which application threads were stopped: 0.0000703 seconds, Stopping threads took: 0.0000213 seconds
+2020-08-24T09:20:48.857-0700: 300.701: Total time for which application threads were stopped: 0.0001418 seconds, Stopping threads took: 0.0000396 seconds
+2020-08-24T09:20:55.858-0700: 307.702: Total time for which application threads were stopped: 0.0000548 seconds, Stopping threads took: 0.0000142 seconds
+2020-08-24T09:20:58.858-0700: 310.702: Total time for which application threads were stopped: 0.0000528 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:20:59.858-0700: 311.702: Total time for which application threads were stopped: 0.0001969 seconds, Stopping threads took: 0.0000667 seconds
+2020-08-24T09:21:02.784-0700: 314.628: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      73448 bytes,      73448 total
+- age   2:        952 bytes,      74400 total
+- age   4:         16 bytes,      74416 total
+- age   5:        656 bytes,      75072 total
+- age   7:        424 bytes,      75496 total
+- age   8:        832 bytes,      76328 total
+- age   9:       1320 bytes,      77648 total
+- age  10:        904 bytes,      78552 total
+- age  11:      23992 bytes,     102544 total
+- age  12:      43240 bytes,     145784 total
+- age  13:    2780584 bytes,    2926368 total
+- age  14:    6907816 bytes,    9834184 total
+- age  15:    3798720 bytes,   13632904 total
+, 0.0308861 secs]
+   [Parallel Time: 26.3 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 314628.3, Avg: 314628.6, Max: 314628.8, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 1.4, Max: 8.0, Diff: 7.6, Sum: 13.8]
+      [Update RS (ms): Min: 0.0, Avg: 1.1, Max: 1.5, Diff: 1.5, Sum: 11.4]
+         [Processed Buffers: Min: 0, Avg: 1.6, Max: 3, Diff: 3, Sum: 16]
+      [Scan RS (ms): Min: 0.4, Avg: 1.0, Max: 1.3, Diff: 1.0, Sum: 9.7]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 5.0, Max: 10.3, Diff: 10.3, Sum: 50.2]
+      [Object Copy (ms): Min: 12.1, Avg: 16.4, Max: 21.8, Diff: 9.7, Sum: 164.2]
+      [Termination (ms): Min: 0.0, Avg: 0.3, Max: 0.3, Diff: 0.3, Sum: 2.7]
+         [Termination Attempts: Min: 1, Avg: 144.5, Max: 175, Diff: 174, Sum: 1445]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.3, Max: 0.6, Diff: 0.5, Sum: 2.7]
+      [GC Worker Total (ms): Min: 25.1, Avg: 25.5, Max: 25.9, Diff: 0.8, Sum: 254.8]
+      [GC Worker End (ms): Min: 314653.8, Avg: 314654.0, Max: 314654.3, Diff: 0.4]
+   [Code Root Fixup: 0.2 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.1 ms]
+   [Other: 3.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.9 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.8 ms]
+   [Eden: 2438.0M(2438.0M)->0.0B(2440.0M) Survivors: 18432.0K->16384.0K Heap: 2472.1M(4096.0M)->38498.5K(4096.0M)]
+ [Times: user=0.27 sys=0.00, real=0.03 secs] 
+2020-08-24T09:21:02.815-0700: 314.659: Total time for which application threads were stopped: 0.0312936 seconds, Stopping threads took: 0.0001188 seconds
+2020-08-24T09:21:05.815-0700: 317.659: Total time for which application threads were stopped: 0.0000577 seconds, Stopping threads took: 0.0000167 seconds
+2020-08-24T09:21:06.815-0700: 318.659: Total time for which application threads were stopped: 0.0000768 seconds, Stopping threads took: 0.0000310 seconds
+2020-08-24T09:21:08.816-0700: 320.660: Total time for which application threads were stopped: 0.0000585 seconds, Stopping threads took: 0.0000162 seconds
+2020-08-24T09:21:10.816-0700: 322.660: Total time for which application threads were stopped: 0.0000537 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:21:11.816-0700: 323.660: Total time for which application threads were stopped: 0.0000672 seconds, Stopping threads took: 0.0000216 seconds
+2020-08-24T09:21:12.816-0700: 324.660: Total time for which application threads were stopped: 0.0002628 seconds, Stopping threads took: 0.0001270 seconds
+2020-08-24T09:21:17.817-0700: 329.661: Total time for which application threads were stopped: 0.0000561 seconds, Stopping threads took: 0.0000182 seconds
+2020-08-24T09:21:19.817-0700: 331.661: Total time for which application threads were stopped: 0.0000681 seconds, Stopping threads took: 0.0000221 seconds
+2020-08-24T09:21:21.817-0700: 333.661: Total time for which application threads were stopped: 0.0000564 seconds, Stopping threads took: 0.0000161 seconds
+2020-08-24T09:21:22.818-0700: 334.662: Total time for which application threads were stopped: 0.0002558 seconds, Stopping threads took: 0.0001323 seconds
+2020-08-24T09:21:22.910-0700: 334.754: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      67808 bytes,      67808 total
+- age   2:        248 bytes,      68056 total
+- age   3:        920 bytes,      68976 total
+- age   5:         16 bytes,      68992 total
+- age   6:        656 bytes,      69648 total
+- age   8:        424 bytes,      70072 total
+- age   9:        832 bytes,      70904 total
+- age  10:       1320 bytes,      72224 total
+- age  11:        904 bytes,      73128 total
+- age  12:      23992 bytes,      97120 total
+- age  13:      43240 bytes,     140360 total
+- age  14:    2780584 bytes,    2920944 total
+- age  15:    6907816 bytes,    9828760 total
+, 0.0259113 secs]
+   [Parallel Time: 21.5 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 334754.1, Avg: 334754.4, Max: 334754.6, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 1.4, Max: 7.2, Diff: 6.7, Sum: 13.6]
+      [Update RS (ms): Min: 0.0, Avg: 2.4, Max: 2.9, Diff: 2.9, Sum: 24.5]
+         [Processed Buffers: Min: 0, Avg: 3.0, Max: 6, Diff: 6, Sum: 30]
+      [Scan RS (ms): Min: 0.5, Avg: 1.1, Max: 1.6, Diff: 1.2, Sum: 11.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 4.2, Max: 8.4, Diff: 8.4, Sum: 42.2]
+      [Object Copy (ms): Min: 7.2, Avg: 11.1, Max: 15.4, Diff: 8.2, Sum: 110.6]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 1.0]
+         [Termination Attempts: Min: 1, Avg: 70.8, Max: 84, Diff: 83, Sum: 708]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.4]
+      [GC Worker Total (ms): Min: 20.2, Avg: 20.5, Max: 20.8, Diff: 0.5, Sum: 204.6]
+      [GC Worker End (ms): Min: 334774.8, Avg: 334774.9, Max: 334775.0, Diff: 0.2]
+   [Code Root Fixup: 0.2 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.2 ms]
+   [Other: 3.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.0 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.0 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.8 ms]
+   [Eden: 2440.0M(2440.0M)->0.0B(2444.0M) Survivors: 16384.0K->12288.0K Heap: 2477.6M(4096.0M)->42011.1K(4096.0M)]
+ [Times: user=0.22 sys=0.00, real=0.03 secs] 
+2020-08-24T09:21:22.936-0700: 334.780: Total time for which application threads were stopped: 0.0263318 seconds, Stopping threads took: 0.0001023 seconds
+2020-08-24T09:21:28.937-0700: 340.781: Total time for which application threads were stopped: 0.0002524 seconds, Stopping threads took: 0.0001278 seconds
+2020-08-24T09:21:43.051-0700: 354.895: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      56960 bytes,      56960 total
+- age   2:        280 bytes,      57240 total
+- age   3:        216 bytes,      57456 total
+- age   4:        920 bytes,      58376 total
+- age   6:         16 bytes,      58392 total
+- age   7:        656 bytes,      59048 total
+- age   9:        424 bytes,      59472 total
+- age  10:        832 bytes,      60304 total
+- age  11:       1320 bytes,      61624 total
+- age  12:        904 bytes,      62528 total
+- age  13:      23992 bytes,      86520 total
+- age  14:      43240 bytes,     129760 total
+- age  15:    2780584 bytes,    2910344 total
+, 0.0176930 secs]
+   [Parallel Time: 11.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 354895.7, Avg: 354896.0, Max: 354896.2, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.9, Max: 3.1, Diff: 2.6, Sum: 9.2]
+      [Update RS (ms): Min: 0.0, Avg: 2.2, Max: 3.0, Diff: 3.0, Sum: 21.5]
+         [Processed Buffers: Min: 1, Avg: 3.4, Max: 8, Diff: 7, Sum: 34]
+      [Scan RS (ms): Min: 0.4, Avg: 0.9, Max: 1.2, Diff: 0.8, Sum: 8.7]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 3.3, Max: 6.8, Diff: 6.8, Sum: 33.3]
+      [Object Copy (ms): Min: 0.0, Avg: 2.5, Max: 4.9, Diff: 4.9, Sum: 24.6]
+      [Termination (ms): Min: 0.0, Avg: 1.2, Max: 2.2, Diff: 2.2, Sum: 11.5]
+         [Termination Attempts: Min: 1, Avg: 4.4, Max: 9, Diff: 8, Sum: 44]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.6]
+      [GC Worker Total (ms): Min: 10.6, Avg: 11.0, Max: 11.2, Diff: 0.6, Sum: 109.6]
+      [GC Worker End (ms): Min: 354906.7, Avg: 354906.9, Max: 354907.2, Diff: 0.4]
+   [Code Root Fixup: 0.1 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.6 ms]
+   [Other: 4.2 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2444.0M(2444.0M)->0.0B(2452.0M) Survivors: 12288.0K->4096.0K Heap: 2485.0M(4096.0M)->41179.7K(4096.0M)]
+ [Times: user=0.13 sys=0.00, real=0.01 secs] 
+2020-08-24T09:21:43.069-0700: 354.913: Total time for which application threads were stopped: 0.0182114 seconds, Stopping threads took: 0.0000595 seconds
+2020-08-24T09:22:03.154-0700: 374.998: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      51952 bytes,      51952 total
+- age   2:        632 bytes,      52584 total
+- age   3:        280 bytes,      52864 total
+- age   4:        216 bytes,      53080 total
+- age   5:        920 bytes,      54000 total
+- age   7:         16 bytes,      54016 total
+- age   8:        656 bytes,      54672 total
+- age  10:        424 bytes,      55096 total
+- age  11:        832 bytes,      55928 total
+- age  12:       1320 bytes,      57248 total
+- age  13:        904 bytes,      58152 total
+- age  14:      23992 bytes,      82144 total
+- age  15:      43240 bytes,     125384 total
+, 0.0033096 secs]
+   [Parallel Time: 2.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 374997.6, Avg: 374997.7, Max: 374998.6, Diff: 1.0]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 0.9, Diff: 0.9, Sum: 2.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.5, Max: 0.6, Diff: 0.6, Sum: 4.9]
+         [Processed Buffers: Min: 0, Avg: 3.7, Max: 9, Diff: 9, Sum: 37]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 1.2, Diff: 1.2, Sum: 1.8]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.9]
+      [Termination (ms): Min: 0.0, Avg: 1.0, Max: 1.1, Diff: 1.1, Sum: 9.8]
+         [Termination Attempts: Min: 1, Avg: 1.2, Max: 2, Diff: 1, Sum: 12]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.4]
+      [GC Worker Total (ms): Min: 1.3, Avg: 2.2, Max: 2.3, Diff: 1.0, Sum: 21.7]
+      [GC Worker End (ms): Min: 374999.9, Avg: 374999.9, Max: 374999.9, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 0.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.1 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.3 ms]
+   [Eden: 2452.0M(2452.0M)->0.0B(2454.0M) Survivors: 4096.0K->2048.0K Heap: 2492.2M(4096.0M)->41861.5K(4096.0M)]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-24T09:22:03.157-0700: 375.001: Total time for which application threads were stopped: 0.0034555 seconds, Stopping threads took: 0.0000154 seconds
+2020-08-24T09:22:05.158-0700: 377.002: Total time for which application threads were stopped: 0.0002366 seconds, Stopping threads took: 0.0000947 seconds
+2020-08-24T09:22:12.159-0700: 384.003: Total time for which application threads were stopped: 0.0002592 seconds, Stopping threads took: 0.0001270 seconds
+2020-08-24T09:22:13.159-0700: 385.003: Total time for which application threads were stopped: 0.0002328 seconds, Stopping threads took: 0.0001047 seconds
+2020-08-24T09:22:19.160-0700: 391.004: Total time for which application threads were stopped: 0.0003418 seconds, Stopping threads took: 0.0001946 seconds
+2020-08-24T09:22:23.412-0700: 395.256: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      52856 bytes,      52856 total
+- age   2:        264 bytes,      53120 total
+- age   3:        568 bytes,      53688 total
+- age   4:        280 bytes,      53968 total
+- age   5:        216 bytes,      54184 total
+- age   6:        920 bytes,      55104 total
+- age   8:         16 bytes,      55120 total
+- age   9:        656 bytes,      55776 total
+- age  11:        424 bytes,      56200 total
+- age  12:        832 bytes,      57032 total
+- age  13:       1320 bytes,      58352 total
+- age  14:        904 bytes,      59256 total
+- age  15:      23992 bytes,      83248 total
+, 0.0123113 secs]
+   [Parallel Time: 7.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 395256.5, Avg: 395256.7, Max: 395256.9, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.8, Max: 1.7, Diff: 1.2, Sum: 7.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.7, Max: 1.0, Diff: 1.0, Sum: 6.8]
+         [Processed Buffers: Min: 0, Avg: 3.0, Max: 7, Diff: 7, Sum: 30]
+      [Scan RS (ms): Min: 0.4, Avg: 0.6, Max: 0.8, Diff: 0.4, Sum: 5.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.6, Diff: 3.6, Sum: 3.9]
+      [Object Copy (ms): Min: 0.1, Avg: 0.3, Max: 0.4, Diff: 0.3, Sum: 3.1]
+      [Termination (ms): Min: 0.0, Avg: 3.2, Max: 3.6, Diff: 3.6, Sum: 32.3]
+         [Termination Attempts: Min: 1, Avg: 1.2, Max: 2, Diff: 1, Sum: 12]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+      [GC Worker Total (ms): Min: 5.6, Avg: 6.0, Max: 6.3, Diff: 0.7, Sum: 60.2]
+      [GC Worker End (ms): Min: 395262.5, Avg: 395262.7, Max: 395262.9, Diff: 0.4]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.4 ms]
+   [Other: 3.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.9M(4096.0M)->41954.4K(4096.0M)]
+ [Times: user=0.06 sys=0.00, real=0.01 secs] 
+2020-08-24T09:22:23.425-0700: 395.269: Total time for which application threads were stopped: 0.0127262 seconds, Stopping threads took: 0.0000430 seconds
+2020-08-24T09:22:28.426-0700: 400.270: Total time for which application threads were stopped: 0.0002074 seconds, Stopping threads took: 0.0000830 seconds
+2020-08-24T09:22:29.426-0700: 401.270: Total time for which application threads were stopped: 0.0001523 seconds, Stopping threads took: 0.0000439 seconds
+2020-08-24T09:22:41.428-0700: 413.272: Total time for which application threads were stopped: 0.0001740 seconds, Stopping threads took: 0.0000758 seconds
+2020-08-24T09:22:43.428-0700: 415.272: Total time for which application threads were stopped: 0.0001623 seconds, Stopping threads took: 0.0000461 seconds
+2020-08-24T09:22:43.819-0700: 415.663: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      48560 bytes,      48560 total
+- age   2:         64 bytes,      48624 total
+- age   3:        264 bytes,      48888 total
+- age   4:        568 bytes,      49456 total
+- age   5:        280 bytes,      49736 total
+- age   6:        216 bytes,      49952 total
+- age   7:        920 bytes,      50872 total
+- age   9:         16 bytes,      50888 total
+- age  10:        656 bytes,      51544 total
+- age  12:        424 bytes,      51968 total
+- age  13:        832 bytes,      52800 total
+- age  14:       1320 bytes,      54120 total
+- age  15:        904 bytes,      55024 total
+, 0.0125985 secs]
+   [Parallel Time: 7.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 415663.0, Avg: 415663.2, Max: 415663.4, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.8, Max: 1.8, Diff: 1.4, Sum: 7.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.8, Max: 1.2, Diff: 1.2, Sum: 7.8]
+         [Processed Buffers: Min: 0, Avg: 2.9, Max: 6, Diff: 6, Sum: 29]
+      [Scan RS (ms): Min: 0.2, Avg: 0.5, Max: 0.7, Diff: 0.5, Sum: 4.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.5, Diff: 3.5, Sum: 3.6]
+      [Object Copy (ms): Min: 0.1, Avg: 0.2, Max: 0.3, Diff: 0.2, Sum: 2.2]
+      [Termination (ms): Min: 0.0, Avg: 3.2, Max: 3.6, Diff: 3.6, Sum: 32.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.4, Diff: 0.3, Sum: 1.3]
+      [GC Worker Total (ms): Min: 5.1, Avg: 6.0, Max: 6.3, Diff: 1.2, Sum: 59.7]
+      [GC Worker End (ms): Min: 415668.5, Avg: 415669.2, Max: 415669.5, Diff: 0.9]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.0 ms]
+   [Other: 4.5 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.6 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.0M(4096.0M)->41981.4K(4096.0M)]
+ [Times: user=0.07 sys=0.01, real=0.02 secs] 
+2020-08-24T09:22:43.832-0700: 415.676: Total time for which application threads were stopped: 0.0130635 seconds, Stopping threads took: 0.0000431 seconds
+2020-08-24T09:22:53.833-0700: 425.677: Total time for which application threads were stopped: 0.0001828 seconds, Stopping threads took: 0.0000531 seconds
+2020-08-24T09:22:55.833-0700: 427.677: Total time for which application threads were stopped: 0.0002672 seconds, Stopping threads took: 0.0001494 seconds
+2020-08-24T09:23:04.014-0700: 435.858: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66560 bytes,      66560 total
+- age   2:       1032 bytes,      67592 total
+- age   4:        264 bytes,      67856 total
+- age   5:        568 bytes,      68424 total
+- age   6:        280 bytes,      68704 total
+- age   7:        216 bytes,      68920 total
+- age   8:        920 bytes,      69840 total
+- age  10:         16 bytes,      69856 total
+- age  11:        656 bytes,      70512 total
+- age  13:        424 bytes,      70936 total
+- age  14:        832 bytes,      71768 total
+- age  15:       1320 bytes,      73088 total
+, 0.0121415 secs]
+   [Parallel Time: 6.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 435857.7, Avg: 435858.0, Max: 435858.2, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.7, Max: 1.8, Diff: 1.3, Sum: 7.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.7, Max: 1.1, Diff: 1.1, Sum: 6.7]
+         [Processed Buffers: Min: 0, Avg: 2.9, Max: 7, Diff: 7, Sum: 29]
+      [Scan RS (ms): Min: 0.2, Avg: 0.4, Max: 0.8, Diff: 0.6, Sum: 3.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.3, Diff: 3.3, Sum: 3.8]
+      [Object Copy (ms): Min: 0.1, Avg: 0.2, Max: 0.3, Diff: 0.2, Sum: 2.1]
+      [Termination (ms): Min: 0.0, Avg: 3.3, Max: 3.7, Diff: 3.7, Sum: 32.7]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.6]
+      [GC Worker Total (ms): Min: 5.1, Avg: 5.7, Max: 6.1, Diff: 1.0, Sum: 57.2]
+      [GC Worker End (ms): Min: 435863.2, Avg: 435863.7, Max: 435863.9, Diff: 0.7]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.3 ms]
+   [Other: 4.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.2 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.0M(4096.0M)->42012.7K(4096.0M)]
+ [Times: user=0.07 sys=0.00, real=0.01 secs] 
+2020-08-24T09:23:04.026-0700: 435.870: Total time for which application threads were stopped: 0.0125992 seconds, Stopping threads took: 0.0000517 seconds
+2020-08-24T09:23:20.029-0700: 451.873: Total time for which application threads were stopped: 0.0002134 seconds, Stopping threads took: 0.0000825 seconds
+2020-08-24T09:23:21.029-0700: 452.873: Total time for which application threads were stopped: 0.0000739 seconds, Stopping threads took: 0.0000207 seconds
+2020-08-24T09:23:22.030-0700: 453.874: Total time for which application threads were stopped: 0.0001596 seconds, Stopping threads took: 0.0000464 seconds
+2020-08-24T09:23:23.030-0700: 454.874: Total time for which application threads were stopped: 0.0001802 seconds, Stopping threads took: 0.0000463 seconds
+2020-08-24T09:23:24.282-0700: 456.126: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      63440 bytes,      63440 total
+- age   3:       1032 bytes,      64472 total
+- age   5:        264 bytes,      64736 total
+- age   6:        568 bytes,      65304 total
+- age   7:        280 bytes,      65584 total
+- age   8:        216 bytes,      65800 total
+- age   9:        920 bytes,      66720 total
+- age  11:         16 bytes,      66736 total
+- age  12:        656 bytes,      67392 total
+- age  14:        424 bytes,      67816 total
+- age  15:        832 bytes,      68648 total
+, 0.0122383 secs]
+   [Parallel Time: 6.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 456126.7, Avg: 456126.9, Max: 456127.2, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.6, Avg: 0.9, Max: 1.9, Diff: 1.3, Sum: 8.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.7, Max: 1.2, Diff: 1.2, Sum: 6.6]
+         [Processed Buffers: Min: 0, Avg: 3.1, Max: 7, Diff: 7, Sum: 31]
+      [Scan RS (ms): Min: 0.2, Avg: 0.4, Max: 0.7, Diff: 0.5, Sum: 4.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.5, Diff: 3.5, Sum: 4.2]
+      [Object Copy (ms): Min: 0.1, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 3.0]
+      [Termination (ms): Min: 0.0, Avg: 3.1, Max: 3.6, Diff: 3.6, Sum: 30.9]
+         [Termination Attempts: Min: 1, Avg: 1.1, Max: 2, Diff: 1, Sum: 11]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 0.6]
+      [GC Worker Total (ms): Min: 5.1, Avg: 5.8, Max: 6.3, Diff: 1.2, Sum: 58.4]
+      [GC Worker End (ms): Min: 456132.3, Avg: 456132.8, Max: 456133.1, Diff: 0.8]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.6 ms]
+   [Other: 3.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.2 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.1 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.0M(4096.0M)->42037.1K(4096.0M)]
+ [Times: user=0.07 sys=0.00, real=0.01 secs] 
+2020-08-24T09:23:24.295-0700: 456.139: Total time for which application threads were stopped: 0.0128400 seconds, Stopping threads took: 0.0001390 seconds
+2020-08-24T09:23:30.296-0700: 462.140: Total time for which application threads were stopped: 0.0001599 seconds, Stopping threads took: 0.0000520 seconds
+2020-08-24T09:23:32.296-0700: 464.140: Total time for which application threads were stopped: 0.0001605 seconds, Stopping threads took: 0.0000448 seconds
+2020-08-24T09:23:36.297-0700: 468.141: Total time for which application threads were stopped: 0.0002006 seconds, Stopping threads took: 0.0000707 seconds
+2020-08-24T09:23:37.297-0700: 469.141: Total time for which application threads were stopped: 0.0001798 seconds, Stopping threads took: 0.0000455 seconds
+2020-08-24T09:23:38.298-0700: 470.142: Total time for which application threads were stopped: 0.0001582 seconds, Stopping threads took: 0.0000444 seconds
+2020-08-24T09:23:44.198-0700: 476.042: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      70616 bytes,      70616 total
+- age   2:        264 bytes,      70880 total
+- age   4:       1032 bytes,      71912 total
+- age   6:        264 bytes,      72176 total
+- age   7:        568 bytes,      72744 total
+- age   8:        280 bytes,      73024 total
+- age   9:        216 bytes,      73240 total
+- age  10:        920 bytes,      74160 total
+- age  12:         16 bytes,      74176 total
+- age  13:        656 bytes,      74832 total
+- age  15:        424 bytes,      75256 total
+, 0.0028488 secs]
+   [Parallel Time: 1.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 476042.2, Avg: 476042.3, Max: 476042.3, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.3, Max: 0.9, Diff: 0.8, Sum: 2.6]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.4]
+         [Processed Buffers: Min: 0, Avg: 2.8, Max: 8, Diff: 8, Sum: 28]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.7, Diff: 0.7, Sum: 0.7]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.7, Diff: 0.7, Sum: 5.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 1.1, Avg: 1.3, Max: 1.3, Diff: 0.2, Sum: 12.5]
+      [GC Worker End (ms): Min: 476043.4, Avg: 476043.5, Max: 476043.6, Diff: 0.2]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 1.2 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.3 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.1M(4096.0M)->42035.6K(4096.0M)]
+ [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2020-08-24T09:23:44.201-0700: 476.045: Total time for which application threads were stopped: 0.0029862 seconds, Stopping threads took: 0.0000151 seconds
+2020-08-24T09:24:04.780-0700: 496.624: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66048 bytes,      66048 total
+- age   2:        696 bytes,      66744 total
+- age   3:        232 bytes,      66976 total
+- age   5:       1000 bytes,      67976 total
+- age   7:        264 bytes,      68240 total
+- age   8:        568 bytes,      68808 total
+- age   9:        280 bytes,      69088 total
+- age  10:        216 bytes,      69304 total
+- age  11:        920 bytes,      70224 total
+- age  13:         16 bytes,      70240 total
+- age  14:        656 bytes,      70896 total
+, 0.0112565 secs]
+   [Parallel Time: 5.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 496624.4, Avg: 496624.7, Max: 496624.9, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.8, Max: 1.6, Diff: 1.1, Sum: 7.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.9, Sum: 5.9]
+         [Processed Buffers: Min: 0, Avg: 2.9, Max: 7, Diff: 7, Sum: 29]
+      [Scan RS (ms): Min: 0.4, Avg: 0.6, Max: 0.8, Diff: 0.4, Sum: 5.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 2.5, Diff: 2.5, Sum: 2.7]
+      [Object Copy (ms): Min: 0.0, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 3.3]
+      [Termination (ms): Min: 0.0, Avg: 1.9, Max: 2.2, Diff: 2.2, Sum: 19.4]
+         [Termination Attempts: Min: 1, Avg: 1.3, Max: 2, Diff: 1, Sum: 13]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.2, Sum: 1.0]
+      [GC Worker Total (ms): Min: 4.1, Avg: 4.6, Max: 5.0, Diff: 1.0, Sum: 45.7]
+      [GC Worker End (ms): Min: 496629.0, Avg: 496629.3, Max: 496629.5, Diff: 0.5]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.9 ms]
+   [Other: 4.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.5 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.1M(4096.0M)->42040.5K(4096.0M)]
+ [Times: user=0.06 sys=0.00, real=0.01 secs] 
+2020-08-24T09:24:04.792-0700: 496.636: Total time for which application threads were stopped: 0.0117409 seconds, Stopping threads took: 0.0000640 seconds
+2020-08-24T09:24:24.804-0700: 516.648: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      75832 bytes,      75832 total
+- age   2:        136 bytes,      75968 total
+- age   3:        696 bytes,      76664 total
+- age   4:        232 bytes,      76896 total
+- age   6:        968 bytes,      77864 total
+- age   8:        264 bytes,      78128 total
+- age   9:        568 bytes,      78696 total
+- age  10:        280 bytes,      78976 total
+- age  11:        216 bytes,      79192 total
+- age  12:        920 bytes,      80112 total
+- age  14:         16 bytes,      80128 total
+- age  15:        656 bytes,      80784 total
+, 0.0025289 secs]
+   [Parallel Time: 1.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 516648.0, Avg: 516648.1, Max: 516648.1, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.2, Max: 0.8, Diff: 0.7, Sum: 2.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.5]
+         [Processed Buffers: Min: 0, Avg: 3.0, Max: 8, Diff: 8, Sum: 30]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.8, Diff: 0.8, Sum: 0.8]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.8, Diff: 0.8, Sum: 7.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.3]
+      [GC Worker Total (ms): Min: 1.2, Avg: 1.4, Max: 1.4, Diff: 0.2, Sum: 13.8]
+      [GC Worker End (ms): Min: 516649.3, Avg: 516649.4, Max: 516649.5, Diff: 0.2]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 0.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.1 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.3 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.1M(4096.0M)->42043.6K(4096.0M)]
+ [Times: user=0.01 sys=0.01, real=0.00 secs] 
+2020-08-24T09:24:24.807-0700: 516.651: Total time for which application threads were stopped: 0.0026687 seconds, Stopping threads took: 0.0000241 seconds
+2020-08-24T09:24:26.807-0700: 518.651: Total time for which application threads were stopped: 0.0000626 seconds, Stopping threads took: 0.0000196 seconds
+2020-08-24T09:24:27.807-0700: 519.651: Total time for which application threads were stopped: 0.0002500 seconds, Stopping threads took: 0.0001339 seconds
+2020-08-24T09:24:45.178-0700: 537.022: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      63552 bytes,      63552 total
+- age   2:         48 bytes,      63600 total
+- age   3:        104 bytes,      63704 total
+- age   4:        696 bytes,      64400 total
+- age   5:        232 bytes,      64632 total
+- age   7:        968 bytes,      65600 total
+- age   9:        264 bytes,      65864 total
+- age  10:        568 bytes,      66432 total
+- age  11:        280 bytes,      66712 total
+- age  12:        216 bytes,      66928 total
+- age  13:        920 bytes,      67848 total
+- age  15:         16 bytes,      67864 total
+, 0.0113893 secs]
+   [Parallel Time: 6.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 537022.3, Avg: 537022.5, Max: 537022.7, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.8, Max: 1.8, Diff: 1.3, Sum: 8.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.6, Max: 1.0, Diff: 1.0, Sum: 5.8]
+         [Processed Buffers: Min: 0, Avg: 3.0, Max: 8, Diff: 8, Sum: 30]
+      [Scan RS (ms): Min: 0.2, Avg: 0.4, Max: 0.7, Diff: 0.5, Sum: 4.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 3.1, Diff: 3.1, Sum: 3.6]
+      [Object Copy (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 2.1]
+      [Termination (ms): Min: 0.0, Avg: 2.6, Max: 2.9, Diff: 2.9, Sum: 26.0]
+         [Termination Attempts: Min: 1, Avg: 1.1, Max: 2, Diff: 1, Sum: 11]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.8]
+      [GC Worker Total (ms): Min: 4.8, Avg: 5.0, Max: 5.4, Diff: 0.5, Sum: 50.4]
+      [GC Worker End (ms): Min: 537027.4, Avg: 537027.5, Max: 537027.7, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.0 ms]
+   [Other: 4.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.5 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.2 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.1M(4096.0M)->42065.5K(4096.0M)]
+ [Times: user=0.07 sys=0.00, real=0.01 secs] 
+2020-08-24T09:24:45.190-0700: 537.034: Total time for which application threads were stopped: 0.0118284 seconds, Stopping threads took: 0.0000403 seconds
+2020-08-24T09:24:46.190-0700: 538.034: Total time for which application threads were stopped: 0.0002259 seconds, Stopping threads took: 0.0001038 seconds
+2020-08-24T09:25:02.192-0700: 554.036: Total time for which application threads were stopped: 0.0002664 seconds, Stopping threads took: 0.0000854 seconds
+2020-08-24T09:25:05.193-0700: 557.037: Total time for which application threads were stopped: 0.0001616 seconds, Stopping threads took: 0.0000556 seconds
+2020-08-24T09:25:05.372-0700: 557.216: [GC pause (G1 Evacuation Pause) (young)
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      74904 bytes,      74904 total
+- age   2:        296 bytes,      75200 total
+- age   3:         48 bytes,      75248 total
+- age   4:        104 bytes,      75352 total
+- age   5:        696 bytes,      76048 total
+- age   6:        232 bytes,      76280 total
+- age   8:        968 bytes,      77248 total
+- age  10:        264 bytes,      77512 total
+- age  11:        568 bytes,      78080 total
+- age  12:        280 bytes,      78360 total
+- age  13:        216 bytes,      78576 total
+- age  14:        920 bytes,      79496 total
+, 0.0108439 secs]
+   [Parallel Time: 5.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 557216.4, Avg: 557216.7, Max: 557216.9, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.5, Avg: 0.8, Max: 1.7, Diff: 1.2, Sum: 7.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.9, Sum: 5.7]
+         [Processed Buffers: Min: 0, Avg: 3.0, Max: 7, Diff: 7, Sum: 30]
+      [Scan RS (ms): Min: 0.2, Avg: 0.5, Max: 0.7, Diff: 0.4, Sum: 4.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 2.6, Diff: 2.6, Sum: 2.8]
+      [Object Copy (ms): Min: 0.0, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 3.1]
+      [Termination (ms): Min: 0.0, Avg: 2.0, Max: 2.3, Diff: 2.3, Sum: 20.4]
+         [Termination Attempts: Min: 1, Avg: 1.1, Max: 2, Diff: 1, Sum: 11]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.0]
+      [GC Worker Total (ms): Min: 4.3, Avg: 4.5, Max: 4.9, Diff: 0.6, Sum: 45.2]
+      [GC Worker End (ms): Min: 557221.1, Avg: 557221.2, Max: 557221.4, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.2 ms]
+   [Other: 4.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.8 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.8 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.1 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2495.1M(4096.0M)->42056.5K(4096.0M)]
+ [Times: user=0.06 sys=0.00, real=0.01 secs] 
+2020-08-24T09:25:05.383-0700: 557.227: Total time for which application threads were stopped: 0.0112545 seconds, Stopping threads took: 0.0000379 seconds
+2020-08-24T09:25:06.384-0700: 558.228: Total time for which application threads were stopped: 0.0003357 seconds, Stopping threads took: 0.0001840 seconds
+2020-08-24T09:25:18.386-0700: 570.230: Total time for which application threads were stopped: 0.0000554 seconds, Stopping threads took: 0.0000159 seconds
+2020-08-24T09:28:40.444-0700: 772.288: Total time for which application threads were stopped: 0.0001592 seconds, Stopping threads took: 0.0000773 seconds
+2020-08-24T09:51:19.272-0700: 2131.625: Total time for which application threads were stopped: 0.0005446 seconds, Stopping threads took: 0.0000113 seconds
+Heap
+ garbage-first heap   total 4194304K, used 1453128K [0x00000006c0000000, 0x00000006c0204000, 0x00000007c0000000)
+  region size 2048K, 691 young (1415168K), 1 survivors (2048K)
+ Metaspace       used 68480K, capacity 73416K, committed 73600K, reserved 1114112K
+  class space    used 8352K, capacity 8740K, committed 8832K, reserved 1048576K
