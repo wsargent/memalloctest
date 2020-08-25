@@ -84,7 +84,7 @@ lazy val root = (project in file("."))
     bashScriptExtraDefines += """addJava "-Dplay.http.secret.key=a-long-secret-to-defeat-entropy"""",
     //bashScriptExtraDefines ++= gclog18Options.map(gcOption => s"""addJava "${gcOption}""""),
     bashScriptExtraDefines += s"""addJava "${gclog9Options}"""",
-    // bashScriptExtraDefines += s"""addJava "$jfrOptions""""" + ,
+    //bashScriptExtraDefines += s"""addJava "$jfrOptions"""",
 
     // Expose LOG_DIR as environment variable in Docker.
     dockerEnvVars := Map(
