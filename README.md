@@ -1,78 +1,31 @@
-# README
+# Memory Allocation Test
 
-Sample Play Project using JDK 14 features.
+This project demos the performance and GC differences between JDK 1.8, 11, and 14.  It also shows Shenandoah performance considerations.
 
-This is here mostly to back up [Logging vs Memory](https://tersesystems.com/blog/2020/07/09/logging-vs-memory/) blog post.
+Initial explorations are from [Logging vs Memory](https://tersesystems.com/blog/2020/07/09/logging-vs-memory/) blog post.  You can read more at [Benchmarking Logging with JDK 14](https://tersesystems.com/blog/2020/08/23/benchmarking-logging-with-jdk-14/).
 
-## Requirements
+JDK management was done with [jabba](https://github.com/shyiko/jabba).
 
-Run this with SDKMAN or Jabba to ensure you have JDK 14 across the board.  
+## Results
 
-```
-sdk use java 14.0.1.hs-adpt
-```
+GC logs and Gatling results are in the results subdirectory.  
 
-## Mount
+### JDK 1.8 with G1GC
 
-```bash
-sudo su -
-mkdir -p /mnt/tmpfs
-mount -t tmpfs tmpfs /mnt/tmpfs
-```
+* [gceasy](https://gceasy.io/my-gc-report.jsp?p=c2hhcmVkLzIwMjAvMDgvMjQvLS1nYy5sb2ctLTE2LTUyLTA=&channel=WEB) /
+* [gatling](https://refined-github-html-preview.kidonng.workers.dev/wsargent/memalloctest/raw/master/results/jdk1.8-g1gc/gatlingspec-20200824161655347/index.html)
 
-## Building
+### JDK 11 with G1GC
 
-```bash
-sbt ";clean; stage"
-```
+* [gceasy](https://gceasy.io/my-gc-report.jsp?p=c2hhcmVkLzIwMjAvMDgvMjcvLS1nYy5sb2ctLTMtNDQtNTE=&channel=WEB) 
+* [gatling](https://refined-github-html-preview.kidonng.workers.dev/wsargent/memalloctest/raw/master/results/jdk11-g1gc/gatlingspec-20200825021623878/index.html)
 
-## Running
-
-
-Start the server with:
-
-```bash
-./run-stage.sh
-```
-
-```bash
-sbt "gatling / gatling:test"
-```
+### JDK 14 with G1GC
  
-Then go to "JVM Internals" / TLAB Allocations to see what the allocation rate is.  Ideally it should be less than 1 GB/sec.
+* [gceasy](https://gceasy.io/my-gc-report.jsp?p=c2hhcmVkLzIwMjAvMDgvMjcvLS1nYy5sb2ctLTQtMi0zNg==&channel=WEB) 
+* [gatling](https://refined-github-html-preview.kidonng.workers.dev/wsargent/memalloctest/raw/master/results/jdk14-g1gc/gatlingspec-20200824203409837/index.html)
 
-## JMC / Java Flight Recorder
+### JDK 14 with Shenandoah
 
-The flight recorder options are in [profile](https://blogs.oracle.com/javamagazine/java-flight-recorder-and-jfr-event-streaming-in-java-14) mode.  
-
-The JFR file is written out to the tmpfs mount.
-
-```
-cd /mnt/tmpfs/
-file memalloctest.jfr
-```
-
-You can load up the JFR in [Java Mission Control](https://adoptopenjdk.net/jmc.html).
-
-You can also attach JMC to a running Play process.  It should say `play.core.server.ProdServerStart`.
-
-## Interpreting Java Flight Recorder
-
-Java Flight Recorder doesn't show TLAB allocations per second.  It shows allocations per interval, which by default is 15 seconds!
-
-This means you have to zoom in with the mousewheel to get the appropriate graph to see the rate per second.
-
-## Using ZGC with Large Pages
-
-Following the [guide](https://wiki.openjdk.java.net/display/zgc/Main#Main-EnablingLargePagesOnLinux):
-
-We're using a 4 GB heap, so we need 2048 large pages.
-
-```
-sudo su - 
-echo 2048 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
-mkdir /hugepages
-
-# my uid is 1000
-mount -t hugetlbfs -o uid=1000 nodev /hugepages 
-```
+* [gceasy](https://gceasy.io/my-gc-report.jsp?p=c2hhcmVkLzIwMjAvMDgvMjcvLS1nYy5sb2ctLTQtMy0xMw==&channel=WEB) 
+* [gatling](https://refined-github-html-preview.kidonng.workers.dev/wsargent/memalloctest/raw/master/results/jdk14-shenandoah/gatlingspec-20200824205013461/index.html)
