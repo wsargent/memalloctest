@@ -10,6 +10,8 @@ JDK management was done with [jabba](https://github.com/shyiko/jabba).
 
 GC logs and Gatling results are in the results subdirectory.  
 
+http://www.gcloganalyzer.com/
+
 ### JDK 1.8 with G1GC
 
 * [gceasy](https://gceasy.io/my-gc-report.jsp?p=c2hhcmVkLzIwMjAvMDgvMjQvLS1nYy5sb2ctLTE2LTUyLTA=&channel=WEB) /

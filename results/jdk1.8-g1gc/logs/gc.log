@@ -1,0 +1,1712 @@
+OpenJDK 64-Bit Server VM (25.252-b09) for linux-amd64 JRE (1.8.0_252-b09), built on Apr 15 2020 12:10:31 by "jenkins" with gcc 4.8.2 20140120 (Red Hat 4.8.2-15)
+Memory: 4k page, physical 32513916k(6376256k free), swap 2097148k(2039036k free)
+CommandLine flags: -XX:+AlwaysPreTouch -XX:InitialHeapSize=4294967296 -XX:MaxHeapSize=4294967296 -XX:MaxInlineLevel=18 -XX:MaxInlineSize=270 -XX:MaxTrivialSize=12 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTLAB -XX:+PrintTenuringDistribution -XX:-UseBiasedLocking -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC -XX:-UseNUMA 
+2020-08-27T20:07:12.925-0700: 2.665: [GC pause (Metadata GC Threshold) (young) (initial-mark)TLAB: gc thread: 0x00007fc5b17391d0 [id: 6789] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.24510    23592KB refills: 2 waste 49.8% gc: 1044552B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.24510    23592KB refills: 1 waste 99.6% gc: 1044480B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b00129b0 [id: 6637] desired_size: 1023KB slow allocs: 10  refill waste: 16376B alloc: 0.24510    23592KB refills: 121 waste  0.1% gc: 86840B slow: 102984B fast: 0B
+TLAB totals: thrds: 3  refills: 124 max: 121 slow allocs: 10 max 10 waste:  1.8% gc: 2175872B max: 1044552B slow: 103000B max: 102984B fast: 0B max: 0B
+
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+, 0.0105034 secs]
+   [Parallel Time: 3.9 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 2665.6, Avg: 2665.7, Max: 2665.8, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.8, Avg: 0.9, Max: 1.1, Diff: 0.2, Sum: 9.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 1.3, Diff: 1.3, Sum: 1.8]
+      [Object Copy (ms): Min: 1.4, Avg: 2.5, Max: 2.7, Diff: 1.3, Sum: 24.7]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+         [Termination Attempts: Min: 1, Avg: 29.1, Max: 41, Diff: 40, Sum: 291]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 3.5, Avg: 3.6, Max: 3.7, Diff: 0.2, Sum: 36.1]
+      [GC Worker End (ms): Min: 2669.3, Avg: 2669.3, Max: 2669.3, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 6.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 5.1 ms]
+      [Ref Enq: 0.1 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 96256.0K(204.0M)->0.0B(186.0M) Survivors: 0.0B->18432.0K Heap: 95246.3K(4096.0M)->16551.3K(4096.0M)]
+ [Times: user=0.04 sys=0.00, real=0.01 secs] 
+2020-08-27T20:07:12.936-0700: 2.676: [GC concurrent-root-region-scan-start]
+2020-08-27T20:07:12.939-0700: 2.679: [GC concurrent-root-region-scan-end, 0.0027448 secs]
+2020-08-27T20:07:12.939-0700: 2.679: [GC concurrent-mark-start]
+2020-08-27T20:07:12.939-0700: 2.679: [GC concurrent-mark-end, 0.0006742 secs]
+2020-08-27T20:07:12.939-0700: 2.680: [GC remark 2020-08-27T20:07:12.939-0700: 2.680: [Finalize Marking, 0.0006838 secs] 2020-08-27T20:07:12.940-0700: 2.680: [GC ref-proc, 0.0002969 secs] 2020-08-27T20:07:12.940-0700: 2.681: [Unloading, 0.0027773 secs], 0.0040114 secs]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-27T20:07:12.943-0700: 2.684: [GC cleanup 17484K->17484K(4096M), 0.0010748 secs]
+ [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2020-08-27T20:07:13.955-0700: 3.695: [GC pause (Metadata GC Threshold) (young) (initial-mark)TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.26882    20370KB refills: 1 waste 17.4% gc: 182944B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 933KB slow allocs: 0  refill waste: 14936B alloc: 0.24510    18572KB refills: 1 waste 99.9% gc: 954640B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0ccfdf0 [id: 6669] desired_size: 933KB slow allocs: 0  refill waste: 14936B alloc: 0.24510    18572KB refills: 1 waste  0.2% gc: 1936B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0c9bce0 [id: 6665] desired_size: 933KB slow allocs: 0  refill waste: 14936B alloc: 0.24510    18572KB refills: 1 waste 100.0% gc: 956040B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b00129b0 [id: 6637] desired_size: 933KB slow allocs: 17  refill waste: 14936B alloc: 0.24510    18572KB refills: 120 waste  0.3% gc: 165728B slow: 166720B fast: 0B
+TLAB totals: thrds: 5  refills: 124 max: 120 slow allocs: 17 max 17 waste:  2.0% gc: 2261288B max: 956040B slow: 166720B max: 166720B fast: 0B max: 0B
+
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+- age   1:    5334184 bytes,    5334184 total
+, 0.0107942 secs]
+   [Parallel Time: 5.8 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 3695.0, Avg: 3695.1, Max: 3695.2, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 1.2, Avg: 1.3, Max: 1.5, Diff: 0.3, Sum: 13.5]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 1.5, Diff: 1.5, Sum: 2.7]
+      [Object Copy (ms): Min: 2.5, Avg: 3.8, Max: 4.1, Diff: 1.6, Sum: 38.2]
+      [Termination (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.3]
+         [Termination Attempts: Min: 1, Avg: 52.6, Max: 70, Diff: 69, Sum: 526]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 5.4, Avg: 5.5, Max: 5.6, Diff: 0.2, Sum: 54.8]
+      [GC Worker End (ms): Min: 3700.6, Avg: 3700.6, Max: 3700.6, Diff: 0.0]
+   [Code Root Fixup: 0.1 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 4.5 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 3.3 ms]
+      [Ref Enq: 0.1 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.1 ms]
+   [Eden: 75776.0K(186.0M)->0.0B(182.0M) Survivors: 18432.0K->22528.0K Heap: 92327.3K(4096.0M)->22528.0K(4096.0M)]
+ [Times: user=0.05 sys=0.01, real=0.01 secs] 
+2020-08-27T20:07:13.966-0700: 3.706: [GC concurrent-root-region-scan-start]
+2020-08-27T20:07:13.971-0700: 3.712: [GC concurrent-root-region-scan-end, 0.0058830 secs]
+2020-08-27T20:07:13.971-0700: 3.712: [GC concurrent-mark-start]
+2020-08-27T20:07:13.972-0700: 3.712: [GC concurrent-mark-end, 0.0006849 secs]
+2020-08-27T20:07:13.973-0700: 3.713: [GC remark 2020-08-27T20:07:13.973-0700: 3.713: [Finalize Marking, 0.0008478 secs] 2020-08-27T20:07:13.974-0700: 3.714: [GC ref-proc, 0.0004129 secs] 2020-08-27T20:07:13.975-0700: 3.715: [Unloading, 0.0041889 secs], 0.0058787 secs]
+ [Times: user=0.04 sys=0.00, real=0.00 secs] 
+2020-08-27T20:07:13.980-0700: 3.720: [GC cleanup 24355K->24355K(4096M), 0.0016371 secs]
+ [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-08-27T20:07:15.718-0700: 5.459: [GC pause (GCLocker Initiated GC) (young) (initial-mark)TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 1 waste 98.4% gc: 1031896B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e40070b0 [id: 6838] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 1 waste 96.9% gc: 1015784B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 1 waste 22.6% gc: 237192B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80069e0 [id: 6836] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 1 waste 89.9% gc: 942800B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b28f7a00 [id: 6835] desired_size: 1023KB slow allocs: 1  refill waste: 16376B alloc: 0.27472    37134KB refills: 2 waste 10.9% gc: 222496B slow: 5592B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 9 waste  3.6% gc: 337192B slow: 4120B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.27472    37134KB refills: 1 waste 16.9% gc: 177568B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1001KB slow allocs: 0  refill waste: 16024B alloc: 0.26882    36335KB refills: 2 waste  4.3% gc: 84872B slow: 2464B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 913KB slow allocs: 0  refill waste: 14616B alloc: 0.24510    33129KB refills: 1 waste 16.7% gc: 156688B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd1860 [id: 6670] desired_size: 913KB slow allocs: 0  refill waste: 14616B alloc: 0.24510    33129KB refills: 1 waste 98.2% gc: 918408B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cce380 [id: 6668] desired_size: 913KB slow allocs: 0  refill waste: 14616B alloc: 0.24510    33129KB refills: 1 waste 100.0% gc: 935408B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0c97cc0 [id: 6664] desired_size: 913KB slow allocs: 0  refill waste: 14616B alloc: 0.24510    33129KB refills: 1 waste 100.0% gc: 935280B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b00129b0 [id: 6637] desired_size: 913KB slow allocs: 16  refill waste: 14616B alloc: 0.24510    33129KB refills: 213 waste  0.5% gc: 805824B slow: 251320B fast: 0B
+TLAB totals: thrds: 13  refills: 235 max: 213 slow allocs: 17 max 16 waste:  3.6% gc: 7801408B max: 1031896B slow: 263496B max: 251320B fast: 0B max: 0B
+
+Desired survivor size 13631488 bytes, new threshold 15 (max 15)
+- age   1:    4091672 bytes,    4091672 total
+- age   2:    5045256 bytes,    9136928 total
+, 0.0225979 secs]
+   [Parallel Time: 11.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 5458.9, Avg: 5459.0, Max: 5459.1, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 2.4, Avg: 2.8, Max: 3.1, Diff: 0.8, Sum: 28.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.0]
+         [Processed Buffers: Min: 0, Avg: 0.0, Max: 0, Diff: 0, Sum: 0]
+      [Scan RS (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.6, Max: 1.1, Diff: 1.1, Sum: 5.6]
+      [Object Copy (ms): Min: 6.8, Avg: 7.5, Max: 8.4, Diff: 1.6, Sum: 74.9]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.8]
+         [Termination Attempts: Min: 1, Avg: 84.3, Max: 126, Diff: 125, Sum: 843]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [GC Worker Total (ms): Min: 10.9, Avg: 11.0, Max: 11.1, Diff: 0.2, Sum: 110.1]
+      [GC Worker End (ms): Min: 5470.0, Avg: 5470.0, Max: 5470.1, Diff: 0.1]
+   [Code Root Fixup: 0.1 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 10.4 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 8.8 ms]
+      [Ref Enq: 0.1 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.2 ms]
+   [Eden: 132.0M(182.0M)->0.0B(912.0M) Survivors: 22528.0K->26624.0K Heap: 152.9M(4096.0M)->37366.0K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.02 secs] 
+2020-08-27T20:07:15.741-0700: 5.481: [GC concurrent-root-region-scan-start]
+2020-08-27T20:07:15.757-0700: 5.497: [GC concurrent-root-region-scan-end, 0.0153611 secs]
+2020-08-27T20:07:15.757-0700: 5.497: [GC concurrent-mark-start]
+2020-08-27T20:07:15.758-0700: 5.498: [GC concurrent-mark-end, 0.0014705 secs]
+2020-08-27T20:07:15.759-0700: 5.499: [GC remark 2020-08-27T20:07:15.759-0700: 5.499: [Finalize Marking, 0.0071701 secs] 2020-08-27T20:07:15.766-0700: 5.506: [GC ref-proc, 0.0005266 secs] 2020-08-27T20:07:15.767-0700: 5.507: [Unloading, 0.0095353 secs], 0.0180226 secs]
+ [Times: user=0.15 sys=0.00, real=0.02 secs] 
+2020-08-27T20:07:15.777-0700: 5.517: [GC cleanup 42487K->42487K(4096M), 0.0035703 secs]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-27T20:07:44.826-0700: 34.566: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 71.9% gc: 754216B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 46 waste  1.7% gc: 802576B slow: 9344B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e2640 [id: 7200] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 89.9% gc: 942256B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4d40044b0 [id: 7199] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 52.7% gc: 553000B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 54 waste  0.4% gc: 229952B slow: 9680B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 57 waste  0.9% gc: 507360B slow: 5272B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 76.8% gc: 805240B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 49 waste  1.9% gc: 958216B slow: 6176B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 59 waste  0.3% gc: 185464B slow: 3184B fast: 0B
+TLAB: gc thread: 0x00007fc4bc022270 [id: 7187] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 65.5% gc: 686736B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 63 waste  0.2% gc: 111632B slow: 7608B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 59 waste  1.2% gc: 757456B slow: 3456B fast: 0B
+TLAB: gc thread: 0x00007fc4e42541e0 [id: 7183] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 61 waste  1.6% gc: 1027152B slow: 2488B fast: 0B
+TLAB: gc thread: 0x00007fc4ec045410 [id: 7182] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 71 waste  0.1% gc: 59808B slow: 8680B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 55.1% gc: 577272B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 5 waste 15.5% gc: 811184B slow: 128B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 74.1% gc: 776728B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 2 waste 38.6% gc: 809016B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 2 waste 37.6% gc: 788072B slow: 1056B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 2 waste 34.4% gc: 720880B slow: 128B fast: 0B
+TLAB: gc thread: 0x00007fc4d8008f90 [id: 7174] desired_size: 1023KB slow allocs: 2  refill waste: 16376B alloc: 0.05482    51200KB refills: 96 waste  0.1% gc: 67128B slow: 21288B fast: 0B
+TLAB: gc thread: 0x00007fc5b00129b0 [id: 6637] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 1 waste 99.8% gc: 1046032B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05482    51200KB refills: 2 waste 18.0% gc: 376488B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.13736   128280KB refills: 2 waste 44.2% gc: 927832B slow: 24B fast: 0B
+TLAB: gc thread: 0x00007fc4e40070b0 [id: 6838] desired_size: 1023KB slow allocs: 1  refill waste: 16376B alloc: 0.13736   128280KB refills: 78 waste  0.9% gc: 725544B slow: 14040B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.13736   128280KB refills: 56 waste  0.0% gc: 0B slow: 3864B fast: 0B
+TLAB: gc thread: 0x00007fc4e80069e0 [id: 6836] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.13748   128391KB refills: 1 waste  6.1% gc: 63752B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.14692   137207KB refills: 1 waste 22.5% gc: 236024B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.13736   128280KB refills: 1 waste 86.5% gc: 907288B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.13522   126282KB refills: 403 waste  0.4% gc: 410072B slow: 1267752B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.12255   114451KB refills: 1 waste 98.8% gc: 1035576B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd1860 [id: 6670] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.12255   114446KB refills: 1 waste  0.2% gc: 1856B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0ccfdf0 [id: 6669] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.24510   228892KB refills: 1 waste 99.6% gc: 1044432B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cce380 [id: 6668] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.12255   114446KB refills: 1 waste  0.2% gc: 1832B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b0c9bce0 [id: 6665] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.24510   228892KB refills: 1 waste 99.8% gc: 1046184B slow: 0B fast: 0B
+TLAB totals: thrds: 35  refills: 1183 max: 403 slow allocs: 3 max 2 waste:  1.8% gc: 20754256B max: 1046184B slow: 1364200B max: 1267752B fast: 0B max: 0B
+
+Desired survivor size 61865984 bytes, new threshold 15 (max 15)
+- age   1:    6913984 bytes,    6913984 total
+- age   2:    3784608 bytes,   10698592 total
+- age   3:    4991200 bytes,   15689792 total
+, 0.0214105 secs]
+   [Parallel Time: 17.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 34566.4, Avg: 34566.4, Max: 34566.5, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.3, Avg: 1.2, Max: 4.7, Diff: 4.4, Sum: 11.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.4]
+         [Processed Buffers: Min: 0, Avg: 0.8, Max: 2, Diff: 2, Sum: 8]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 4.7, Max: 14.2, Diff: 14.2, Sum: 47.1]
+      [Object Copy (ms): Min: 0.0, Avg: 7.8, Max: 15.2, Diff: 15.2, Sum: 78.5]
+      [Termination (ms): Min: 0.1, Avg: 3.5, Max: 4.2, Diff: 4.1, Sum: 34.6]
+         [Termination Attempts: Min: 1, Avg: 143.2, Max: 266, Diff: 265, Sum: 1432]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 17.3, Avg: 17.4, Max: 17.5, Diff: 0.2, Sum: 174.2]
+      [GC Worker End (ms): Min: 34583.8, Avg: 34583.8, Max: 34583.9, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 3.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 2.0 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 912.0M(912.0M)->0.0B(1160.0M) Survivors: 26624.0K->28672.0K Heap: 948.5M(4096.0M)->39414.0K(4096.0M)]
+ [Times: user=0.15 sys=0.00, real=0.02 secs] 
+2020-08-27T20:07:53.684-0700: 43.424: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32561KB refills: 3 waste 18.1% gc: 361312B slow: 128B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1015KB slow allocs: 0  refill waste: 16248B alloc: 0.04276    50790KB refills: 112 waste  0.9% gc: 994320B slow: 7416B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04818    57232KB refills: 114 waste  0.5% gc: 567152B slow: 11744B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04820    57254KB refills: 43 waste  1.0% gc: 433080B slow: 5144B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 651KB slow allocs: 0  refill waste: 10424B alloc: 0.02743    32582KB refills: 1 waste 45.6% gc: 304216B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04655    55296KB refills: 178 waste  0.3% gc: 512552B slow: 15192B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04824    57303KB refills: 4 waste  8.9% gc: 371456B slow: 104B fast: 0B
+TLAB: gc thread: 0x00007fc4bc022270 [id: 7187] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32561KB refills: 1 waste 99.6% gc: 664296B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04881    57983KB refills: 185 waste  0.4% gc: 736864B slow: 21440B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04876    57919KB refills: 152 waste  0.1% gc: 131032B slow: 13032B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 651KB slow allocs: 0  refill waste: 10424B alloc: 0.02743    32582KB refills: 3 waste  6.2% gc: 124432B slow: 56B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02742    32566KB refills: 2 waste 25.9% gc: 345552B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32561KB refills: 1 waste 51.5% gc: 343232B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32562KB refills: 1 waste  7.4% gc: 49456B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32562KB refills: 1 waste 50.7% gc: 337840B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32562KB refills: 2 waste  4.4% gc: 59264B slow: 48B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 651KB slow allocs: 0  refill waste: 10416B alloc: 0.02741    32562KB refills: 5 waste  9.2% gc: 305384B slow: 128B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08929   106064KB refills: 1 waste 95.6% gc: 1002408B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.10451   124139KB refills: 192 waste  0.0% gc: 0B slow: 21472B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09576   113746KB refills: 1 waste 99.3% gc: 1040904B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08929   106059KB refills: 1 waste 95.5% gc: 1001792B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.23006   273271KB refills: 540 waste  0.4% gc: 883616B slow: 1107936B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07966    94624KB refills: 2 waste 49.7% gc: 1041992B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cce380 [id: 6668] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07966    94619KB refills: 1 waste 99.2% gc: 1040400B slow: 0B fast: 0B
+TLAB totals: thrds: 24  refills: 1546 max: 540 slow allocs: 0 max 0 waste:  0.9% gc: 12652552B max: 1041992B slow: 1203872B max: 1107936B fast: 0B max: 0B
+
+Desired survivor size 78643200 bytes, new threshold 15 (max 15)
+- age   1:    3066024 bytes,    3066024 total
+- age   2:    6606568 bytes,    9672592 total
+- age   3:    3781856 bytes,   13454448 total
+- age   4:    4961616 bytes,   18416064 total
+, 0.0419133 secs]
+   [Parallel Time: 34.3 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 43424.5, Avg: 43427.1, Max: 43431.2, Diff: 6.8]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.8, Max: 5.4, Diff: 5.4, Sum: 8.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.7, Diff: 0.7, Sum: 2.1]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 3, Diff: 3, Sum: 11]
+      [Scan RS (ms): Min: 0.1, Avg: 1.9, Max: 17.2, Diff: 17.1, Sum: 18.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 5.8, Max: 17.0, Diff: 17.0, Sum: 58.3]
+      [Object Copy (ms): Min: 0.0, Avg: 9.1, Max: 16.5, Diff: 16.5, Sum: 91.0]
+      [Termination (ms): Min: 0.0, Avg: 5.9, Max: 14.2, Diff: 14.2, Sum: 59.5]
+         [Termination Attempts: Min: 1, Avg: 145.3, Max: 258, Diff: 257, Sum: 1453]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.3]
+      [GC Worker Total (ms): Min: 18.0, Avg: 23.8, Max: 34.0, Diff: 16.1, Sum: 238.4]
+      [GC Worker End (ms): Min: 43449.1, Avg: 43450.9, Max: 43458.5, Diff: 9.4]
+   [Code Root Fixup: 0.7 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 6.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 5.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 1160.0M(1160.0M)->0.0B(2044.0M) Survivors: 28672.0K->26624.0K Heap: 1198.5M(4096.0M)->36342.0K(4096.0M)]
+ [Times: user=0.17 sys=0.01, real=0.04 secs] 
+2020-08-27T20:08:10.573-0700: 60.314: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 757KB slow allocs: 0  refill waste: 12112B alloc: 0.01809    37873KB refills: 3 waste  9.7% gc: 225360B slow: 40B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05033   105347KB refills: 266 waste  0.0% gc: 0B slow: 20008B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05316   111266KB refills: 272 waste  0.1% gc: 288600B slow: 27176B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 749KB slow allocs: 0  refill waste: 11984B alloc: 0.01790    37464KB refills: 4 waste 15.3% gc: 470912B slow: 80B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06474   135515KB refills: 280 waste  0.3% gc: 706576B slow: 31792B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06756   141404KB refills: 330 waste  0.0% gc: 36872B slow: 30744B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06292   131685KB refills: 255 waste  0.1% gc: 315592B slow: 25240B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 759KB slow allocs: 0  refill waste: 12152B alloc: 0.01815    37999KB refills: 4 waste  6.1% gc: 190384B slow: 80B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 748KB slow allocs: 0  refill waste: 11976B alloc: 0.01789    37442KB refills: 3 waste 32.6% gc: 750056B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 749KB slow allocs: 0  refill waste: 11984B alloc: 0.01790    37457KB refills: 1 waste 24.4% gc: 187144B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 748KB slow allocs: 0  refill waste: 11976B alloc: 0.01789    37435KB refills: 2 waste 12.3% gc: 188704B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 749KB slow allocs: 0  refill waste: 11984B alloc: 0.01789    37451KB refills: 1 waste 24.4% gc: 186888B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 749KB slow allocs: 0  refill waste: 11992B alloc: 0.01791    37494KB refills: 1 waste 24.5% gc: 188136B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 758KB slow allocs: 0  refill waste: 12136B alloc: 0.01812    37931KB refills: 4 waste 13.0% gc: 404928B slow: 88B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05807   121553KB refills: 1 waste 91.9% gc: 963240B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.10678   223498KB refills: 289 waste  0.3% gc: 1022512B slow: 27840B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05808   121559KB refills: 1 waste 92.0% gc: 965168B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.30064   629264KB refills: 979 waste  0.2% gc: 20648B slow: 1609736B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05178   108385KB refills: 1 waste 99.8% gc: 1046016B slow: 0B fast: 0B
+TLAB totals: thrds: 19  refills: 2697 max: 979 slow allocs: 0 max 0 waste:  0.4% gc: 8157736B max: 1046016B slow: 1772872B max: 1609736B fast: 0B max: 0B
+
+Desired survivor size 136314880 bytes, new threshold 15 (max 15)
+- age   1:     109992 bytes,     109992 total
+- age   2:    2883904 bytes,    2993896 total
+- age   3:    6606488 bytes,    9600384 total
+- age   4:    3781856 bytes,   13382240 total
+- age   5:    4961160 bytes,   18343400 total
+, 0.0341914 secs]
+   [Parallel Time: 29.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 60314.5, Avg: 60314.7, Max: 60314.9, Diff: 0.5]
+      [Ext Root Scanning (ms): Min: 0.7, Avg: 1.8, Max: 10.6, Diff: 10.0, Sum: 18.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.5, Max: 0.6, Diff: 0.6, Sum: 4.9]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 2, Diff: 2, Sum: 11]
+      [Scan RS (ms): Min: 0.2, Avg: 0.5, Max: 0.7, Diff: 0.5, Sum: 5.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 5.0, Max: 15.7, Diff: 15.7, Sum: 49.8]
+      [Object Copy (ms): Min: 10.7, Avg: 20.7, Max: 26.5, Diff: 15.8, Sum: 206.9]
+      [Termination (ms): Min: 0.0, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 3.2]
+         [Termination Attempts: Min: 1, Avg: 323.6, Max: 396, Diff: 395, Sum: 3236]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.1]
+      [GC Worker Total (ms): Min: 28.7, Avg: 28.9, Max: 29.2, Diff: 0.5, Sum: 289.5]
+      [GC Worker End (ms): Min: 60343.6, Avg: 60343.7, Max: 60343.7, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 3.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.8 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2044.0M(2044.0M)->0.0B(2434.0M) Survivors: 26624.0K->22528.0K Heap: 2079.5M(4096.0M)->33270.0K(4096.0M)]
+ [Times: user=0.27 sys=0.00, real=0.03 secs] 
+2020-08-27T20:08:30.448-0700: 80.189: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 595KB slow allocs: 0  refill waste: 9520B alloc: 0.01194    29755KB refills: 8 waste 11.4% gc: 557448B slow: 240B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06302   157082KB refills: 316 waste  0.2% gc: 616992B slow: 37176B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06529   162719KB refills: 91 waste  0.9% gc: 899032B slow: 7400B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 595KB slow allocs: 0  refill waste: 9520B alloc: 0.01194    29771KB refills: 1 waste 46.4% gc: 282952B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07486   186582KB refills: 377 waste  0.2% gc: 951712B slow: 31072B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03221    80273KB refills: 206 waste  0.1% gc: 256152B slow: 19288B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08112   202173KB refills: 386 waste  0.0% gc: 0B slow: 37768B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07100   176964KB refills: 327 waste  0.2% gc: 583384B slow: 32952B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 599KB slow allocs: 0  refill waste: 9584B alloc: 0.01202    29952KB refills: 6 waste  9.0% gc: 330824B slow: 224B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 586KB slow allocs: 0  refill waste: 9384B alloc: 0.01177    29341KB refills: 2 waste 42.6% gc: 511752B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 582KB slow allocs: 0  refill waste: 9312B alloc: 0.01169    29125KB refills: 3 waste 28.2% gc: 505232B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 582KB slow allocs: 0  refill waste: 9312B alloc: 0.01168    29110KB refills: 8 waste 10.8% gc: 514568B slow: 216B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 582KB slow allocs: 0  refill waste: 9312B alloc: 0.01168    29122KB refills: 2 waste 42.2% gc: 503104B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 583KB slow allocs: 0  refill waste: 9328B alloc: 0.01170    29151KB refills: 4 waste 21.3% gc: 507984B slow: 72B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 598KB slow allocs: 0  refill waste: 9576B alloc: 0.01201    29937KB refills: 5 waste 18.8% gc: 576432B slow: 88B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03776    94103KB refills: 2 waste 45.4% gc: 952096B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.10215   254602KB refills: 317 waste  0.1% gc: 233008B slow: 38400B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03776    94107KB refills: 1 waste 90.7% gc: 950952B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.34822   867908KB refills: 1174 waste  0.2% gc: 871536B slow: 2019464B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03366    83894KB refills: 1 waste  0.1% gc: 1560B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3237 max: 1174 slow allocs: 0 max 0 waste:  0.4% gc: 10606720B max: 952096B slow: 2224472B max: 2019464B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      79384 bytes,      79384 total
+- age   2:      53672 bytes,     133056 total
+- age   3:    2883840 bytes,    3016896 total
+- age   4:    6606488 bytes,    9623384 total
+- age   5:    3781856 bytes,   13405240 total
+- age   6:    4961040 bytes,   18366280 total
+, 0.0118250 secs]
+   [Parallel Time: 9.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 80188.8, Avg: 80188.8, Max: 80188.9, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.2, Diff: 3.0, Sum: 5.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 3, Diff: 3, Sum: 13]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.3, Max: 2.6, Diff: 2.6, Sum: 12.5]
+      [Object Copy (ms): Min: 5.8, Avg: 6.9, Max: 8.3, Diff: 2.5, Sum: 68.9]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 341.9, Max: 413, Diff: 412, Sum: 3419]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.8]
+      [GC Worker Total (ms): Min: 9.2, Avg: 9.3, Max: 9.4, Diff: 0.3, Sum: 93.1]
+      [GC Worker End (ms): Min: 80198.0, Avg: 80198.2, Max: 80198.3, Diff: 0.3]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2432.0M) Survivors: 22528.0K->24576.0K Heap: 2466.5M(4096.0M)->34294.0K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-27T20:08:50.491-0700: 100.231: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 414KB slow allocs: 0  refill waste: 6624B alloc: 0.00831    20706KB refills: 11 waste  5.8% gc: 270920B slow: 480B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07203   179382KB refills: 311 waste  0.3% gc: 892528B slow: 23808B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03932    97915KB refills: 243 waste  0.0% gc: 0B slow: 32704B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 388KB slow allocs: 0  refill waste: 6216B alloc: 0.00780    19436KB refills: 6 waste 16.3% gc: 388616B slow: 152B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08330   207453KB refills: 271 waste  0.1% gc: 303992B slow: 30528B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04103   102174KB refills: 333 waste  0.3% gc: 955464B slow: 35712B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08978   223578KB refills: 338 waste  0.0% gc: 50648B slow: 44024B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07799   194215KB refills: 345 waste  0.1% gc: 453568B slow: 41912B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 401KB slow allocs: 0  refill waste: 6416B alloc: 0.00806    20074KB refills: 6 waste  6.9% gc: 170296B slow: 248B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 385KB slow allocs: 0  refill waste: 6160B alloc: 0.00774    19267KB refills: 2 waste 12.5% gc: 98584B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 386KB slow allocs: 0  refill waste: 6176B alloc: 0.00776    19318KB refills: 3 waste  8.7% gc: 103000B slow: 56B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 386KB slow allocs: 0  refill waste: 6176B alloc: 0.00775    19311KB refills: 3 waste 30.1% gc: 356592B slow: 48B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 386KB slow allocs: 0  refill waste: 6176B alloc: 0.00776    19316KB refills: 5 waste  5.4% gc: 106648B slow: 80B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 386KB slow allocs: 0  refill waste: 6184B alloc: 0.00776    19336KB refills: 2 waste 12.8% gc: 101376B slow: 72B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 402KB slow allocs: 0  refill waste: 6440B alloc: 0.00809    20139KB refills: 6 waste 14.6% gc: 361024B slow: 128B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.02455    61146KB refills: 2 waste 45.4% gc: 952096B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09696   241470KB refills: 150 waste  0.0% gc: 39160B slow: 14952B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.02455    61148KB refills: 1 waste 90.6% gc: 950136B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.37930   944589KB refills: 1175 waste  0.2% gc: 788896B slow: 2012864B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.02188    54487KB refills: 1 waste  0.1% gc: 1496B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3214 max: 1175 slow allocs: 0 max 0 waste:  0.3% gc: 7345040B max: 955464B slow: 2237832B max: 2012864B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      77168 bytes,      77168 total
+- age   2:       9584 bytes,      86752 total
+- age   3:      53640 bytes,     140392 total
+- age   4:    2883808 bytes,    3024200 total
+- age   5:    6606488 bytes,    9630688 total
+- age   6:    3781856 bytes,   13412544 total
+- age   7:    4961040 bytes,   18373584 total
+, 0.0120902 secs]
+   [Parallel Time: 9.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 100231.0, Avg: 100231.0, Max: 100231.1, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.1, Diff: 3.0, Sum: 4.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.1]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 3, Diff: 3, Sum: 13]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.2, Max: 2.7, Diff: 2.7, Sum: 11.9]
+      [Object Copy (ms): Min: 5.6, Avg: 6.8, Max: 8.2, Diff: 2.6, Sum: 67.7]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+         [Termination Attempts: Min: 1, Avg: 307.2, Max: 376, Diff: 375, Sum: 3072]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.9]
+      [GC Worker Total (ms): Min: 8.8, Avg: 8.9, Max: 9.0, Diff: 0.2, Sum: 89.1]
+      [GC Worker End (ms): Min: 100239.9, Avg: 100239.9, Max: 100240.0, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.0 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2432.0M) Survivors: 24576.0K->24576.0K Heap: 2465.5M(4096.0M)->35318.0K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-27T20:09:10.511-0700: 120.251: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 286KB slow allocs: 0  refill waste: 4584B alloc: 0.00576    14349KB refills: 11 waste  3.7% gc: 119672B slow: 544B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07691   191547KB refills: 321 waste  0.1% gc: 212008B slow: 31112B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05099   126974KB refills: 97 waste  0.7% gc: 658136B slow: 8360B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05060   126012KB refills: 253 waste  0.3% gc: 664376B slow: 31848B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 263KB slow allocs: 0  refill waste: 4208B alloc: 0.00528    13155KB refills: 5 waste 14.2% gc: 191704B slow: 200B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07997   199154KB refills: 326 waste  0.3% gc: 985976B slow: 31176B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05936   147833KB refills: 357 waste  0.0% gc: 126624B slow: 48848B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09140   227608KB refills: 297 waste  0.3% gc: 974608B slow: 27944B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08349   207931KB refills: 359 waste  0.2% gc: 592192B slow: 42256B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 271KB slow allocs: 0  refill waste: 4336B alloc: 0.00545    13568KB refills: 20 waste  4.5% gc: 247520B slow: 1280B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 253KB slow allocs: 0  refill waste: 4056B alloc: 0.00510    12689KB refills: 14 waste  3.1% gc: 110976B slow: 408B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 254KB slow allocs: 0  refill waste: 4064B alloc: 0.00511    12724KB refills: 3 waste 11.7% gc: 91080B slow: 80B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 256KB slow allocs: 0  refill waste: 4096B alloc: 0.00514    12803KB refills: 6 waste  6.5% gc: 101992B slow: 160B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 254KB slow allocs: 0  refill waste: 4064B alloc: 0.00511    12724KB refills: 6 waste  6.2% gc: 97136B slow: 120B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 254KB slow allocs: 0  refill waste: 4072B alloc: 0.00511    12734KB refills: 5 waste  7.3% gc: 95704B slow: 112B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 273KB slow allocs: 0  refill waste: 4368B alloc: 0.00549    13667KB refills: 9 waste 10.3% gc: 259864B slow: 216B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 795KB slow allocs: 0  refill waste: 12728B alloc: 0.01597    39778KB refills: 1 waste 87.9% gc: 716216B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 795KB slow allocs: 0  refill waste: 12728B alloc: 0.01597    39780KB refills: 1 waste 87.9% gc: 716432B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.39963   995222KB refills: 1167 waste  0.2% gc: 0B slow: 1935008B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 708KB slow allocs: 0  refill waste: 11328B alloc: 0.01422    35416KB refills: 1 waste  0.2% gc: 1400B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3259 max: 1167 slow allocs: 0 max 0 waste:  0.3% gc: 6963616B max: 985976B slow: 2159672B max: 1935008B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      69744 bytes,      69744 total
+- age   2:        600 bytes,      70344 total
+- age   3:       9584 bytes,      79928 total
+- age   4:      53608 bytes,     133536 total
+- age   5:    2883808 bytes,    3017344 total
+- age   6:    6606488 bytes,    9623832 total
+- age   7:    3781856 bytes,   13405688 total
+- age   8:    4961040 bytes,   18366728 total
+, 0.0116395 secs]
+   [Parallel Time: 8.9 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 120251.3, Avg: 120251.3, Max: 120251.4, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.1, Diff: 2.9, Sum: 4.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.0, Max: 2, Diff: 2, Sum: 10]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.2]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.3, Max: 2.5, Diff: 2.5, Sum: 12.7]
+      [Object Copy (ms): Min: 5.5, Avg: 6.5, Max: 8.0, Diff: 2.5, Sum: 64.7]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.9]
+         [Termination Attempts: Min: 1, Avg: 187.0, Max: 230, Diff: 229, Sum: 1870]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.7]
+      [GC Worker Total (ms): Min: 8.6, Avg: 8.6, Max: 8.7, Diff: 0.1, Sum: 86.2]
+      [GC Worker End (ms): Min: 120259.9, Avg: 120260.0, Max: 120260.0, Diff: 0.1]
+   [Code Root Fixup: 0.3 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.6 ms]
+   [Other: 1.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2434.0M) Survivors: 24576.0K->22528.0K Heap: 2466.5M(4096.0M)->33270.0K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-27T20:09:30.510-0700: 140.250: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 199KB slow allocs: 0  refill waste: 3192B alloc: 0.00401     9993KB refills: 23 waste  0.2% gc: 10192B slow: 1240B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08101   201920KB refills: 339 waste  0.0% gc: 0B slow: 33728B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04269   106403KB refills: 339 waste  0.1% gc: 383336B slow: 31576B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 174KB slow allocs: 0  refill waste: 2792B alloc: 0.00351     8747KB refills: 1 waste  1.1% gc: 1992B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08422   209921KB refills: 310 waste  0.3% gc: 795360B slow: 30032B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07254   180806KB refills: 45 waste  0.1% gc: 64352B slow: 2096B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08920   222326KB refills: 359 waste  0.2% gc: 629424B slow: 31784B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08673   216161KB refills: 321 waste  0.2% gc: 752664B slow: 25680B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 197KB slow allocs: 0  refill waste: 3152B alloc: 0.00396     9865KB refills: 25 waste  2.5% gc: 123560B slow: 952B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 170KB slow allocs: 0  refill waste: 2728B alloc: 0.00343     8541KB refills: 4 waste  1.3% gc: 8680B slow: 112B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 171KB slow allocs: 0  refill waste: 2736B alloc: 0.00343     8556KB refills: 7 waste  1.3% gc: 15472B slow: 192B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 170KB slow allocs: 0  refill waste: 2720B alloc: 0.00342     8524KB refills: 9 waste  1.1% gc: 16976B slow: 256B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 171KB slow allocs: 0  refill waste: 2736B alloc: 0.00343     8557KB refills: 4 waste  1.4% gc: 9616B slow: 112B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 171KB slow allocs: 0  refill waste: 2736B alloc: 0.00344     8565KB refills: 4 waste  1.5% gc: 10200B slow: 96B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 189KB slow allocs: 0  refill waste: 3032B alloc: 0.00381     9485KB refills: 19 waste  1.7% gc: 63088B slow: 480B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 518KB slow allocs: 0  refill waste: 8288B alloc: 0.01040    25910KB refills: 1 waste 81.4% gc: 432200B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07751   193175KB refills: 301 waste  0.3% gc: 1034624B slow: 28560B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 518KB slow allocs: 0  refill waste: 8288B alloc: 0.01040    25912KB refills: 1 waste 81.5% gc: 432448B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.41291  1029136KB refills: 1178 waste  0.2% gc: 1019216B slow: 1892784B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 460KB slow allocs: 0  refill waste: 7368B alloc: 0.00924    23040KB refills: 1 waste 100.0% gc: 471696B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3291 max: 1178 slow allocs: 0 max 0 waste:  0.2% gc: 6275096B max: 1034624B slow: 2079680B max: 1892784B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      71200 bytes,      71200 total
+- age   2:        824 bytes,      72024 total
+- age   3:        568 bytes,      72592 total
+- age   4:       9552 bytes,      82144 total
+- age   5:      53608 bytes,     135752 total
+- age   6:    2883776 bytes,    3019528 total
+- age   7:    6606488 bytes,    9626016 total
+- age   8:    3781856 bytes,   13407872 total
+- age   9:    4961040 bytes,   18368912 total
+, 0.0142777 secs]
+   [Parallel Time: 11.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 140250.7, Avg: 140250.7, Max: 140250.8, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.8, Max: 5.2, Diff: 5.0, Sum: 8.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 2.0]
+         [Processed Buffers: Min: 0, Avg: 0.9, Max: 2, Diff: 2, Sum: 9]
+      [Scan RS (ms): Min: 0.1, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 2.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.8, Max: 3.6, Diff: 3.6, Sum: 18.1]
+      [Object Copy (ms): Min: 5.8, Avg: 7.8, Max: 10.0, Diff: 4.2, Sum: 77.6]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 326.5, Max: 396, Diff: 395, Sum: 3265]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+      [GC Worker Total (ms): Min: 11.1, Avg: 11.2, Max: 11.3, Diff: 0.2, Sum: 111.8]
+      [GC Worker End (ms): Min: 140261.8, Avg: 140261.9, Max: 140262.0, Diff: 0.2]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 2.0 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.0 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2430.0M) Survivors: 22528.0K->26624.0K Heap: 2466.5M(4096.0M)->36342.0K(4096.0M)]
+ [Times: user=0.11 sys=0.01, real=0.02 secs] 
+2020-08-27T20:09:50.507-0700: 160.248: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 147KB slow allocs: 0  refill waste: 2360B alloc: 0.00297     7389KB refills: 40 waste  1.7% gc: 99760B slow: 1784B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08416   209410KB refills: 314 waste  0.0% gc: 312B slow: 30152B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06129   152509KB refills: 334 waste  0.0% gc: 0B slow: 46560B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 114KB slow allocs: 0  refill waste: 1824B alloc: 0.00229     5703KB refills: 15 waste  5.4% gc: 94584B slow: 608B fast: 0B
+TLAB: gc thread: 0x00007fc4ec3b8320 [id: 7190] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08457   210432KB refills: 286 waste  0.2% gc: 543376B slow: 35856B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05125   127534KB refills: 30 waste  2.6% gc: 820928B slow: 984B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09192   228721KB refills: 337 waste  0.1% gc: 429104B slow: 42144B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08818   219418KB refills: 324 waste  0.2% gc: 557824B slow: 28736B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 146KB slow allocs: 0  refill waste: 2336B alloc: 0.00294     7316KB refills: 9 waste  0.6% gc: 7272B slow: 280B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 115KB slow allocs: 0  refill waste: 1840B alloc: 0.00232     5773KB refills: 9 waste  2.3% gc: 24592B slow: 232B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 115KB slow allocs: 0  refill waste: 1848B alloc: 0.00233     5791KB refills: 15 waste  2.2% gc: 38856B slow: 448B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 115KB slow allocs: 0  refill waste: 1840B alloc: 0.00232     5768KB refills: 8 waste  2.3% gc: 21728B slow: 272B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 115KB slow allocs: 0  refill waste: 1848B alloc: 0.00233     5788KB refills: 8 waste  2.6% gc: 24200B slow: 224B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 115KB slow allocs: 0  refill waste: 1848B alloc: 0.00233     5794KB refills: 14 waste  2.3% gc: 37360B slow: 384B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 133KB slow allocs: 0  refill waste: 2136B alloc: 0.00269     6699KB refills: 23 waste  3.2% gc: 99320B slow: 584B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 336KB slow allocs: 0  refill waste: 5384B alloc: 0.00677    16848KB refills: 1 waste 71.5% gc: 246592B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07991   198832KB refills: 358 waste  0.1% gc: 174592B slow: 26456B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 336KB slow allocs: 0  refill waste: 5384B alloc: 0.00677    16848KB refills: 1 waste 71.5% gc: 246832B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.42155  1048944KB refills: 1164 waste  0.2% gc: 48288B slow: 1927408B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 299KB slow allocs: 0  refill waste: 4784B alloc: 0.00601    14952KB refills: 1 waste  0.4% gc: 1080B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3291 max: 1164 slow allocs: 0 max 0 waste:  0.2% gc: 3516600B max: 820928B slow: 2143112B max: 1927408B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      74296 bytes,      74296 total
+- age   2:        776 bytes,      75072 total
+- age   3:        760 bytes,      75832 total
+- age   4:        568 bytes,      76400 total
+- age   5:       9552 bytes,      85952 total
+- age   6:      53608 bytes,     139560 total
+- age   7:    2883776 bytes,    3023336 total
+- age   8:    6606488 bytes,    9629824 total
+- age   9:    3781856 bytes,   13411680 total
+- age  10:    4961040 bytes,   18372720 total
+, 0.0153243 secs]
+   [Parallel Time: 12.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 160247.8, Avg: 160247.9, Max: 160247.9, Diff: 0.2]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 1.0, Max: 7.8, Diff: 7.7, Sum: 10.4]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Processed Buffers: Min: 0, Avg: 1.1, Max: 3, Diff: 3, Sum: 11]
+      [Scan RS (ms): Min: 0.2, Avg: 0.4, Max: 0.6, Diff: 0.4, Sum: 3.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 2.8, Max: 9.0, Diff: 9.0, Sum: 27.5]
+      [Object Copy (ms): Min: 2.0, Avg: 7.4, Max: 11.1, Diff: 9.1, Sum: 73.6]
+      [Termination (ms): Min: 0.0, Avg: 0.3, Max: 2.2, Diff: 2.2, Sum: 3.5]
+         [Termination Attempts: Min: 1, Avg: 297.1, Max: 398, Diff: 397, Sum: 2971]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.3, Diff: 0.3, Sum: 1.1]
+      [GC Worker Total (ms): Min: 12.1, Avg: 12.2, Max: 12.3, Diff: 0.3, Sum: 121.6]
+      [GC Worker End (ms): Min: 160259.9, Avg: 160260.0, Max: 160260.1, Diff: 0.2]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 2.0 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2430.0M(2430.0M)->0.0B(2432.0M) Survivors: 26624.0K->24576.0K Heap: 2465.5M(4096.0M)->34294.0K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.01 secs] 
+2020-08-27T20:10:10.519-0700: 180.260: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 120KB slow allocs: 0  refill waste: 1920B alloc: 0.00242     6024KB refills: 44 waste  1.2% gc: 62336B slow: 1664B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08652   215463KB refills: 345 waste  0.1% gc: 453984B slow: 40912B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07273   181115KB refills: 301 waste  0.2% gc: 527888B slow: 35096B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 81KB slow allocs: 0  refill waste: 1296B alloc: 0.00164     4073KB refills: 1 waste 92.5% gc: 77128B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03618    90112KB refills: 339 waste  0.1% gc: 338528B slow: 26696B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09213   229433KB refills: 333 waste  0.0% gc: 0B slow: 32080B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08995   224009KB refills: 335 waste  0.1% gc: 243304B slow: 31016B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 100KB slow allocs: 0  refill waste: 1608B alloc: 0.00203     5045KB refills: 35 waste  2.0% gc: 70840B slow: 1352B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 80KB slow allocs: 0  refill waste: 1280B alloc: 0.00161     4016KB refills: 15 waste  5.0% gc: 61488B slow: 408B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 80KB slow allocs: 0  refill waste: 1288B alloc: 0.00162     4031KB refills: 10 waste  6.6% gc: 53920B slow: 224B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 80KB slow allocs: 0  refill waste: 1280B alloc: 0.00161     4010KB refills: 17 waste  4.6% gc: 63800B slow: 504B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 80KB slow allocs: 0  refill waste: 1288B alloc: 0.00162     4026KB refills: 15 waste  5.1% gc: 63128B slow: 400B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 80KB slow allocs: 0  refill waste: 1288B alloc: 0.00162     4034KB refills: 19 waste  4.6% gc: 72480B slow: 464B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 99KB slow allocs: 0  refill waste: 1584B alloc: 0.00200     4973KB refills: 26 waste  1.7% gc: 44968B slow: 672B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 219KB slow allocs: 0  refill waste: 3512B alloc: 0.00441    10994KB refills: 1 waste 56.3% gc: 126704B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08624   214774KB refills: 339 waste  0.1% gc: 464744B slow: 30656B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 219KB slow allocs: 0  refill waste: 3512B alloc: 0.00441    10994KB refills: 1 waste 56.4% gc: 126888B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.42718  1063830KB refills: 1162 waste  0.2% gc: 328688B slow: 1928720B fast: 0B
+TLAB totals: thrds: 18  refills: 3338 max: 1162 slow allocs: 0 max 0 waste:  0.2% gc: 3180816B max: 527888B slow: 2130864B max: 1928720B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      69800 bytes,      69800 total
+- age   2:        808 bytes,      70608 total
+- age   3:        712 bytes,      71320 total
+- age   4:        760 bytes,      72080 total
+- age   5:        568 bytes,      72648 total
+- age   6:       9552 bytes,      82200 total
+- age   7:      53608 bytes,     135808 total
+- age   8:    2883776 bytes,    3019584 total
+- age   9:    6606488 bytes,    9626072 total
+- age  10:    3781856 bytes,   13407928 total
+- age  11:    4961040 bytes,   18368968 total
+, 0.0146684 secs]
+   [Parallel Time: 12.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 180259.7, Avg: 180259.7, Max: 180259.8, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.6, Max: 4.0, Diff: 3.8, Sum: 6.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 4, Diff: 4, Sum: 15]
+      [Scan RS (ms): Min: 0.2, Avg: 0.2, Max: 0.4, Diff: 0.2, Sum: 2.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 2.4, Max: 11.0, Diff: 11.0, Sum: 24.3]
+      [Object Copy (ms): Min: 0.0, Avg: 6.9, Max: 9.5, Diff: 9.5, Sum: 69.3]
+      [Termination (ms): Min: 0.0, Avg: 1.6, Max: 1.9, Diff: 1.9, Sum: 15.9]
+         [Termination Attempts: Min: 1, Avg: 245.3, Max: 334, Diff: 333, Sum: 2453]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [GC Worker Total (ms): Min: 11.9, Avg: 12.0, Max: 12.0, Diff: 0.1, Sum: 119.7]
+      [GC Worker End (ms): Min: 180271.6, Avg: 180271.7, Max: 180271.7, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2434.0M) Survivors: 24576.0K->22528.0K Heap: 2465.5M(4096.0M)->33270.0K(4096.0M)]
+ [Times: user=0.11 sys=0.01, real=0.02 secs] 
+2020-08-27T20:10:30.530-0700: 200.270: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 99KB slow allocs: 0  refill waste: 1584B alloc: 0.00199     4962KB refills: 33 waste  2.0% gc: 65664B slow: 1008B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09140   227815KB refills: 280 waste  0.1% gc: 332144B slow: 30848B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07593   189254KB refills: 349 waste  0.2% gc: 642632B slow: 24672B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05795   144446KB refills: 69 waste  1.2% gc: 866344B slow: 5064B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 53KB slow allocs: 0  refill waste: 848B alloc: 0.00107     2657KB refills: 32 waste  0.4% gc: 6096B slow: 1568B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05558   138520KB refills: 331 waste  0.2% gc: 727504B slow: 26304B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09229   230027KB refills: 326 waste  0.3% gc: 830224B slow: 41904B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09095   226681KB refills: 360 waste  0.3% gc: 1036592B slow: 47840B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 82KB slow allocs: 0  refill waste: 1312B alloc: 0.00165     4116KB refills: 43 waste  2.0% gc: 72152B slow: 2000B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 57KB slow allocs: 0  refill waste: 912B alloc: 0.00115     2874KB refills: 16 waste  2.4% gc: 22608B slow: 408B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 57KB slow allocs: 0  refill waste: 920B alloc: 0.00115     2876KB refills: 22 waste  2.8% gc: 35384B slow: 608B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 57KB slow allocs: 0  refill waste: 912B alloc: 0.00115     2872KB refills: 24 waste  2.8% gc: 38352B slow: 608B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 57KB slow allocs: 0  refill waste: 920B alloc: 0.00116     2881KB refills: 25 waste  2.9% gc: 42408B slow: 760B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 57KB slow allocs: 0  refill waste: 920B alloc: 0.00116     2885KB refills: 18 waste  2.8% gc: 29448B slow: 616B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 76KB slow allocs: 0  refill waste: 1216B alloc: 0.00153     3812KB refills: 42 waste  1.6% gc: 51440B slow: 1184B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 143KB slow allocs: 0  refill waste: 2296B alloc: 0.00288     7185KB refills: 1 waste 33.1% gc: 48712B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08960   223318KB refills: 284 waste  0.1% gc: 154440B slow: 38360B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 143KB slow allocs: 0  refill waste: 2296B alloc: 0.00288     7186KB refills: 1 waste 33.2% gc: 48896B slow: 0B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43092  1074022KB refills: 1159 waste  0.2% gc: 0B slow: 1994888B fast: 0B
+TLAB totals: thrds: 19  refills: 3415 max: 1159 slow allocs: 0 max 0 waste:  0.2% gc: 5051040B max: 1036592B slow: 2218640B max: 1994888B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      74312 bytes,      74312 total
+- age   2:       1048 bytes,      75360 total
+- age   3:        808 bytes,      76168 total
+- age   4:        712 bytes,      76880 total
+- age   5:        760 bytes,      77640 total
+- age   6:        568 bytes,      78208 total
+- age   7:       9552 bytes,      87760 total
+- age   8:      53608 bytes,     141368 total
+- age   9:    2883776 bytes,    3025144 total
+- age  10:    6606488 bytes,    9631632 total
+- age  11:    3781856 bytes,   13413488 total
+- age  12:    4961040 bytes,   18374528 total
+, 0.0118406 secs]
+   [Parallel Time: 9.3 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 200270.2, Avg: 200270.2, Max: 200270.2, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.5, Max: 3.1, Diff: 3.0, Sum: 4.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.4, Max: 4, Diff: 4, Sum: 14]
+      [Scan RS (ms): Min: 0.1, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.5, Max: 3.0, Diff: 3.0, Sum: 14.8]
+      [Object Copy (ms): Min: 5.5, Avg: 6.8, Max: 8.5, Diff: 3.0, Sum: 67.8]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 325.4, Max: 416, Diff: 415, Sum: 3254]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 9.2, Avg: 9.2, Max: 9.2, Diff: 0.1, Sum: 92.0]
+      [GC Worker End (ms): Min: 200279.4, Avg: 200279.4, Max: 200279.4, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2432.0M) Survivors: 22528.0K->24576.0K Heap: 2466.5M(4096.0M)->34294.0K(4096.0M)]
+ [Times: user=0.09 sys=0.00, real=0.01 secs] 
+2020-08-27T20:10:50.591-0700: 220.331: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 77KB slow allocs: 0  refill waste: 1240B alloc: 0.00156     3878KB refills: 46 waste  2.2% gc: 78728B slow: 2192B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08692   216458KB refills: 295 waste  0.2% gc: 521248B slow: 24464B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08442   210236KB refills: 337 waste  0.0% gc: 0B slow: 39072B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04438   110523KB refills: 191 waste  0.2% gc: 416968B slow: 12072B fast: 0B
+TLAB: gc thread: 0x00007fc4bc023520 [id: 7192] desired_size: 41KB slow allocs: 0  refill waste: 664B alloc: 0.00084     2089KB refills: 75 waste  1.1% gc: 32896B slow: 3144B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06840   170334KB refills: 359 waste  0.3% gc: 951664B slow: 30904B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09170   228375KB refills: 332 waste  0.3% gc: 876880B slow: 40936B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09287   231278KB refills: 307 waste  0.1% gc: 397384B slow: 28800B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 70KB slow allocs: 0  refill waste: 1120B alloc: 0.00141     3500KB refills: 22 waste  2.4% gc: 36048B slow: 1240B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 41KB slow allocs: 0  refill waste: 664B alloc: 0.00084     2098KB refills: 28 waste  1.8% gc: 20776B slow: 736B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 42KB slow allocs: 0  refill waste: 672B alloc: 0.00085     2106KB refills: 26 waste  1.8% gc: 19392B slow: 696B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 42KB slow allocs: 0  refill waste: 672B alloc: 0.00084     2101KB refills: 34 waste  2.4% gc: 33792B slow: 704B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 42KB slow allocs: 0  refill waste: 672B alloc: 0.00085     2108KB refills: 26 waste  1.8% gc: 20000B slow: 704B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 42KB slow allocs: 0  refill waste: 672B alloc: 0.00084     2103KB refills: 36 waste  2.6% gc: 38864B slow: 968B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 61KB slow allocs: 0  refill waste: 976B alloc: 0.00123     3069KB refills: 48 waste  1.2% gc: 34816B slow: 1400B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 94KB slow allocs: 0  refill waste: 1504B alloc: 0.00189     4700KB refills: 3 waste 33.3% gc: 96104B slow: 56B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08561   213213KB refills: 152 waste  0.6% gc: 984696B slow: 11032B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 94KB slow allocs: 0  refill waste: 1504B alloc: 0.00189     4700KB refills: 2 waste 48.8% gc: 94016B slow: 32B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43342  1079367KB refills: 1140 waste  0.2% gc: 810384B slow: 2005704B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 194KB slow allocs: 0  refill waste: 3112B alloc: 0.00391     9727KB refills: 1 waste 99.8% gc: 198864B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3460 max: 1140 slow allocs: 0 max 0 waste:  0.2% gc: 5663520B max: 984696B slow: 2204856B max: 2005704B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      78424 bytes,      78424 total
+- age   2:         32 bytes,      78456 total
+- age   3:       1048 bytes,      79504 total
+- age   4:        808 bytes,      80312 total
+- age   5:        648 bytes,      80960 total
+- age   6:        760 bytes,      81720 total
+- age   7:        568 bytes,      82288 total
+- age   8:       9552 bytes,      91840 total
+- age   9:      53608 bytes,     145448 total
+- age  10:    2883776 bytes,    3029224 total
+- age  11:    6606488 bytes,    9635712 total
+- age  12:    3781856 bytes,   13417568 total
+- age  13:    4961040 bytes,   18378608 total
+, 0.0120021 secs]
+   [Parallel Time: 10.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 220331.3, Avg: 220331.5, Max: 220331.8, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.6, Max: 4.2, Diff: 4.2, Sum: 6.0]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+         [Processed Buffers: Min: 0, Avg: 1.0, Max: 3, Diff: 3, Sum: 10]
+      [Scan RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 2.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.6, Max: 3.2, Diff: 3.2, Sum: 16.2]
+      [Object Copy (ms): Min: 5.5, Avg: 7.0, Max: 9.0, Diff: 3.5, Sum: 69.8]
+      [Termination (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+         [Termination Attempts: Min: 1, Avg: 290.2, Max: 344, Diff: 343, Sum: 2902]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.0]
+      [GC Worker Total (ms): Min: 9.4, Avg: 9.8, Max: 9.9, Diff: 0.6, Sum: 97.7]
+      [GC Worker End (ms): Min: 220341.2, Avg: 220341.2, Max: 220341.3, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.3 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2432.0M(2432.0M)->0.0B(2434.0M) Survivors: 24576.0K->22528.0K Heap: 2465.5M(4096.0M)->33270.0K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-27T20:11:10.614-0700: 240.355: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 66KB slow allocs: 0  refill waste: 1064B alloc: 0.00134     3334KB refills: 30 waste  0.9% gc: 16328B slow: 1288B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08592   214160KB refills: 324 waste  0.0% gc: 105776B slow: 24464B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08843   220414KB refills: 314 waste  0.1% gc: 213944B slow: 25064B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04761   118676KB refills: 12 waste  0.8% gc: 100584B slow: 368B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07913   197229KB refills: 317 waste  0.2% gc: 534384B slow: 26344B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09129   227520KB refills: 320 waste  0.2% gc: 693384B slow: 27888B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09227   229980KB refills: 319 waste  0.1% gc: 305296B slow: 39584B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 52KB slow allocs: 0  refill waste: 832B alloc: 0.00105     2606KB refills: 58 waste  1.6% gc: 46976B slow: 2608B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00064     1606KB refills: 36 waste  2.5% gc: 28816B slow: 984B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00064     1606KB refills: 37 waste  0.1% gc: 400B slow: 928B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00064     1607KB refills: 30 waste  1.8% gc: 17112B slow: 1016B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00064     1606KB refills: 37 waste  0.1% gc: 40B slow: 1064B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00065     1613KB refills: 47 waste  1.6% gc: 23624B slow: 1016B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 51KB slow allocs: 0  refill waste: 824B alloc: 0.00103     2579KB refills: 66 waste  1.5% gc: 51160B slow: 1920B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 62KB slow allocs: 0  refill waste: 1000B alloc: 0.00125     3125KB refills: 3 waste 16.5% gc: 31576B slow: 48B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06995   174353KB refills: 329 waste  0.2% gc: 808360B slow: 40384B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06248   155717KB refills: 2 waste 10.8% gc: 226024B slow: 16B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 62KB slow allocs: 0  refill waste: 992B alloc: 0.00125     3124KB refills: 2 waste 23.2% gc: 29672B slow: 24B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43488  1083906KB refills: 1130 waste  0.2% gc: 0B slow: 1933200B fast: 0B
+TLAB totals: thrds: 19  refills: 3413 max: 1130 slow allocs: 0 max 0 waste:  0.2% gc: 3233456B max: 808360B slow: 2128208B max: 1933200B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      68000 bytes,      68000 total
+- age   2:        216 bytes,      68216 total
+- age   4:       1048 bytes,      69264 total
+- age   5:        808 bytes,      70072 total
+- age   6:        648 bytes,      70720 total
+- age   7:        760 bytes,      71480 total
+- age   8:        568 bytes,      72048 total
+- age   9:       9552 bytes,      81600 total
+- age  10:      53608 bytes,     135208 total
+- age  11:    2883776 bytes,    3018984 total
+- age  12:    6606488 bytes,    9625472 total
+- age  13:    3781856 bytes,   13407328 total
+- age  14:    4961040 bytes,   18368368 total
+, 0.0120185 secs]
+   [Parallel Time: 9.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 240354.6, Avg: 240354.7, Max: 240354.7, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.4, Max: 2.4, Diff: 2.3, Sum: 4.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.2]
+         [Processed Buffers: Min: 0, Avg: 1.3, Max: 3, Diff: 3, Sum: 13]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.5, Max: 2.9, Diff: 2.9, Sum: 14.5]
+      [Object Copy (ms): Min: 5.5, Avg: 6.8, Max: 8.4, Diff: 2.9, Sum: 68.0]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.7]
+         [Termination Attempts: Min: 1, Avg: 362.5, Max: 429, Diff: 428, Sum: 3625]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 0.7]
+      [GC Worker Total (ms): Min: 9.1, Avg: 9.2, Max: 9.3, Diff: 0.2, Sum: 91.8]
+      [GC Worker End (ms): Min: 240363.8, Avg: 240363.9, Max: 240363.9, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.5 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2434.0M) Survivors: 22528.0K->22528.0K Heap: 2466.5M(4096.0M)->33270.0K(4096.0M)]
+ [Times: user=0.10 sys=0.00, real=0.01 secs] 
+2020-08-27T20:11:31.428-0700: 261.168: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 52KB slow allocs: 0  refill waste: 832B alloc: 0.00105     2618KB refills: 75 waste  0.4% gc: 12304B slow: 2496B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08785   218969KB refills: 322 waste  0.0% gc: 92648B slow: 37032B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08898   221763KB refills: 341 waste  0.1% gc: 329032B slow: 39112B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.03218    80209KB refills: 302 waste  0.2% gc: 545592B slow: 46496B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08392   209153KB refills: 324 waste  0.0% gc: 0B slow: 23656B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09195   229172KB refills: 339 waste  0.0% gc: 36576B slow: 43808B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09126   227451KB refills: 331 waste  0.2% gc: 689224B slow: 30912B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00052     1287KB refills: 37 waste  1.7% gc: 15552B slow: 1048B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1278KB refills: 53 waste  1.4% gc: 18776B slow: 1128B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1279KB refills: 44 waste  0.2% gc: 1288B slow: 1352B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1277KB refills: 48 waste  0.8% gc: 8328B slow: 1584B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1283KB refills: 35 waste  1.2% gc: 9952B slow: 1000B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 45KB slow allocs: 0  refill waste: 720B alloc: 0.00091     2269KB refills: 70 waste  1.1% gc: 34304B slow: 1992B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 41KB slow allocs: 0  refill waste: 656B alloc: 0.00082     2054KB refills: 4 waste 14.8% gc: 24808B slow: 80B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.04075   101572KB refills: 6 waste  5.9% gc: 372448B slow: 104B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 41KB slow allocs: 0  refill waste: 656B alloc: 0.00082     2053KB refills: 4 waste 15.5% gc: 26016B slow: 56B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43598  1086651KB refills: 1137 waste  0.2% gc: 475992B slow: 1845448B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 126KB slow allocs: 0  refill waste: 2024B alloc: 0.00254     6327KB refills: 1 waste 99.9% gc: 129392B slow: 0B fast: 0B
+TLAB totals: thrds: 18  refills: 3473 max: 1137 slow allocs: 0 max 0 waste:  0.2% gc: 2822232B max: 689224B slow: 2077304B max: 1845448B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      49280 bytes,      49280 total
+- age   2:        512 bytes,      49792 total
+- age   3:        216 bytes,      50008 total
+- age   5:       1048 bytes,      51056 total
+- age   6:        808 bytes,      51864 total
+- age   7:        648 bytes,      52512 total
+- age   8:        760 bytes,      53272 total
+- age   9:        568 bytes,      53840 total
+- age  10:       9552 bytes,      63392 total
+- age  11:      53608 bytes,     117000 total
+- age  12:    2883776 bytes,    3000776 total
+- age  13:    6606488 bytes,    9607264 total
+- age  14:    3781856 bytes,   13389120 total
+- age  15:    4961040 bytes,   18350160 total
+, 0.0130995 secs]
+   [Parallel Time: 10.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 261168.1, Avg: 261168.2, Max: 261168.2, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.6, Max: 4.0, Diff: 3.9, Sum: 5.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.3]
+         [Processed Buffers: Min: 0, Avg: 1.0, Max: 2, Diff: 2, Sum: 10]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.2, Diff: 0.1, Sum: 1.7]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 1.8, Max: 3.6, Diff: 3.6, Sum: 18.2]
+      [Object Copy (ms): Min: 5.9, Avg: 7.3, Max: 9.4, Diff: 3.6, Sum: 72.7]
+      [Termination (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+         [Termination Attempts: Min: 1, Avg: 319.1, Max: 392, Diff: 391, Sum: 3191]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.7]
+      [GC Worker Total (ms): Min: 10.1, Avg: 10.2, Max: 10.3, Diff: 0.2, Sum: 101.9]
+      [GC Worker End (ms): Min: 261178.3, Avg: 261178.4, Max: 261178.4, Diff: 0.1]
+   [Code Root Fixup: 0.4 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.9 ms]
+   [Eden: 2434.0M(2434.0M)->0.0B(2438.0M) Survivors: 22528.0K->18432.0K Heap: 2466.5M(4096.0M)->32325.0K(4096.0M)]
+ [Times: user=0.11 sys=0.00, real=0.01 secs] 
+2020-08-27T20:11:51.485-0700: 281.225: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 52KB slow allocs: 0  refill waste: 832B alloc: 0.00105     2621KB refills: 76 waste  0.5% gc: 17928B slow: 3088B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08889   221908KB refills: 214 waste  0.3% gc: 722600B slow: 29408B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09161   228700KB refills: 138 waste  0.1% gc: 139920B slow: 15664B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05224   130411KB refills: 300 waste  0.1% gc: 376992B slow: 27424B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08639   215665KB refills: 320 waste  0.2% gc: 502128B slow: 28296B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09246   230836KB refills: 356 waste  0.0% gc: 28512B slow: 43680B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09248   230881KB refills: 318 waste  0.2% gc: 562280B slow: 38472B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 49KB slow allocs: 0  refill waste: 784B alloc: 0.00098     2451KB refills: 17 waste  0.9% gc: 7248B slow: 768B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 21KB slow allocs: 0  refill waste: 336B alloc: 0.00043     1072KB refills: 47 waste  0.2% gc: 424B slow: 1288B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 21KB slow allocs: 0  refill waste: 344B alloc: 0.00043     1077KB refills: 52 waste  1.3% gc: 13872B slow: 1288B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 21KB slow allocs: 0  refill waste: 336B alloc: 0.00043     1066KB refills: 53 waste  0.9% gc: 8600B slow: 1784B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 21KB slow allocs: 0  refill waste: 336B alloc: 0.00043     1073KB refills: 51 waste  0.9% gc: 8592B slow: 1528B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 21KB slow allocs: 0  refill waste: 336B alloc: 0.00043     1070KB refills: 55 waste  1.4% gc: 15296B slow: 1496B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 41KB slow allocs: 0  refill waste: 656B alloc: 0.00082     2058KB refills: 75 waste  0.3% gc: 7480B slow: 2160B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 27KB slow allocs: 0  refill waste: 440B alloc: 0.00055     1378KB refills: 4 waste 12.9% gc: 14424B slow: 104B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07853   196057KB refills: 264 waste  0.3% gc: 777256B slow: 38224B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.02689    67121KB refills: 5 waste 13.4% gc: 701856B slow: 104B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 27KB slow allocs: 0  refill waste: 440B alloc: 0.00055     1378KB refills: 5 waste 11.7% gc: 16392B slow: 72B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43655  1089851KB refills: 1156 waste  0.2% gc: 0B slow: 2122864B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 82KB slow allocs: 0  refill waste: 1312B alloc: 0.00165     4120KB refills: 1 waste  1.8% gc: 1560B slow: 0B fast: 0B
+TLAB totals: thrds: 20  refills: 3507 max: 1156 slow allocs: 0 max 0 waste:  0.2% gc: 3923360B max: 777256B slow: 2357712B max: 2122864B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      69048 bytes,      69048 total
+- age   2:         64 bytes,      69112 total
+- age   3:        416 bytes,      69528 total
+- age   4:        216 bytes,      69744 total
+- age   6:       1048 bytes,      70792 total
+- age   7:        808 bytes,      71600 total
+- age   8:        648 bytes,      72248 total
+- age   9:        760 bytes,      73008 total
+- age  10:        568 bytes,      73576 total
+- age  11:       9552 bytes,      83128 total
+- age  12:      53608 bytes,     136736 total
+- age  13:    2883776 bytes,    3020512 total
+- age  14:    6606488 bytes,    9627000 total
+- age  15:    3781856 bytes,   13408856 total
+, 0.0119299 secs]
+   [Parallel Time: 9.5 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 281225.7, Avg: 281225.8, Max: 281225.8, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.7, Max: 4.3, Diff: 4.2, Sum: 7.2]
+      [Update RS (ms): Min: 0.0, Avg: 0.3, Max: 0.5, Diff: 0.5, Sum: 3.4]
+         [Processed Buffers: Min: 0, Avg: 1.5, Max: 4, Diff: 4, Sum: 15]
+      [Scan RS (ms): Min: 0.3, Avg: 0.5, Max: 0.8, Diff: 0.5, Sum: 5.1]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 2.1, Max: 7.5, Diff: 7.5, Sum: 20.9]
+      [Object Copy (ms): Min: 0.2, Avg: 4.1, Max: 6.3, Diff: 6.1, Sum: 41.3]
+      [Termination (ms): Min: 0.0, Avg: 1.2, Max: 1.6, Diff: 1.6, Sum: 12.0]
+         [Termination Attempts: Min: 1, Avg: 53.2, Max: 78, Diff: 77, Sum: 532]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.2, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 8.9, Avg: 9.0, Max: 9.3, Diff: 0.4, Sum: 90.3]
+      [GC Worker End (ms): Min: 281234.7, Avg: 281234.8, Max: 281235.1, Diff: 0.4]
+   [Code Root Fixup: 0.1 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 1.7 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.4 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.3 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2438.0M(2438.0M)->0.0B(2440.0M) Survivors: 18432.0K->16384.0K Heap: 2469.6M(4096.0M)->37330.5K(4096.0M)]
+ [Times: user=0.08 sys=0.00, real=0.01 secs] 
+2020-08-27T20:12:11.489-0700: 301.229: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 50KB slow allocs: 0  refill waste: 808B alloc: 0.00101     2531KB refills: 52 waste  0.2% gc: 2008B slow: 2328B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07393   184722KB refills: 338 waste  0.2% gc: 779152B slow: 31152B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06560   163904KB refills: 320 waste  0.2% gc: 689200B slow: 30384B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08819   220350KB refills: 273 waste  0.2% gc: 465872B slow: 33584B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09599   239837KB refills: 325 waste  0.3% gc: 975456B slow: 36480B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09240   230863KB refills: 335 waste  0.1% gc: 186760B slow: 45768B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 35KB slow allocs: 0  refill waste: 560B alloc: 0.00071     1770KB refills: 101 waste  0.8% gc: 24272B slow: 4312B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00038      938KB refills: 64 waste  0.4% gc: 2952B slow: 1784B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00038      938KB refills: 55 waste  0.3% gc: 2096B slow: 1440B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00037      935KB refills: 71 waste  1.2% gc: 15104B slow: 1864B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00037      937KB refills: 55 waste  1.9% gc: 18840B slow: 1720B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00037      936KB refills: 55 waste  1.9% gc: 18208B slow: 1744B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 38KB slow allocs: 0  refill waste: 608B alloc: 0.00077     1916KB refills: 68 waste  1.1% gc: 27128B slow: 1872B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00037      931KB refills: 7 waste 13.9% gc: 18144B slow: 392B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07690   192128KB refills: 329 waste  0.2% gc: 496512B slow: 43528B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 892KB slow allocs: 0  refill waste: 14272B alloc: 0.01785    44611KB refills: 5 waste 10.0% gc: 458144B slow: 272B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 18KB slow allocs: 0  refill waste: 296B alloc: 0.00037      932KB refills: 6 waste 14.3% gc: 16232B slow: 152B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43705  1091987KB refills: 1149 waste  0.2% gc: 0B slow: 2048808B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 53KB slow allocs: 0  refill waste: 856B alloc: 0.00107     2680KB refills: 1 waste  2.9% gc: 1592B slow: 0B fast: 0B
+TLAB totals: thrds: 19  refills: 3609 max: 1149 slow allocs: 0 max 0 waste:  0.2% gc: 4197672B max: 975456B slow: 2287584B max: 2048808B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66016 bytes,      66016 total
+- age   2:        216 bytes,      66232 total
+- age   4:        416 bytes,      66648 total
+- age   5:        216 bytes,      66864 total
+- age   7:       1048 bytes,      67912 total
+- age   8:        808 bytes,      68720 total
+- age   9:        648 bytes,      69368 total
+- age  10:        760 bytes,      70128 total
+- age  11:        568 bytes,      70696 total
+- age  12:       9552 bytes,      80248 total
+- age  13:      53608 bytes,     133856 total
+- age  14:    2883776 bytes,    3017632 total
+- age  15:    6606488 bytes,    9624120 total
+, 0.0105702 secs]
+   [Parallel Time: 8.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 301229.0, Avg: 301229.2, Max: 301231.1, Diff: 2.1]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.6, Max: 3.5, Diff: 3.5, Sum: 6.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.7, Max: 0.9, Diff: 0.9, Sum: 6.5]
+         [Processed Buffers: Min: 0, Avg: 2.9, Max: 7, Diff: 7, Sum: 29]
+      [Scan RS (ms): Min: 0.2, Avg: 0.6, Max: 0.8, Diff: 0.7, Sum: 5.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 2.0, Max: 4.9, Diff: 4.9, Sum: 20.2]
+      [Object Copy (ms): Min: 0.3, Avg: 3.1, Max: 5.4, Diff: 5.1, Sum: 30.7]
+      [Termination (ms): Min: 0.0, Avg: 0.5, Max: 0.6, Diff: 0.6, Sum: 4.9]
+         [Termination Attempts: Min: 1, Avg: 12.9, Max: 22, Diff: 21, Sum: 129]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.8]
+      [GC Worker Total (ms): Min: 5.6, Avg: 7.5, Max: 7.8, Diff: 2.2, Sum: 74.9]
+      [GC Worker End (ms): Min: 301236.7, Avg: 301236.7, Max: 301236.8, Diff: 0.2]
+   [Code Root Fixup: 0.2 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.5 ms]
+   [Other: 1.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.5 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.4 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2440.0M(2440.0M)->0.0B(2446.0M) Survivors: 16384.0K->10240.0K Heap: 2476.5M(4096.0M)->40651.0K(4096.0M)]
+ [Times: user=0.07 sys=0.00, real=0.01 secs] 
+2020-08-27T20:12:31.521-0700: 321.261: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 43KB slow allocs: 0  refill waste: 696B alloc: 0.00088     2192KB refills: 42 waste  0.8% gc: 13840B slow: 2096B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08078   202334KB refills: 338 waste  0.0% gc: 90928B slow: 38952B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07673   192177KB refills: 315 waste  0.2% gc: 691512B slow: 29584B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08507   213087KB refills: 250 waste  0.0% gc: 0B slow: 28968B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09369   234674KB refills: 330 waste  0.3% gc: 1022072B slow: 31824B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09408   235645KB refills: 331 waste  0.1% gc: 382536B slow: 35400B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 40KB slow allocs: 0  refill waste: 640B alloc: 0.00080     2001KB refills: 60 waste  1.5% gc: 35344B slow: 2608B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 16KB slow allocs: 0  refill waste: 264B alloc: 0.00034      844KB refills: 69 waste  0.9% gc: 8424B slow: 1944B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 16KB slow allocs: 0  refill waste: 264B alloc: 0.00034      846KB refills: 69 waste  1.0% gc: 10152B slow: 2224B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 16KB slow allocs: 0  refill waste: 264B alloc: 0.00034      850KB refills: 65 waste  0.7% gc: 5672B slow: 1824B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 17KB slow allocs: 0  refill waste: 272B alloc: 0.00034      852KB refills: 53 waste  1.7% gc: 13544B slow: 1800B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 16KB slow allocs: 0  refill waste: 264B alloc: 0.00034      850KB refills: 68 waste  1.1% gc: 11424B slow: 1952B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 36KB slow allocs: 0  refill waste: 584B alloc: 0.00074     1842KB refills: 72 waste  1.4% gc: 37000B slow: 2088B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 12KB slow allocs: 0  refill waste: 200B alloc: 0.00026      645KB refills: 9 waste  8.1% gc: 9344B slow: 272B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08470   212143KB refills: 332 waste  0.1% gc: 297688B slow: 28320B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 590KB slow allocs: 0  refill waste: 9440B alloc: 0.01178    29501KB refills: 7 waste  0.6% gc: 26832B slow: 216B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 12KB slow allocs: 0  refill waste: 200B alloc: 0.00026      644KB refills: 11 waste  1.6% gc: 2024B slow: 304B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43729  1095271KB refills: 1159 waste  0.2% gc: 806344B slow: 1991992B fast: 0B
+TLAB totals: thrds: 18  refills: 3580 max: 1159 slow allocs: 0 max 0 waste:  0.2% gc: 3464680B max: 1022072B slow: 2202368B max: 1991992B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      63808 bytes,      63808 total
+- age   2:        552 bytes,      64360 total
+- age   3:        216 bytes,      64576 total
+- age   5:        416 bytes,      64992 total
+- age   6:        216 bytes,      65208 total
+- age   8:       1048 bytes,      66256 total
+- age   9:        808 bytes,      67064 total
+- age  10:        648 bytes,      67712 total
+- age  11:        760 bytes,      68472 total
+- age  12:        568 bytes,      69040 total
+- age  13:       9552 bytes,      78592 total
+- age  14:      53608 bytes,     132200 total
+- age  15:    2883776 bytes,    3015976 total
+, 0.0041563 secs]
+   [Parallel Time: 3.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 321261.5, Avg: 321261.6, Max: 321261.6, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.3, Max: 1.4, Diff: 1.2, Sum: 3.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.5, Max: 0.7, Diff: 0.7, Sum: 5.4]
+         [Processed Buffers: Min: 0, Avg: 3.4, Max: 7, Diff: 7, Sum: 34]
+      [Scan RS (ms): Min: 0.1, Avg: 0.2, Max: 0.4, Diff: 0.3, Sum: 2.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.7, Max: 1.6, Diff: 1.6, Sum: 7.0]
+      [Object Copy (ms): Min: 0.0, Avg: 0.5, Max: 1.0, Diff: 0.9, Sum: 4.9]
+      [Termination (ms): Min: 0.0, Avg: 0.5, Max: 0.8, Diff: 0.8, Sum: 4.9]
+         [Termination Attempts: Min: 1, Avg: 1.2, Max: 2, Diff: 1, Sum: 12]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 2.7, Avg: 2.8, Max: 2.9, Diff: 0.2, Sum: 28.1]
+      [GC Worker End (ms): Min: 321264.3, Avg: 321264.4, Max: 321264.5, Diff: 0.2]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 0.9 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.4 ms]
+   [Eden: 2446.0M(2446.0M)->0.0B(2452.0M) Survivors: 10240.0K->4096.0K Heap: 2485.7M(4096.0M)->41389.4K(4096.0M)]
+ [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-08-27T20:12:51.573-0700: 341.313: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 37KB slow allocs: 0  refill waste: 592B alloc: 0.00074     1870KB refills: 122 waste  0.2% gc: 5664B slow: 5208B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08004   200972KB refills: 4 waste 20.8% gc: 873408B slow: 104B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08658   217399KB refills: 311 waste  0.0% gc: 0B slow: 29672B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08151   204668KB refills: 273 waste  0.3% gc: 745272B slow: 26968B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08191   205669KB refills: 321 waste  0.2% gc: 670232B slow: 57864B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09552   239842KB refills: 336 waste  0.2% gc: 630112B slow: 41696B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09540   239546KB refills: 337 waste  0.1% gc: 250864B slow: 46216B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 38KB slow allocs: 0  refill waste: 608B alloc: 0.00076     1909KB refills: 6 waste 10.9% gc: 25392B slow: 144B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 15KB slow allocs: 0  refill waste: 248B alloc: 0.00031      791KB refills: 74 waste  0.7% gc: 6632B slow: 1472B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 15KB slow allocs: 0  refill waste: 248B alloc: 0.00032      793KB refills: 66 waste  0.7% gc: 5280B slow: 1752B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 15KB slow allocs: 0  refill waste: 248B alloc: 0.00031      789KB refills: 56 waste  1.4% gc: 10920B slow: 1608B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 15KB slow allocs: 0  refill waste: 248B alloc: 0.00032      793KB refills: 58 waste  0.5% gc: 3416B slow: 1632B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 15KB slow allocs: 0  refill waste: 248B alloc: 0.00031      790KB refills: 74 waste  0.6% gc: 4856B slow: 2552B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 35KB slow allocs: 0  refill waste: 568B alloc: 0.00071     1792KB refills: 78 waste  1.3% gc: 34648B slow: 2096B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 9KB slow allocs: 8  refill waste: 144B alloc: 0.00018      453KB refills: 12 waste  0.9% gc: 488B slow: 472B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08833   221781KB refills: 314 waste  0.2% gc: 713000B slow: 34320B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 400KB slow allocs: 0  refill waste: 6400B alloc: 0.00797    20002KB refills: 8 waste  1.5% gc: 47928B slow: 352B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 9KB slow allocs: 0  refill waste: 144B alloc: 0.00018      454KB refills: 12 waste  5.4% gc: 5792B slow: 248B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43747  1098411KB refills: 1173 waste  0.2% gc: 383408B slow: 1954224B fast: 0B
+TLAB totals: thrds: 19  refills: 3635 max: 1173 slow allocs: 8 max 8 waste:  0.2% gc: 4417312B max: 873408B slow: 2208600B max: 1954224B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66584 bytes,      66584 total
+- age   2:        488 bytes,      67072 total
+- age   3:        552 bytes,      67624 total
+- age   4:        216 bytes,      67840 total
+- age   6:        416 bytes,      68256 total
+- age   7:        216 bytes,      68472 total
+- age   9:       1048 bytes,      69520 total
+- age  10:        808 bytes,      70328 total
+- age  11:        648 bytes,      70976 total
+- age  12:        760 bytes,      71736 total
+- age  13:        568 bytes,      72304 total
+- age  14:       9552 bytes,      81856 total
+- age  15:      53608 bytes,     135464 total
+, 0.0049036 secs]
+   [Parallel Time: 3.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 341313.0, Avg: 341313.0, Max: 341313.1, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.3, Max: 1.0, Diff: 0.9, Sum: 2.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.9, Max: 2.4, Diff: 2.4, Sum: 8.8]
+         [Processed Buffers: Min: 0, Avg: 3.7, Max: 10, Diff: 10, Sum: 37]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 1.1, Diff: 1.1, Sum: 1.9]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.1, Sum: 0.9]
+      [Termination (ms): Min: 0.0, Avg: 1.1, Max: 1.6, Diff: 1.6, Sum: 11.2]
+         [Termination Attempts: Min: 1, Avg: 4.7, Max: 9, Diff: 8, Sum: 47]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.2]
+      [GC Worker Total (ms): Min: 2.7, Avg: 2.7, Max: 2.8, Diff: 0.2, Sum: 27.4]
+      [GC Worker End (ms): Min: 341315.7, Avg: 341315.8, Max: 341315.8, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2452.0M(2452.0M)->0.0B(2454.0M) Survivors: 4096.0K->2048.0K Heap: 2492.4M(4096.0M)->41259.4K(4096.0M)]
+ [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2020-08-27T20:13:12.469-0700: 362.209: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 44KB slow allocs: 0  refill waste: 704B alloc: 0.00088     2204KB refills: 103 waste  0.9% gc: 36768B slow: 5840B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05231   131455KB refills: 323 waste  0.3% gc: 925208B slow: 40312B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08851   222413KB refills: 231 waste  0.1% gc: 153800B slow: 27424B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08046   202192KB refills: 329 waste  0.2% gc: 551296B slow: 45736B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08656   217526KB refills: 301 waste  0.0% gc: 0B slow: 27648B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09690   243494KB refills: 76 waste  0.1% gc: 31744B slow: 8584B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09539   239702KB refills: 303 waste  0.3% gc: 841984B slow: 29736B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      752KB refills: 76 waste  0.6% gc: 4832B slow: 2128B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      753KB refills: 77 waste  0.8% gc: 7248B slow: 2344B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      754KB refills: 74 waste  0.4% gc: 2768B slow: 1912B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      751KB refills: 73 waste  1.2% gc: 11360B slow: 2072B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      750KB refills: 68 waste  0.3% gc: 608B slow: 2144B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 35KB slow allocs: 0  refill waste: 560B alloc: 0.00070     1753KB refills: 81 waste  1.3% gc: 34616B slow: 2424B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 6KB slow allocs: 2  refill waste: 104B alloc: 0.00013      327KB refills: 18 waste  3.6% gc: 3808B slow: 552B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09031   226928KB refills: 346 waste  0.2% gc: 644928B slow: 36776B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 278KB slow allocs: 0  refill waste: 4448B alloc: 0.00554    13911KB refills: 14 waste  3.5% gc: 138896B slow: 720B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 6KB slow allocs: 0  refill waste: 104B alloc: 0.00013      328KB refills: 21 waste  4.3% gc: 5512B slow: 504B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43743  1099228KB refills: 1132 waste  0.2% gc: 742080B slow: 2094120B fast: 0B
+TLAB totals: thrds: 18  refills: 3646 max: 1132 slow allocs: 2 max 2 waste:  0.2% gc: 4137456B max: 925208B slow: 2330976B max: 2094120B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      68944 bytes,      68944 total
+- age   3:        456 bytes,      69400 total
+- age   4:        520 bytes,      69920 total
+- age   5:        216 bytes,      70136 total
+- age   7:        416 bytes,      70552 total
+- age   8:        216 bytes,      70768 total
+- age  10:       1048 bytes,      71816 total
+- age  11:        808 bytes,      72624 total
+- age  12:        648 bytes,      73272 total
+- age  13:        760 bytes,      74032 total
+- age  14:        568 bytes,      74600 total
+- age  15:       9552 bytes,      84152 total
+, 0.0042362 secs]
+   [Parallel Time: 2.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 362209.2, Avg: 362209.4, Max: 362210.9, Diff: 1.7]
+      [Ext Root Scanning (ms): Min: 0.0, Avg: 0.4, Max: 1.4, Diff: 1.4, Sum: 4.1]
+      [Update RS (ms): Min: 0.0, Avg: 0.3, Max: 0.4, Diff: 0.4, Sum: 2.8]
+         [Processed Buffers: Min: 0, Avg: 2.6, Max: 5, Diff: 5, Sum: 26]
+      [Scan RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.2, Sum: 1.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.9, Diff: 0.9, Sum: 0.9]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 0.9]
+      [Termination (ms): Min: 0.0, Avg: 0.6, Max: 0.9, Diff: 0.9, Sum: 6.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 0.2, Avg: 1.7, Max: 2.0, Diff: 1.9, Sum: 17.2]
+      [GC Worker End (ms): Min: 362211.1, Avg: 362211.2, Max: 362211.3, Diff: 0.2]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.4 ms]
+   [Other: 1.8 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.6 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.3M(4096.0M)->41014.2K(4096.0M)]
+ [Times: user=0.02 sys=0.01, real=0.01 secs] 
+2020-08-27T20:13:32.519-0700: 382.259: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 49KB slow allocs: 0  refill waste: 784B alloc: 0.00098     2473KB refills: 83 waste  0.7% gc: 26288B slow: 3592B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06700   168353KB refills: 266 waste  0.2% gc: 397032B slow: 26696B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08135   204434KB refills: 38 waste  0.0% gc: 0B slow: 3944B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08595   215986KB refills: 310 waste  0.3% gc: 1017184B slow: 44896B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08656   217523KB refills: 306 waste  0.1% gc: 367912B slow: 24864B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07110   178662KB refills: 336 waste  0.2% gc: 568104B slow: 27528B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09271   232971KB refills: 328 waste  0.1% gc: 232984B slow: 29560B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1285KB refills: 73 waste  1.4% gc: 24816B slow: 2536B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      727KB refills: 69 waste  1.1% gc: 8880B slow: 1960B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      728KB refills: 66 waste  0.5% gc: 3400B slow: 1784B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      726KB refills: 67 waste  0.5% gc: 3200B slow: 2000B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      729KB refills: 77 waste  0.2% gc: 784B slow: 2080B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      725KB refills: 72 waste  1.4% gc: 13192B slow: 1824B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 34KB slow allocs: 0  refill waste: 552B alloc: 0.00069     1728KB refills: 76 waste  0.1% gc: 1160B slow: 2136B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 4KB slow allocs: 0  refill waste: 72B alloc: 0.00010      250KB refills: 25 waste  4.2% gc: 4536B slow: 768B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09345   234841KB refills: 350 waste  0.2% gc: 608080B slow: 40072B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 198KB slow allocs: 0  refill waste: 3176B alloc: 0.00396     9949KB refills: 9 waste  4.6% gc: 83432B slow: 448B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 4KB slow allocs: 0  refill waste: 72B alloc: 0.00010      249KB refills: 25 waste  3.9% gc: 4496B slow: 448B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43758  1099599KB refills: 1136 waste  0.2% gc: 593376B slow: 2115688B fast: 0B
+TLAB totals: thrds: 19  refills: 3712 max: 1136 slow allocs: 0 max 0 waste:  0.2% gc: 3958856B max: 1017184B slow: 2332824B max: 2115688B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66856 bytes,      66856 total
+- age   2:        256 bytes,      67112 total
+- age   4:        456 bytes,      67568 total
+- age   5:        488 bytes,      68056 total
+- age   6:        216 bytes,      68272 total
+- age   8:        416 bytes,      68688 total
+- age   9:        216 bytes,      68904 total
+- age  11:       1048 bytes,      69952 total
+- age  12:        808 bytes,      70760 total
+- age  13:        648 bytes,      71408 total
+- age  14:        760 bytes,      72168 total
+- age  15:        568 bytes,      72736 total
+, 0.0030742 secs]
+   [Parallel Time: 1.6 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 382258.9, Avg: 382259.0, Max: 382259.0, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.3, Max: 1.0, Diff: 0.9, Sum: 2.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.4, Diff: 0.4, Sum: 2.0]
+         [Processed Buffers: Min: 0, Avg: 2.6, Max: 5, Diff: 5, Sum: 26]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.8, Diff: 0.8, Sum: 0.8]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.9, Diff: 0.9, Sum: 7.1]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 1.4, Avg: 1.5, Max: 1.6, Diff: 0.2, Sum: 15.0]
+      [GC Worker End (ms): Min: 382260.4, Avg: 382260.5, Max: 382260.5, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.2 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.7 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41024.9K(4096.0M)]
+ [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-08-27T20:13:52.568-0700: 402.308: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 52KB slow allocs: 0  refill waste: 832B alloc: 0.00104     2614KB refills: 49 waste  2.0% gc: 50920B slow: 2624B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.05669   142461KB refills: 312 waste  0.0% gc: 0B slow: 26408B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08755   220001KB refills: 317 waste  0.2% gc: 667272B slow: 34824B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08719   219101KB refills: 338 waste  0.1% gc: 270264B slow: 43312B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08024   201636KB refills: 278 waste  0.0% gc: 69600B slow: 24600B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09179   230648KB refills: 357 waste  0.2% gc: 685352B slow: 37608B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 25KB slow allocs: 0  refill waste: 408B alloc: 0.00051     1292KB refills: 122 waste  0.7% gc: 16920B slow: 6840B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      712KB refills: 81 waste  0.8% gc: 6704B slow: 2176B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      711KB refills: 76 waste  0.9% gc: 8016B slow: 2064B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      711KB refills: 80 waste  0.5% gc: 3488B slow: 2192B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      713KB refills: 71 waste  0.2% gc: 192B slow: 2344B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      714KB refills: 71 waste  0.3% gc: 1048B slow: 1784B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00068     1700KB refills: 95 waste  0.4% gc: 12152B slow: 2592B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 3KB slow allocs: 7  refill waste: 56B alloc: 0.00008      197KB refills: 24 waste  1.0% gc: 264B slow: 712B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09600   241226KB refills: 302 waste  0.3% gc: 943336B slow: 29624B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 137KB slow allocs: 0  refill waste: 2192B alloc: 0.00273     6867KB refills: 20 waste  4.0% gc: 111288B slow: 632B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 3KB slow allocs: 0  refill waste: 56B alloc: 0.00008      196KB refills: 29 waste  2.2% gc: 1808B slow: 768B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43763  1099721KB refills: 1127 waste  0.2% gc: 529016B slow: 2098544B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 35KB slow allocs: 0  refill waste: 560B alloc: 0.00070     1752KB refills: 1 waste 97.3% gc: 34896B slow: 0B fast: 0B
+TLAB totals: thrds: 19  refills: 3750 max: 1127 slow allocs: 7 max 7 waste:  0.2% gc: 3412536B max: 943336B slow: 2319648B max: 2098544B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      68360 bytes,      68360 total
+- age   2:        120 bytes,      68480 total
+- age   3:        256 bytes,      68736 total
+- age   5:        456 bytes,      69192 total
+- age   6:        488 bytes,      69680 total
+- age   7:        216 bytes,      69896 total
+- age   9:        416 bytes,      70312 total
+- age  10:        216 bytes,      70528 total
+- age  12:       1048 bytes,      71576 total
+- age  13:        808 bytes,      72384 total
+- age  14:        648 bytes,      73032 total
+- age  15:        760 bytes,      73792 total
+, 0.0032244 secs]
+   [Parallel Time: 1.9 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 402308.7, Avg: 402308.8, Max: 402308.8, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.4, Max: 1.4, Diff: 1.3, Sum: 3.8]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.5, Diff: 0.5, Sum: 2.4]
+         [Processed Buffers: Min: 0, Avg: 2.8, Max: 7, Diff: 7, Sum: 28]
+      [Scan RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.8]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.8, Diff: 0.8, Sum: 1.0]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.7]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.8, Diff: 0.8, Sum: 6.5]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [GC Worker Total (ms): Min: 1.5, Avg: 1.7, Max: 1.8, Diff: 0.3, Sum: 16.7]
+      [GC Worker End (ms): Min: 402310.3, Avg: 402310.4, Max: 402310.6, Diff: 0.3]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 1.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41052.2K(4096.0M)]
+ [Times: user=0.01 sys=0.01, real=0.01 secs] 
+2020-08-27T20:14:12.574-0700: 422.314: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 46KB slow allocs: 0  refill waste: 736B alloc: 0.00092     2322KB refills: 71 waste  0.7% gc: 19592B slow: 3208B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.06884   172983KB refills: 326 waste  0.3% gc: 885352B slow: 36800B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08913   223970KB refills: 358 waste  0.3% gc: 1001504B slow: 33336B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09183   230753KB refills: 325 waste  0.0% gc: 0B slow: 26696B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08099   203510KB refills: 314 waste  0.3% gc: 922528B slow: 32392B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09563   240312KB refills: 264 waste  0.3% gc: 914752B slow: 28616B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 32KB slow allocs: 0  refill waste: 520B alloc: 0.00065     1634KB refills: 74 waste  1.3% gc: 27616B slow: 3768B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      701KB refills: 75 waste  1.1% gc: 9480B slow: 2176B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      702KB refills: 71 waste  0.4% gc: 2336B slow: 2064B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      700KB refills: 77 waste  0.3% gc: 848B slow: 2168B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      698KB refills: 78 waste  0.2% gc: 704B slow: 2032B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 14KB slow allocs: 0  refill waste: 224B alloc: 0.00028      703KB refills: 77 waste  0.5% gc: 3352B slow: 2112B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00068     1697KB refills: 79 waste  0.5% gc: 10888B slow: 2240B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 3KB slow allocs: 0  refill waste: 48B alloc: 0.00006      160KB refills: 31 waste  2.2% gc: 1296B slow: 928B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09270   232952KB refills: 318 waste  0.3% gc: 1024712B slow: 33016B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 98KB slow allocs: 0  refill waste: 1576B alloc: 0.00197     4944KB refills: 26 waste  1.2% gc: 29400B slow: 1168B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 3KB slow allocs: 0  refill waste: 48B alloc: 0.00006      160KB refills: 33 waste  0.6% gc: 24B slow: 672B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43770  1099904KB refills: 1133 waste  0.2% gc: 0B slow: 2205632B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 22KB slow allocs: 0  refill waste: 360B alloc: 0.00045     1139KB refills: 1 waste 98.4% gc: 22952B slow: 0B fast: 0B
+TLAB totals: thrds: 19  refills: 3731 max: 1133 slow allocs: 0 max 0 waste:  0.2% gc: 4877336B max: 1024712B slow: 2419024B max: 2205632B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      77224 bytes,      77224 total
+- age   2:         32 bytes,      77256 total
+- age   3:         88 bytes,      77344 total
+- age   4:        256 bytes,      77600 total
+- age   6:        456 bytes,      78056 total
+- age   7:        488 bytes,      78544 total
+- age   8:        216 bytes,      78760 total
+- age  10:        416 bytes,      79176 total
+- age  11:        216 bytes,      79392 total
+- age  13:       1048 bytes,      80440 total
+- age  14:        808 bytes,      81248 total
+- age  15:        648 bytes,      81896 total
+, 0.0031301 secs]
+   [Parallel Time: 1.7 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 422314.3, Avg: 422314.3, Max: 422314.4, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.3, Max: 1.0, Diff: 0.9, Sum: 2.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.9]
+         [Processed Buffers: Min: 0, Avg: 2.7, Max: 5, Diff: 5, Sum: 27]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.9, Diff: 0.9, Sum: 1.0]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.6]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.8, Diff: 0.8, Sum: 7.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 1.4, Avg: 1.5, Max: 1.5, Diff: 0.1, Sum: 14.8]
+      [GC Worker End (ms): Min: 422315.8, Avg: 422315.8, Max: 422315.8, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.3 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.2 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.4 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41058.8K(4096.0M)]
+ [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2020-08-27T20:14:33.454-0700: 443.194: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 46KB slow allocs: 0  refill waste: 736B alloc: 0.00092     2321KB refills: 107 waste  0.3% gc: 7392B slow: 5704B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07896   198408KB refills: 293 waste  0.2% gc: 736912B slow: 29904B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09375   235595KB refills: 347 waste  0.2% gc: 796864B slow: 40560B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09160   230179KB refills: 303 waste  0.0% gc: 36552B slow: 32720B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08520   214089KB refills: 361 waste  0.1% gc: 513000B slow: 33352B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08997   226095KB refills: 301 waste  0.3% gc: 948632B slow: 31680B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 32KB slow allocs: 0  refill waste: 512B alloc: 0.00064     1621KB refills: 27 waste  3.6% gc: 31056B slow: 1224B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      695KB refills: 68 waste  0.4% gc: 1712B slow: 1752B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      693KB refills: 72 waste  1.1% gc: 8552B slow: 2368B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      693KB refills: 81 waste  0.4% gc: 1984B slow: 2816B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      696KB refills: 79 waste  0.3% gc: 1200B slow: 2472B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      692KB refills: 87 waste  1.3% gc: 13504B slow: 2296B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00067     1690KB refills: 86 waste  0.7% gc: 17952B slow: 2432B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 2KB slow allocs: 13  refill waste: 40B alloc: 0.00006      139KB refills: 36 waste  2.6% gc: 1720B slow: 968B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09261   232721KB refills: 294 waste  0.3% gc: 869104B slow: 25712B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 73KB slow allocs: 0  refill waste: 1176B alloc: 0.00147     3682KB refills: 31 waste  2.7% gc: 61216B slow: 1336B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 2KB slow allocs: 0  refill waste: 40B alloc: 0.00005      137KB refills: 41 waste  1.6% gc: 792B slow: 1048B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43773  1099972KB refills: 1139 waste  0.2% gc: 0B slow: 2158680B fast: 0B
+TLAB totals: thrds: 18  refills: 3753 max: 1139 slow allocs: 13 max 13 waste:  0.2% gc: 4048144B max: 948632B slow: 2377024B max: 2158680B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      71512 bytes,      71512 total
+- age   2:       1008 bytes,      72520 total
+- age   3:         32 bytes,      72552 total
+- age   4:         88 bytes,      72640 total
+- age   5:        256 bytes,      72896 total
+- age   7:        456 bytes,      73352 total
+- age   8:        488 bytes,      73840 total
+- age   9:        216 bytes,      74056 total
+- age  11:        416 bytes,      74472 total
+- age  12:        216 bytes,      74688 total
+- age  14:       1048 bytes,      75736 total
+- age  15:        808 bytes,      76544 total
+, 0.0030482 secs]
+   [Parallel Time: 1.7 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 443194.1, Avg: 443194.2, Max: 443194.2, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.3, Max: 1.1, Diff: 0.9, Sum: 3.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.9]
+         [Processed Buffers: Min: 0, Avg: 2.8, Max: 7, Diff: 7, Sum: 28]
+      [Scan RS (ms): Min: 0.0, Avg: 0.2, Max: 0.2, Diff: 0.2, Sum: 1.6]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.8, Diff: 0.8, Sum: 0.9]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.8, Diff: 0.8, Sum: 7.0]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 1.5, Avg: 1.5, Max: 1.6, Diff: 0.2, Sum: 15.4]
+      [GC Worker End (ms): Min: 443195.7, Avg: 443195.7, Max: 443195.8, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 1.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.1 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41077.7K(4096.0M)]
+ [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-08-27T20:14:53.497-0700: 463.237: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 53KB slow allocs: 0  refill waste: 856B alloc: 0.00107     2680KB refills: 61 waste  1.7% gc: 52680B slow: 3320B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08128   204255KB refills: 323 waste  0.1% gc: 314592B slow: 34656B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09640   242238KB refills: 333 waste  0.3% gc: 960416B slow: 37880B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09103   228741KB refills: 304 waste  0.0% gc: 116432B slow: 32632B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09117   229100KB refills: 302 waste  0.1% gc: 171200B slow: 24584B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08968   225359KB refills: 341 waste  0.3% gc: 993264B slow: 34952B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 25KB slow allocs: 0  refill waste: 400B alloc: 0.00050     1265KB refills: 13 waste  1.3% gc: 3632B slow: 776B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      687KB refills: 80 waste  0.9% gc: 7480B slow: 2296B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      691KB refills: 81 waste  0.2% gc: 0B slow: 2488B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      689KB refills: 78 waste  0.6% gc: 4128B slow: 2552B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      691KB refills: 77 waste  0.6% gc: 4384B slow: 2208B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00028      691KB refills: 69 waste  0.3% gc: 768B slow: 1760B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00067     1689KB refills: 82 waste  0.4% gc: 9696B slow: 2344B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 2KB slow allocs: 4  refill waste: 40B alloc: 0.00005      126KB refills: 38 waste  2.2% gc: 1072B slow: 1120B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09040   227172KB refills: 343 waste  0.2% gc: 667272B slow: 25984B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 57KB slow allocs: 0  refill waste: 920B alloc: 0.00115     2890KB refills: 70 waste  0.4% gc: 13416B slow: 3296B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 2KB slow allocs: 0  refill waste: 32B alloc: 0.00005      125KB refills: 41 waste  1.8% gc: 944B slow: 960B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43767  1099828KB refills: 1136 waste  0.2% gc: 762472B slow: 2205560B fast: 0B
+TLAB totals: thrds: 18  refills: 3772 max: 1136 slow allocs: 4 max 4 waste:  0.2% gc: 4083848B max: 993264B slow: 2419368B max: 2205560B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      78200 bytes,      78200 total
+- age   2:        464 bytes,      78664 total
+- age   3:       1008 bytes,      79672 total
+- age   4:         32 bytes,      79704 total
+- age   5:         88 bytes,      79792 total
+- age   6:        256 bytes,      80048 total
+- age   8:        456 bytes,      80504 total
+- age   9:        488 bytes,      80992 total
+- age  10:        216 bytes,      81208 total
+- age  12:        416 bytes,      81624 total
+- age  13:        216 bytes,      81840 total
+- age  15:       1048 bytes,      82888 total
+, 0.0033430 secs]
+   [Parallel Time: 2.0 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 463237.4, Avg: 463237.4, Max: 463237.5, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.2, Avg: 0.4, Max: 1.5, Diff: 1.3, Sum: 4.3]
+      [Update RS (ms): Min: 0.0, Avg: 0.3, Max: 0.6, Diff: 0.6, Sum: 2.9]
+         [Processed Buffers: Min: 0, Avg: 2.6, Max: 6, Diff: 6, Sum: 26]
+      [Scan RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 2.3]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.9, Diff: 0.9, Sum: 0.9]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.7]
+      [Termination (ms): Min: 0.0, Avg: 0.7, Max: 0.9, Diff: 0.9, Sum: 7.0]
+         [Termination Attempts: Min: 1, Avg: 1.3, Max: 2, Diff: 1, Sum: 13]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.1]
+      [GC Worker Total (ms): Min: 1.8, Avg: 1.8, Max: 1.9, Diff: 0.2, Sum: 18.3]
+      [GC Worker End (ms): Min: 463239.2, Avg: 463239.3, Max: 463239.3, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.2 ms]
+   [Other: 1.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.5 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41073.1K(4096.0M)]
+ [Times: user=0.02 sys=0.01, real=0.00 secs] 
+2020-08-27T20:15:13.553-0700: 483.294: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 50KB slow allocs: 0  refill waste: 800B alloc: 0.00100     2502KB refills: 62 waste  0.9% gc: 25608B slow: 3104B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08509   213814KB refills: 323 waste  0.0% gc: 135680B slow: 31112B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09560   240223KB refills: 327 waste  0.3% gc: 842664B slow: 26080B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08983   225739KB refills: 293 waste  0.2% gc: 446544B slow: 38184B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09071   227951KB refills: 322 waste  0.3% gc: 962032B slow: 28088B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09182   230740KB refills: 321 waste  0.2% gc: 566288B slow: 23224B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      687KB refills: 74 waste  0.9% gc: 6712B slow: 2200B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      689KB refills: 82 waste  0.3% gc: 16B slow: 3136B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      687KB refills: 78 waste  0.4% gc: 2552B slow: 2360B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      684KB refills: 79 waste  1.5% gc: 13728B slow: 2464B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      683KB refills: 75 waste  0.7% gc: 5264B slow: 2288B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00067     1683KB refills: 72 waste  0.7% gc: 15136B slow: 1888B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 2KB slow allocs: 8  refill waste: 32B alloc: 0.00005      115KB refills: 41 waste  2.1% gc: 864B slow: 1200B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09219   231662KB refills: 340 waste  0.1% gc: 429864B slow: 46072B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 58KB slow allocs: 0  refill waste: 928B alloc: 0.00116     2908KB refills: 96 waste  0.6% gc: 30464B slow: 5728B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 2KB slow allocs: 0  refill waste: 32B alloc: 0.00005      115KB refills: 44 waste  1.7% gc: 672B slow: 1080B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43759  1099623KB refills: 1140 waste  0.2% gc: 0B slow: 2179952B fast: 0B
+TLAB totals: thrds: 17  refills: 3769 max: 1140 slow allocs: 8 max 8 waste:  0.2% gc: 3484088B max: 962032B slow: 2398160B max: 2179952B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      66544 bytes,      66544 total
+- age   3:        464 bytes,      67008 total
+- age   4:       1008 bytes,      68016 total
+- age   5:         32 bytes,      68048 total
+- age   6:         88 bytes,      68136 total
+- age   7:        256 bytes,      68392 total
+- age   9:        456 bytes,      68848 total
+- age  10:        488 bytes,      69336 total
+- age  11:        216 bytes,      69552 total
+- age  13:        416 bytes,      69968 total
+- age  14:        216 bytes,      70184 total
+, 0.0027181 secs]
+   [Parallel Time: 1.4 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 483293.7, Avg: 483293.7, Max: 483293.7, Diff: 0.1]
+      [Ext Root Scanning (ms): Min: 0.1, Avg: 0.3, Max: 1.0, Diff: 0.9, Sum: 2.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.2, Max: 0.3, Diff: 0.3, Sum: 1.7]
+         [Processed Buffers: Min: 0, Avg: 2.5, Max: 5, Diff: 5, Sum: 25]
+      [Scan RS (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.4]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.1, Max: 0.6, Diff: 0.6, Sum: 0.7]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.1, Diff: 0.1, Sum: 0.5]
+      [Termination (ms): Min: 0.0, Avg: 0.5, Max: 0.6, Diff: 0.6, Sum: 4.7]
+         [Termination Attempts: Min: 1, Avg: 1.9, Max: 3, Diff: 2, Sum: 19]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.0, Diff: 0.0, Sum: 0.2]
+      [GC Worker Total (ms): Min: 1.2, Avg: 1.2, Max: 1.3, Diff: 0.1, Sum: 12.2]
+      [GC Worker End (ms): Min: 483294.9, Avg: 483294.9, Max: 483294.9, Diff: 0.0]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.3 ms]
+   [Other: 1.1 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.2 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.1 ms]
+      [Humongous Register: 0.0 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.6 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41080.6K(4096.0M)]
+ [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2020-08-27T20:15:34.425-0700: 504.165: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 46KB slow allocs: 0  refill waste: 744B alloc: 0.00093     2342KB refills: 74 waste  0.8% gc: 24240B slow: 2824B fast: 0B
+TLAB: gc thread: 0x00007fc4b8000dd0 [id: 7202] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.07078   177856KB refills: 77 waste  0.2% gc: 166856B slow: 5120B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08862   222697KB refills: 260 waste  0.2% gc: 443088B slow: 32624B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09419   236693KB refills: 290 waste  0.3% gc: 1030240B slow: 33712B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08837   222063KB refills: 296 waste  0.2% gc: 486320B slow: 43936B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09089   228401KB refills: 325 waste  0.3% gc: 904520B slow: 28896B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09245   232309KB refills: 355 waste  0.1% gc: 224536B slow: 36208B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 17KB slow allocs: 0  refill waste: 280B alloc: 0.00035      888KB refills: 37 waste  0.9% gc: 4392B slow: 1888B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      685KB refills: 82 waste  0.9% gc: 8088B slow: 2328B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      686KB refills: 78 waste  0.3% gc: 1528B slow: 2120B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      684KB refills: 78 waste  1.3% gc: 12024B slow: 2304B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      686KB refills: 83 waste  0.2% gc: 168B slow: 2112B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      684KB refills: 78 waste  1.3% gc: 11520B slow: 2384B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00067     1683KB refills: 80 waste  1.2% gc: 30888B slow: 2400B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 2KB slow allocs: 25  refill waste: 32B alloc: 0.00004      109KB refills: 43 waste  1.6% gc: 528B slow: 1016B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09432   237010KB refills: 307 waste  0.0% gc: 0B slow: 30752B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 60KB slow allocs: 0  refill waste: 968B alloc: 0.00121     3033KB refills: 63 waste  0.7% gc: 25736B slow: 3456B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 2KB slow allocs: 0  refill waste: 32B alloc: 0.00004      108KB refills: 48 waste  2.2% gc: 1168B slow: 1184B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43765  1099779KB refills: 1137 waste  0.2% gc: 548352B slow: 2159440B fast: 0B
+TLAB totals: thrds: 19  refills: 3791 max: 1137 slow allocs: 25 max 25 waste:  0.2% gc: 3924192B max: 1030240B slow: 2394704B max: 2159440B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      75688 bytes,      75688 total
+- age   4:        464 bytes,      76152 total
+- age   5:       1008 bytes,      77160 total
+- age   6:         32 bytes,      77192 total
+- age   7:         88 bytes,      77280 total
+- age   8:        256 bytes,      77536 total
+- age  10:        456 bytes,      77992 total
+- age  11:        488 bytes,      78480 total
+- age  12:        216 bytes,      78696 total
+- age  14:        416 bytes,      79112 total
+- age  15:        216 bytes,      79328 total
+, 0.0065869 secs]
+   [Parallel Time: 3.1 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 504165.6, Avg: 504165.7, Max: 504165.9, Diff: 0.3]
+      [Ext Root Scanning (ms): Min: 0.4, Avg: 0.6, Max: 1.5, Diff: 1.1, Sum: 5.7]
+      [Update RS (ms): Min: 0.0, Avg: 0.4, Max: 0.7, Diff: 0.7, Sum: 4.2]
+         [Processed Buffers: Min: 0, Avg: 2.8, Max: 5, Diff: 5, Sum: 28]
+      [Scan RS (ms): Min: 0.1, Avg: 0.3, Max: 0.4, Diff: 0.3, Sum: 3.0]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.2, Max: 1.5, Diff: 1.5, Sum: 1.6]
+      [Object Copy (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.5]
+      [Termination (ms): Min: 0.0, Avg: 1.2, Max: 1.4, Diff: 1.4, Sum: 11.6]
+         [Termination Attempts: Min: 1, Avg: 1.1, Max: 2, Diff: 1, Sum: 11]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.0, Max: 0.1, Diff: 0.1, Sum: 0.3]
+      [GC Worker Total (ms): Min: 2.6, Avg: 2.8, Max: 3.0, Diff: 0.3, Sum: 27.8]
+      [GC Worker End (ms): Min: 504168.5, Avg: 504168.5, Max: 504168.6, Diff: 0.1]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 0.9 ms]
+   [Other: 2.6 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 0.8 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 0.6 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 0.8 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41100.5K(4096.0M)]
+ [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2020-08-27T20:15:54.697-0700: 524.438: [GC pause (G1 Evacuation Pause) (young)TLAB: gc thread: 0x00007fc4bc000e00 [id: 7205] desired_size: 47KB slow allocs: 0  refill waste: 752B alloc: 0.00094     2367KB refills: 85 waste  0.8% gc: 29464B slow: 2768B fast: 0B
+TLAB: gc thread: 0x00007fc4d83c6860 [id: 7196] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08366   210240KB refills: 348 waste  0.0% gc: 0B slow: 36048B fast: 0B
+TLAB: gc thread: 0x00007fc4c4000dd0 [id: 7195] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09158   230128KB refills: 317 waste  0.1% gc: 456008B slow: 38064B fast: 0B
+TLAB: gc thread: 0x00007fc4b0002c80 [id: 7188] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.08805   221263KB refills: 289 waste  0.3% gc: 929024B slow: 29024B fast: 0B
+TLAB: gc thread: 0x00007fc4a8000e60 [id: 7186] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09181   230714KB refills: 365 waste  0.1% gc: 338760B slow: 32736B fast: 0B
+TLAB: gc thread: 0x00007fc4e4256ef0 [id: 7184] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09536   239630KB refills: 316 waste  0.1% gc: 379776B slow: 22232B fast: 0B
+TLAB: gc thread: 0x00007fc4e00e0b40 [id: 7181] desired_size: 15KB slow allocs: 0  refill waste: 240B alloc: 0.00030      757KB refills: 30 waste  0.4% gc: 240B slow: 1688B fast: 0B
+TLAB: gc thread: 0x00007fc4e424f480 [id: 7179] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      684KB refills: 72 waste  1.3% gc: 11088B slow: 2312B fast: 0B
+TLAB: gc thread: 0x00007fc4e424e110 [id: 7178] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      680KB refills: 78 waste  1.0% gc: 8112B slow: 2288B fast: 0B
+TLAB: gc thread: 0x00007fc4e424ce60 [id: 7177] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      686KB refills: 77 waste  0.2% gc: 328B slow: 1976B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bf3f0 [id: 7176] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      684KB refills: 72 waste  1.3% gc: 11472B slow: 2056B fast: 0B
+TLAB: gc thread: 0x00007fc4d83bbfc0 [id: 7175] desired_size: 13KB slow allocs: 0  refill waste: 216B alloc: 0.00027      685KB refills: 83 waste  1.2% gc: 11200B slow: 2624B fast: 0B
+TLAB: gc thread: 0x00007fc4ec01d330 [id: 6912] desired_size: 33KB slow allocs: 0  refill waste: 536B alloc: 0.00067     1688KB refills: 76 waste  1.1% gc: 27512B slow: 2040B fast: 0B
+TLAB: gc thread: 0x00007fc5b2c1c880 [id: 6840] desired_size: 2KB slow allocs: 34  refill waste: 32B alloc: 0.00004      106KB refills: 41 waste  1.9% gc: 408B slow: 1264B fast: 0B
+TLAB: gc thread: 0x00007fc4e80098d0 [id: 6837] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.09321   234216KB refills: 302 waste  0.3% gc: 984368B slow: 34552B fast: 0B
+TLAB: gc thread: 0x00007fc5b28e3dc0 [id: 6834] desired_size: 56KB slow allocs: 0  refill waste: 896B alloc: 0.00112     2804KB refills: 60 waste  1.7% gc: 56120B slow: 3128B fast: 0B
+TLAB: gc thread: 0x00007fc5b27c8d30 [id: 6833] desired_size: 2KB slow allocs: 0  refill waste: 32B alloc: 0.00004      106KB refills: 48 waste  3.4% gc: 2112B slow: 1368B fast: 0B
+TLAB: gc thread: 0x00007fc5b1fcf0e0 [id: 6830] desired_size: 1023KB slow allocs: 0  refill waste: 16376B alloc: 0.43762  1099690KB refills: 1149 waste  0.2% gc: 247808B slow: 2254968B fast: 0B
+TLAB: gc thread: 0x00007fc5b0cd32d0 [id: 6671] desired_size: 14KB slow allocs: 0  refill waste: 232B alloc: 0.00029      741KB refills: 1 waste 10.9% gc: 1656B slow: 0B fast: 0B
+TLAB totals: thrds: 19  refills: 3809 max: 1149 slow allocs: 34 max 34 waste:  0.2% gc: 3495456B max: 984368B slow: 2471136B max: 2254968B fast: 0B max: 0B
+
+Desired survivor size 161480704 bytes, new threshold 15 (max 15)
+- age   1:      75696 bytes,      75696 total
+- age   2:         48 bytes,      75744 total
+- age   5:        464 bytes,      76208 total
+- age   6:       1008 bytes,      77216 total
+- age   8:         88 bytes,      77304 total
+- age   9:        256 bytes,      77560 total
+- age  11:        456 bytes,      78016 total
+- age  12:        488 bytes,      78504 total
+- age  13:        216 bytes,      78720 total
+- age  15:        416 bytes,      79136 total
+, 0.0123457 secs]
+   [Parallel Time: 5.7 ms, GC Workers: 10]
+      [GC Worker Start (ms): Min: 524438.2, Avg: 524438.4, Max: 524438.6, Diff: 0.4]
+      [Ext Root Scanning (ms): Min: 0.6, Avg: 0.9, Max: 1.8, Diff: 1.2, Sum: 8.9]
+      [Update RS (ms): Min: 0.0, Avg: 0.9, Max: 1.5, Diff: 1.5, Sum: 8.8]
+         [Processed Buffers: Min: 0, Avg: 2.8, Max: 7, Diff: 7, Sum: 28]
+      [Scan RS (ms): Min: 0.2, Avg: 0.5, Max: 0.7, Diff: 0.5, Sum: 4.9]
+      [Code Root Scanning (ms): Min: 0.0, Avg: 0.3, Max: 2.8, Diff: 2.8, Sum: 3.2]
+      [Object Copy (ms): Min: 0.1, Avg: 0.2, Max: 0.4, Diff: 0.3, Sum: 2.4]
+      [Termination (ms): Min: 0.0, Avg: 2.4, Max: 2.6, Diff: 2.6, Sum: 23.6]
+         [Termination Attempts: Min: 1, Avg: 1.0, Max: 1, Diff: 0, Sum: 10]
+      [GC Worker Other (ms): Min: 0.0, Avg: 0.1, Max: 0.2, Diff: 0.2, Sum: 1.0]
+      [GC Worker Total (ms): Min: 5.0, Avg: 5.3, Max: 5.6, Diff: 0.6, Sum: 52.7]
+      [GC Worker End (ms): Min: 524443.5, Avg: 524443.7, Max: 524443.8, Diff: 0.4]
+   [Code Root Fixup: 0.0 ms]
+   [Code Root Purge: 0.0 ms]
+   [Clear CT: 1.6 ms]
+   [Other: 5.0 ms]
+      [Choose CSet: 0.0 ms]
+      [Ref Proc: 1.7 ms]
+      [Ref Enq: 0.0 ms]
+      [Redirty Cards: 1.3 ms]
+      [Humongous Register: 0.1 ms]
+      [Humongous Reclaim: 0.0 ms]
+      [Free CSet: 1.4 ms]
+   [Eden: 2454.0M(2454.0M)->0.0B(2454.0M) Survivors: 2048.0K->2048.0K Heap: 2494.1M(4096.0M)->41076.3K(4096.0M)]
+ [Times: user=0.06 sys=0.01, real=0.01 secs] 
+Heap
+ garbage-first heap   total 4194304K, used 385140K [0x00000006c0000000, 0x00000006c0204000, 0x00000007c0000000)
+  region size 2048K, 170 young (348160K), 1 survivors (2048K)
+ Metaspace       used 68305K, capacity 73218K, committed 73548K, reserved 1114112K
+  class space    used 8350K, capacity 8739K, committed 8832K, reserved 1048576K
